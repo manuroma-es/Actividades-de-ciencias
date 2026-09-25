@@ -24,11 +24,11 @@ export function ActivityThumbnail({
 
   return (
     <div className={`activity-thumbnail${visual.image ? " has-topic-image" : " visual-fallback"}`} style={visualStyle(subject, topic)} aria-hidden="true">
-      {visual.image ? <img src={visual.image} alt="" style={{ objectPosition: visual.imageObjectPosition }} /> : null}
+      {visual.image ? <img src={visual.image} alt="" loading="lazy" decoding="async" style={{ objectPosition: visual.imageObjectPosition }} /> : null}
       <div className="thumbnail-shade" />
       <div className="thumbnail-icon"><CatalogIcon name={activityType?.icon ?? visual.icon} /></div>
       <span>{topic?.name ?? subject?.name ?? "Actividad de repaso"}</span>
-      {visual.image ? <small className="image-signature">Alejandro Castaño Medina</small> : null}
+      {visual.image && topic?.legacy?.sourceId ? <small className="image-signature">Alejandro Castaño Medina</small> : null}
     </div>
   );
 }

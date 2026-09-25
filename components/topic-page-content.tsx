@@ -16,11 +16,11 @@ export function TopicPageContent({ subject, topic }: { subject: Subject; topic: 
         <Link href={`/asignatura/${subject.slug}`}>{subject.name}</Link><span aria-hidden="true">/</span>
         <span aria-current="page">{topic.name}</span>
       </nav>
-      <div className={`page-heading section-page-heading${visual.image ? " has-topic-image" : " visual-fallback"}`} style={visualStyle(subject, topic)}>
-        {visual.image ? <img src={visual.image} alt={visual.imageAlt ?? ""} style={{ objectPosition: visual.imageObjectPosition }} /> : null}
+      <div className={`page-heading section-page-heading${visual.image ? " has-topic-image" : " visual-fallback"}${visual.heroImageFit === "contain" ? " hero-contain" : ""}`} style={visualStyle(subject, topic)}>
+        {visual.image ? <img src={visual.image} alt={visual.imageAlt ?? ""} decoding="async" style={{ objectPosition: visual.heroImageFit === "contain" ? "right center" : visual.imageObjectPosition }} /> : null}
         <span className="section-hero-shade" aria-hidden="true" />
         <div className="section-heading-content"><p className="eyebrow">{subject.name} · Tema {String(topic.order).padStart(2, "0")}</p><h1>{topic.name}</h1><p>{topic.description ?? `${count} actividades de repaso relacionadas con este tema.`}</p></div>
-        {visual.image ? <small className="image-signature">Alejandro Castaño Medina</small> : null}
+        {visual.image && topic.legacy?.sourceId ? <small className="image-signature">Alejandro Castaño Medina</small> : null}
       </div>
       <ActivityCatalog lockedSubjectId={subject.id} lockedTopicId={topic.id} />
       {relatedMedia.length ? <section className="topic-media" aria-labelledby="topic-media-heading"><h2 id="topic-media-heading">Videotutorial relacionado</h2>{relatedMedia.flatMap((resource) => resource.relatedActivityIds.flatMap((id) => { const activity = activityById.get(id); return activity ? [<p key={`${resource.id}-${id}`}><Link href={`/actividad/${activity.slug}`}>{resource.title}</Link> · Vídeo original creado en {resource.originCourseLabel}</p>] : []; }))}</section> : null}

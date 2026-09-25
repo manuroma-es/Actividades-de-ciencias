@@ -88,6 +88,7 @@ export function resolveVisual(subject?: Subject, topic?: Topic): VisualConfig {
     image: topic?.visual?.image ?? configuredSubject?.visual.image,
     imageAlt: topic?.visual?.imageAlt ?? configuredSubject?.visual.imageAlt,
     imageObjectPosition: topic?.visual?.imageObjectPosition ?? configuredSubject?.visual.imageObjectPosition,
+    heroImageFit: topic?.visual?.heroImageFit ?? configuredSubject?.visual.heroImageFit,
     creditId: topic?.visual?.creditId ?? configuredSubject?.visual.creditId,
   };
 }

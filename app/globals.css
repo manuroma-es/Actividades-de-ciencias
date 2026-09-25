@@ -241,6 +241,7 @@ svg { stroke-width: 1.8; }
 .breadcrumbs a { min-height: 40px; display: inline-flex; align-items: center; }
 .section-page-heading { --theme: #285f79; --theme-soft: #dfeaf0; position: relative; min-height: 18rem; display: flex; align-items: flex-end; overflow: hidden; isolation: isolate; margin-top: 1.3rem; padding: 1.8rem; border: 1px solid color-mix(in srgb, var(--theme) 20%, #d8ddda); border-radius: 1.2rem; background: var(--theme); color: #fff; }
 .section-page-heading > img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.section-page-heading.hero-contain > img { object-fit: contain; }
 .section-hero-shade { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(8,23,30,.88) 0%, rgba(8,23,30,.55) 60%, rgba(8,23,30,.2) 100%); }
 .section-heading-content { position: relative; max-width: 48rem; }
 .section-page-heading .eyebrow { color: #f3c19f; }

@@ -15,6 +15,7 @@ export interface VisualConfig {
   image?: string;
   imageAlt?: string;
   imageObjectPosition?: string;
+  heroImageFit?: "cover" | "contain";
   creditId?: string;
 }
 

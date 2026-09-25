@@ -91,5 +91,5 @@ test("Ciencias conserva exactamente el catálogo estructurado de main",()=>{
  const digest=(value)=>createHash("sha256").update(JSON.stringify(stable(value))).digest("hex");
  assert.equal(digest(catalog.activities.filter((item)=>item.primarySubjectId==="ciencias")),"cf4177d8ba3de0268b689a2579180c6de635bfae65b03a944497eead593d6302");
  assert.equal(digest(catalog.topics.filter((item)=>item.subjectId==="ciencias")),"0c015042647059e77185db5e1701db7ba822aeda24037da45e4c1fca7b381d4e");
- assert.equal(digest(catalog.credits),"2528dced5f8daf0f8c6c91e94b9dc02b87e4b4dbf6fc2ebf8ae8b008a5a90418");
+ assert.equal(digest(catalog.credits.filter((credit)=>credit.id.startsWith("credit-topic-ciencias-"))),"2528dced5f8daf0f8c6c91e94b9dc02b87e4b4dbf6fc2ebf8ae8b008a5a90418");
 });

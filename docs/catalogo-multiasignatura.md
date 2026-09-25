@@ -99,6 +99,14 @@ El adaptador temporal `lib/science-data.ts` se retiró en Fase 2 porque ya no ti
 
 `tests/fixtures/science-data.legacy.json` se conserva exclusivamente como fixture de regresión para demostrar la paridad de la migración; no es una fuente activa.
 
+## Imágenes de los temas
+
+Cada Topic público tiene su propio WebP de 1600 × 900 bajo `public/images/topics/`. Los 21 visuales añadidos en esta fase proceden de la selección aprobada; sus hashes, PNG de origen, fecha, posición de recorte y método de preparación se registran en `data/topic-image-sources.json`. Los once WebP históricos de Ciencias permanecen en `public/sections/` sin cambios. El ZIP original aprobado se conserva fuera del repositorio para evitar versionar también los PNG de alta resolución.
+
+Para añadir un tema: colocar un WebP con nombre basado en el ID del Topic, rellenar `Imagen`, `Posición de imagen` cuando haga falta y `ID de crédito` en `TEMAS`, y añadir la procedencia a `CRÉDITOS`. `Presentación de cabecera = contain` reserva la imagen completa para diagramas en el hero; el valor vacío usa `cover`. `Icono` es opcional y solo actúa como apoyo/fallback. El texto alternativo se rellena si la imagen comunica algo que el nombre y la descripción no explican. Después, ejecutar `npm run catalog:generate`, `npm run catalog:validate` y las pruebas. El validador rechaza rutas ausentes, créditos inexistentes, imágenes duplicadas y presentaciones no admitidas.
+
+Las imágenes nuevas se cargan localmente y las tarjetas usan carga diferida. El nombre de Alejandro superpuesto se mantiene únicamente en los once visuales históricos de Ciencias; los créditos de procedencia están en «Sobre el proyecto».
+
 ## Añadir datos en fases posteriores
 
 Una nueva asignatura se añadirá mediante filas en `ASIGNATURAS`, `TEMAS`, `ACTIVIDADES` y `ACTIVIDAD_TEMA`, más créditos cuando use imágenes. Las rutas de asignatura y tema se generan ya desde esos datos. La portada general, `/explorar`, `/recientes` y la navegación de producto pertenecen a Fase 3.

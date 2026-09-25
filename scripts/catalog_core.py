@@ -82,6 +82,8 @@ def validate_catalog(catalog: dict, locations=None) -> tuple[list[dict], list[di
                     errors.append(problem("legacy-slug-collision", record_id, f"Slug histórico en colisión: {legacy_slug}", "Cada slug actual o histórico debe resolver a una sola entidad", locations, "Slugs históricos"))
                 legacy_slugs[legacy_slug] = record_id
 
+    asset_root = Path(__file__).resolve().parents[1] / "public"
+    topic_images: dict[str, str] = {}
     for topic in collections["topic"]:
         topic_id = topic.get("id", "topic")
         if topic.get("subjectId") not in subjects:
@@ -89,6 +91,17 @@ def validate_catalog(catalog: dict, locations=None) -> tuple[list[dict], list[di
         visual = topic.get("visual") or {}
         if visual.get("image") and visual.get("creditId") not in credits:
             errors.append(problem("missing-image-credit", topic_id, f"Imagen sin crédito válido: {visual.get('creditId')!r}", "Referenciar un ID de CRÉDITOS", locations, "ID de crédito"))
+        image = visual.get("image")
+        if image:
+            if (not isinstance(image, str) or not re.fullmatch(r"/[A-Za-z0-9._/-]+\.(?:webp|png|jpe?g)", image, re.I)
+                    or ".." in Path(image).parts or not (asset_root / image.lstrip("/")).is_file()):
+                errors.append(problem("invalid-topic-image", topic_id, f"Imagen local inexistente o ruta inválida: {image!r}", "Usar archivo existente bajo public/", locations, "Imagen"))
+            elif image in topic_images:
+                errors.append(problem("duplicate-topic-image", topic_id, f"Imagen compartida con {topic_images[image]}: {image}", "Asignar una imagen propia al tema", locations, "Imagen"))
+            else:
+                topic_images[image] = topic_id
+        if visual.get("heroImageFit") not in (None, "cover", "contain"):
+            errors.append(problem("invalid-hero-image-fit", topic_id, f"Presentación inválida: {visual['heroImageFit']!r}", "Usar cover o contain", locations, "Presentación de cabecera"))
 
     canonical_urls: dict[str, str] = {}
     resource_keys: dict[tuple[str, str], str] = {}
@@ -188,7 +201,6 @@ def validate_catalog(catalog: dict, locations=None) -> tuple[list[dict], list[di
                 "expected": "Revisar; no fusionar automáticamente si son recursos distintos",
             })
 
-    asset_root = Path(__file__).resolve().parents[1] / "public"
     for media in collections["media-resource"]:
         media_id = media.get("id", "media-resource")
         if media_id in {activity.get("id") for activity in collections["activity"]}:

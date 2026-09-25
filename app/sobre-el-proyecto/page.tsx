@@ -15,7 +15,7 @@ export default function AboutPage() {
       <section className="course-explanation"><h2>Qué significa “Curso en que la creé”</h2><p>Ese dato indica el curso en el que estudié el tema o creé la actividad. Es un contexto histórico personal. No indica la edad, el nivel o el curso para los que se recomienda el recurso. Cuando no recuerdo el curso con certeza, la ficha lo dice expresamente.</p></section>
       <section className="external-explanation"><ExternalLink aria-hidden="true" /><div><h2>Recursos actuales en plataformas externas</h2><p>Las actividades disponibles ahora se abren en {platforms.map((platform) => platform.name).join(" o ")}, en una pestaña nueva. Esta web organiza los recursos y conserva una ficha propia para cada uno.</p></div></section>
       <section className="image-credits" id="creditos-imagenes" aria-labelledby="credits-heading">
-        <div className="credits-heading"><p className="eyebrow">Imágenes de los temas</p><h2 id="credits-heading">Créditos y licencias</h2><p>Las imágenes se reutilizan como referencia visual de cada tema. Todas las imágenes procedentes de Magnific emplean la misma licencia gratuita con atribución indicada en el certificado aportado.</p></div>
+        <div className="credits-heading"><p className="eyebrow">Imágenes de los temas</p><h2 id="credits-heading">Créditos y procedencia</h2><p>Las imágenes originales de Ciencias conservan sus créditos y atribuciones. Las imágenes de los demás temas fueron preparadas para este proyecto; su procedencia figura junto a cada tema.</p></div>
         <div className="credits-list">
           {credits.map((credit) => <article className="credit-item" key={credit.id}>
             <h3>{credit.title}</h3>

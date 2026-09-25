@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": {
     "file": "data/catalogo-actividades.xlsx",
-    "sha256": "385d2172f1f35c5e57fc1b6c5e14ffa6957aa8c72ee644870175a0044d96f309"
+    "sha256": "298074ee08338967db1ee2532fde0f7b1d7945bf8fdf40df8c3ce892da0e9475"
   },
   "subjects": [
     {
@@ -323,6 +323,10 @@
       "name": "Le matériel scolaire",
       "slug": "material-escolar",
       "order": 1,
+      "visual": {
+        "image": "/images/topics/topic-frances-material-escolar.webp",
+        "creditId": "credit-topic-frances-material-escolar"
+      },
       "status": "active"
     },
     {
@@ -331,6 +335,10 @@
       "name": "Les vêtements",
       "slug": "vetements",
       "order": 2,
+      "visual": {
+        "image": "/images/topics/topic-frances-vetements.webp",
+        "creditId": "credit-topic-frances-vetements"
+      },
       "status": "active"
     },
     {
@@ -339,6 +347,11 @@
       "name": "L’école et les matières",
       "slug": "ecole",
       "order": 3,
+      "visual": {
+        "image": "/images/topics/topic-frances-ecole.webp",
+        "imageObjectPosition": "58% 43%",
+        "creditId": "credit-topic-frances-ecole"
+      },
       "status": "active"
     },
     {
@@ -347,6 +360,12 @@
       "name": "Les prépositions de lieu",
       "slug": "prepositions-lieu",
       "order": 4,
+      "visual": {
+        "image": "/images/topics/topic-frances-prepositions-lieu.webp",
+        "imageAlt": "Una pelota está encima, debajo y al lado de tres sillas.",
+        "imageObjectPosition": "50% 46%",
+        "creditId": "credit-topic-frances-prepositions-lieu"
+      },
       "status": "active"
     },
     {
@@ -355,6 +374,11 @@
       "name": "L’heure",
       "slug": "heure",
       "order": 5,
+      "visual": {
+        "image": "/images/topics/topic-frances-heure.webp",
+        "imageObjectPosition": "72% 40%",
+        "creditId": "credit-topic-frances-heure"
+      },
       "status": "active"
     },
     {
@@ -363,6 +387,11 @@
       "name": "Les verbes au présent",
       "slug": "verbes-present",
       "order": 6,
+      "visual": {
+        "image": "/images/topics/topic-frances-verbes-present.webp",
+        "imageAlt": "Tres escenas relacionan las acciones con «je vais», «tu joues» e «il fait».",
+        "creditId": "credit-topic-frances-verbes-present"
+      },
       "status": "active"
     },
     {
@@ -371,6 +400,10 @@
       "name": "Les loisirs",
       "slug": "loisirs",
       "order": 7,
+      "visual": {
+        "image": "/images/topics/topic-frances-loisirs.webp",
+        "creditId": "credit-topic-frances-loisirs"
+      },
       "status": "active"
     },
     {
@@ -379,6 +412,12 @@
       "name": "Les pièces de la maison",
       "slug": "maison",
       "order": 8,
+      "visual": {
+        "image": "/images/topics/topic-frances-maison.webp",
+        "imageObjectPosition": "54% 48%",
+        "heroImageFit": "contain",
+        "creditId": "credit-topic-frances-maison"
+      },
       "status": "active"
     },
     {
@@ -387,6 +426,10 @@
       "name": "Les moyens de transport",
       "slug": "transports",
       "order": 9,
+      "visual": {
+        "image": "/images/topics/topic-frances-transports.webp",
+        "creditId": "credit-topic-frances-transports"
+      },
       "status": "active"
     },
     {
@@ -395,6 +438,10 @@
       "name": "Les lieux de la ville",
       "slug": "ville",
       "order": 10,
+      "visual": {
+        "image": "/images/topics/topic-frances-ville.webp",
+        "creditId": "credit-topic-frances-ville"
+      },
       "status": "active"
     },
     {
@@ -403,6 +450,11 @@
       "name": "Les itinéraires et la compréhension écrite",
       "slug": "itineraires",
       "order": 11,
+      "visual": {
+        "image": "/images/topics/topic-frances-itineraires.webp",
+        "imageObjectPosition": "48% 55%",
+        "creditId": "credit-topic-frances-itineraires"
+      },
       "status": "active"
     },
     {
@@ -411,6 +463,11 @@
       "name": "Vocabulary",
       "slug": "vocabulary",
       "order": 1,
+      "visual": {
+        "image": "/images/topics/topic-ingles-vocabulary.webp",
+        "imageObjectPosition": "55% 53%",
+        "creditId": "credit-topic-ingles-vocabulary"
+      },
       "status": "active"
     },
     {
@@ -419,6 +476,11 @@
       "name": "Comparative adjectives",
       "slug": "comparativos",
       "order": 2,
+      "visual": {
+        "image": "/images/topics/topic-ingles-comparativos.webp",
+        "imageAlt": "Dos plantas del mismo tipo tienen alturas diferentes.",
+        "creditId": "credit-topic-ingles-comparativos"
+      },
       "status": "active"
     },
     {
@@ -427,6 +489,11 @@
       "name": "Tipos de enunciados",
       "slug": "enunciados",
       "order": 1,
+      "visual": {
+        "image": "/images/topics/topic-lengua-enunciados.webp",
+        "imageObjectPosition": "50% 43%",
+        "creditId": "credit-topic-lengua-enunciados"
+      },
       "status": "active"
     },
     {
@@ -435,6 +502,10 @@
       "name": "Tiempos verbales",
       "slug": "tiempos-verbales",
       "order": 2,
+      "visual": {
+        "image": "/images/topics/topic-lengua-tiempos-verbales.webp",
+        "creditId": "credit-topic-lengua-tiempos-verbales"
+      },
       "status": "active"
     },
     {
@@ -443,6 +514,10 @@
       "name": "Recursos literarios",
       "slug": "recursos-literarios",
       "order": 3,
+      "visual": {
+        "image": "/images/topics/topic-lengua-recursos-literarios.webp",
+        "creditId": "credit-topic-lengua-recursos-literarios"
+      },
       "status": "active"
     },
     {
@@ -451,6 +526,13 @@
       "name": "Palabras invariables",
       "slug": "palabras-invariables",
       "order": 4,
+      "visual": {
+        "image": "/images/topics/topic-lengua-palabras-invariables.webp",
+        "imageAlt": "La palabra con permanece igual en con niño, con niña y con niños.",
+        "imageObjectPosition": "53% 50%",
+        "heroImageFit": "contain",
+        "creditId": "credit-topic-lengua-palabras-invariables"
+      },
       "status": "active"
     },
     {
@@ -459,6 +541,10 @@
       "name": "Multiplicación",
       "slug": "multiplicaciones",
       "order": 1,
+      "visual": {
+        "image": "/images/topics/topic-matematicas-multiplicaciones.webp",
+        "creditId": "credit-topic-matematicas-multiplicaciones"
+      },
       "status": "active"
     },
     {
@@ -467,6 +553,13 @@
       "name": "Puntos y rectas",
       "slug": "rectas",
       "order": 2,
+      "visual": {
+        "image": "/images/topics/topic-matematicas-rectas.webp",
+        "imageAlt": "Un segmento tiene dos extremos, una semirrecta tiene un origen y las dos rectas inferiores son paralelas.",
+        "imageObjectPosition": "50% 48%",
+        "heroImageFit": "contain",
+        "creditId": "credit-topic-matematicas-rectas"
+      },
       "status": "active"
     },
     {
@@ -475,6 +568,13 @@
       "name": "Ángulos",
       "slug": "angulos",
       "order": 3,
+      "visual": {
+        "image": "/images/topics/topic-matematicas-angulos.webp",
+        "imageAlt": "Tres diagramas muestran un ángulo agudo, uno recto y uno obtuso.",
+        "imageObjectPosition": "52% 52%",
+        "heroImageFit": "contain",
+        "creditId": "credit-topic-matematicas-angulos"
+      },
       "status": "active"
     },
     {
@@ -483,6 +583,10 @@
       "name": "Operaciones combinadas",
       "slug": "operaciones-combinadas",
       "order": 4,
+      "visual": {
+        "image": "/images/topics/topic-matematicas-operaciones-combinadas.webp",
+        "creditId": "credit-topic-matematicas-operaciones-combinadas"
+      },
       "status": "active"
     }
   ],
@@ -5057,6 +5161,174 @@
       "sourceName": "Magnific",
       "sourceUrl": "https://www.magnific.com/es/foto-gratis/ompass-mapa-turistico-enfoque-aguja-brujula_1203158.htm",
       "license": "Licencia gratuita de Magnific para uso comercial con atribución, según el certificado aportado."
+    },
+    {
+      "id": "credit-topic-frances-material-escolar",
+      "title": "Le matériel scolaire",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-frances-material-escolar.png; SHA-256 32e63de039c6e3a5a2ab5a73bc17bdc02bc12c28b9665a0149deea932735c3a8. WebP 1600×900: b2825450e3abbbcb344ea64503584b136a3a6cea21e8504bbef0624f5aedc9b4."
+    },
+    {
+      "id": "credit-topic-frances-vetements",
+      "title": "Les vêtements",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-frances-vetements.png; SHA-256 978ce65c50b5f80057b13d30f0bb07e5ea0aa54ca6a7c05d0ceb166dc33df2a0. WebP 1600×900: 9b342d5ad009af786d079fb74e2f634c7ebae09c72083a6e8f1692e3dfb177ad."
+    },
+    {
+      "id": "credit-topic-frances-ecole",
+      "title": "L’école et les matières",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-frances-ecole.png; SHA-256 414198423c4b6a98d18fc7800d4325c6dd14a3669bf50790a947accf7a9e9f49. WebP 1600×900: a8632b44060444ffff23418b33e083f1b4bdd19fed86f7e182c4bb47a8952ff7."
+    },
+    {
+      "id": "credit-topic-frances-prepositions-lieu",
+      "title": "Les prépositions de lieu",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-frances-prepositions-lieu.png; SHA-256 558720d5d48fb11fd2ca65a0cdf243e38d888fa90edd9bde31eabab2c8fa9cc2. WebP 1600×900: 6f2d333aa80c57d9c6b906d0c83bb7981ff5ba78388b0e408eb8febf0b1b0b3e."
+    },
+    {
+      "id": "credit-topic-frances-heure",
+      "title": "L’heure",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-frances-heure.png; SHA-256 57bfee98d8d6d1f07c11c370ca0daf9e320b6bfbe39f8e009b07b9a97812bcaf. WebP 1600×900: 341b121ee64148004ded07947aba41566509895d6683478005f13456c4bcbbe2."
+    },
+    {
+      "id": "credit-topic-frances-verbes-present",
+      "title": "Les verbes au présent",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-25. PNG original: topic-frances-verbes-present.png; SHA-256 98a606c9c38c108aa8aa23c1dfc86f5208893838b62befb6c719531f722e11d3. WebP 1600×900: 050f5b20808148bf8a8030e7a7fccd2b443c127e5b9826b6f8ccd28198d786e1. Archivo final recuperado: ChatGPT Image 25 sept 2026, 08_19_06 p.m..png."
+    },
+    {
+      "id": "credit-topic-frances-loisirs",
+      "title": "Les loisirs",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-25. PNG original: topic-frances-loisirs.png; SHA-256 f7ce755becda4f99885d6cfcd35cb7f60cb495bcc9d536031aa16dfb6b724e6c. WebP 1600×900: 288c98995ed562f7a5533aa86bf476d1ed3454aeb8e0f5fa933cf00e0349415e. Archivo final recuperado: ChatGPT Image 25 sept 2026, 08_19_00 p.m..png."
+    },
+    {
+      "id": "credit-topic-frances-maison",
+      "title": "Les pièces de la maison",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-frances-maison.png; SHA-256 b369274543e7a09d8b799d5c89f1cc5ac008cf2baa870aab64db2c95fdfb3a86. WebP 1600×900: 7ce058d07d062da7bf5c8ada94476876de9e7348904b28b45688fa5fa8737b0d."
+    },
+    {
+      "id": "credit-topic-frances-transports",
+      "title": "Les moyens de transport",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-25. PNG original: topic-frances-transports.png; SHA-256 5d6696a564fc0a1a875a720c441129b2e6af532961cb77f32645015989e89dc5. WebP 1600×900: 95c7d745f91ee56c64fa5d5e24967780e6c1190639daa370cbbb4d318f36af00. Archivo final recuperado: ChatGPT Image 25 sept 2026, 08_18_53 p.m..png."
+    },
+    {
+      "id": "credit-topic-frances-ville",
+      "title": "Les lieux de la ville",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-frances-ville.png; SHA-256 3169bb639f05d7567547b6468ff6e825a481c7e4738ef5f39a43e431da36d40b. WebP 1600×900: 654121d33c1e78c877ed371b802dc1beb5b9db6fe61f814988f30c1f817461f6."
+    },
+    {
+      "id": "credit-topic-frances-itineraires",
+      "title": "Les itinéraires et la compréhension écrite",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-frances-itineraires.png; SHA-256 bbbb65e4336b3a7a098c8b82926f2b6b6fb37cffc8b22803bccafbefe8cae394. WebP 1600×900: 9594393de53b1d19647590bedfccf9e8dd2982607247a2a8334a319e1fa5a85b."
+    },
+    {
+      "id": "credit-topic-ingles-vocabulary",
+      "title": "Vocabulary",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-ingles-vocabulary.png; SHA-256 8b3e909513478ddd791341991f52ef158b79c8406ebbeefe8defbd3fbd053e2d. WebP 1600×900: aa0f214ed86ecd4f3743d6a111660e91ca3767c716649e7ecf5152b4b376c24b."
+    },
+    {
+      "id": "credit-topic-ingles-comparativos",
+      "title": "Comparative adjectives",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-ingles-comparativos.png; SHA-256 d988708afc4037e9c562aac713694018196b9ce4cb05928bd89c1f2dcd28bf33. WebP 1600×900: 3c1f71221ba87632bdb66342f54aec6c4181f3c1c7e86e3a0b99332d532c1525."
+    },
+    {
+      "id": "credit-topic-lengua-enunciados",
+      "title": "Tipos de enunciados",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-lengua-enunciados.png; SHA-256 2474bbed9012e8e8afb0128c1af99c2ef41a1edf465f4a21de7506c013b1148f. WebP 1600×900: 551772676be20ad5c22bbe23d42f540378a0e3a1c1829d77c4596ce7122d2a5c."
+    },
+    {
+      "id": "credit-topic-lengua-tiempos-verbales",
+      "title": "Tiempos verbales",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-lengua-tiempos-verbales.png; SHA-256 4ea0515ed986b76b1356646e00ad04233862b8da1dd5c67846f4fd8418dd8982. WebP 1600×900: dcb626ed7a4b56df9e34e1940184b5512d4d99059707213ab0963fba39d3970c."
+    },
+    {
+      "id": "credit-topic-lengua-recursos-literarios",
+      "title": "Recursos literarios",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-lengua-recursos-literarios.png; SHA-256 1cafa04000cec5b3e9b917650552618ef8cccf061d5ae9f85bd0a656ce55d69f. WebP 1600×900: 7623addb7ed552dd24c212d18c0834e498d7515a3309fa2d95a8585b96877f20."
+    },
+    {
+      "id": "credit-topic-lengua-palabras-invariables",
+      "title": "Palabras invariables",
+      "author": "Composición y tipografía preparadas para el proyecto",
+      "sourceName": "Composición local con Pillow/DejaVu Serif",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-lengua-palabras-invariables.png; SHA-256 2e639ddbfd654771f942b01e3ada2196565d7fd80a65b20d5e75515ee2ae3481. WebP 1600×900: 6075be2601c3fd4abce1bb09d4df4b4d98eeaa384390ab23458b568cac9e78d2."
+    },
+    {
+      "id": "credit-topic-matematicas-multiplicaciones",
+      "title": "Multiplicación",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-matematicas-multiplicaciones.png; SHA-256 6b3294210d8266b4eb46a83c85419739ab83691fae3786442aaba5b5315f1581. WebP 1600×900: 447725e59bdef74007d96fb44dd73608c5c69d8884b85832c3e37236337265c2."
+    },
+    {
+      "id": "credit-topic-matematicas-rectas",
+      "title": "Puntos y rectas",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-matematicas-rectas.png; SHA-256 56f3c2dede09aaa9cdd57451b328cb6d85de788392a81ab6e4f87524625431ce. WebP 1600×900: a9a1b7abde25280b0a88a9962696220fb911d240754eab4f93013ece89eff4c1."
+    },
+    {
+      "id": "credit-topic-matematicas-angulos",
+      "title": "Ángulos",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-matematicas-angulos.png; SHA-256 bcd4e1b3bf4b398229f0b7755c1bf1063d91f4d74f81a23a2777050c60fffec5. WebP 1600×900: d0626cedee54416798d428b3fd48372b57f66150e8acf71bd6140673f8133110."
+    },
+    {
+      "id": "credit-topic-matematicas-operaciones-combinadas",
+      "title": "Operaciones combinadas",
+      "author": "Generada con OpenAI; seleccionada por Alejandro Castaño Medina",
+      "sourceName": "ChatGPT Work (OpenAI)",
+      "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
+      "note": "Generada/preparada el 2026-09-24. PNG original: topic-matematicas-operaciones-combinadas.png; SHA-256 1bc5bb2138465a33820974e4024a4329a1ee2a95de9eb1c969a6f04c82bd6da5. WebP 1600×900: ebf9e1625820896fd11cd5d191addb3399385fdd48bb595fecbd938366b06247."
     }
   ],
   "qualityIssues": [

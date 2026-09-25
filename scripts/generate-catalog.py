@@ -135,9 +135,11 @@ def load_general_workbook(source: Path) -> tuple[dict, dict[str, dict]]:
         visual = without_empty({
             "accent": row["Color principal"],
             "accentSoft": row["Color suave"],
+            "icon": row.get("Icono"),
             "image": row["Imagen"],
             "imageAlt": row["Texto alternativo"],
             "imageObjectPosition": row["Posición de imagen"],
+            "heroImageFit": row.get("Presentación de cabecera"),
             "creditId": row["ID de crédito"],
         })
         legacy = without_empty({
