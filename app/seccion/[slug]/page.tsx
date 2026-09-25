@@ -1,24 +1,29 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ActivityCatalog } from "@/components/activity-catalog";
-import { sectionBySlug, sections } from "@/lib/science-data";
-import { getSectionMedia } from "@/lib/section-media";
+import { TopicPageContent } from "@/components/topic-page-content";
+import { subjectById, topicBySlug } from "@/lib/catalog/indexes";
+import { activeTopics, getTopicHref } from "@/lib/catalog/selectors";
 
-export function generateStaticParams() { return sections.map((section) => ({ slug: section.slug })); }
+export const dynamicParams = false;
 
-export default async function SectionPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const section = sectionBySlug.get(slug);
-  if (!section) notFound();
-  const media = getSectionMedia(section);
-  return (
-    <main id="main-content" className="catalog-page site-container">
-      <div className={`page-heading section-page-heading section-theme-${section.order}`}>
-        {media ? <img src={media.src} alt={media.alt} style={{ objectPosition: media.objectPosition }} /> : null}
-        <span className="section-hero-shade" aria-hidden="true" />
-        <div className="section-heading-content"><p className="eyebrow">Tema {String(section.order).padStart(2, "0")}</p><h1>{section.name}</h1><p>{section.note ?? `${section.count} actividades de repaso relacionadas con este tema.`}</p></div>
-        <small className="image-signature">Alejandro Castaño Medina</small>
-      </div>
-      <ActivityCatalog lockedSection={section.slug} />
-    </main>
-  );
+export function generateStaticParams() {
+  return activeTopics.map((topic) => ({ slug: topic.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const topic = topicBySlug.get((await params).slug);
+  const subject = topic ? subjectById.get(topic.subjectId) : undefined;
+  return subject && topic ? {
+    title: `${topic.name} | ${subject.name}`,
+    description: topic.description,
+    alternates: { canonical: getTopicHref(topic) },
+    robots: { index: false, follow: true },
+  } : {};
+}
+
+export default async function LegacyTopicAliasPage({ params }: { params: Promise<{ slug: string }> }) {
+  const topic = topicBySlug.get((await params).slug);
+  const subject = topic ? subjectById.get(topic.subjectId) : undefined;
+  if (!topic || !subject || topic.status !== "active" || subject.status !== "active") notFound();
+  return <TopicPageContent subject={subject} topic={topic} />;
 }

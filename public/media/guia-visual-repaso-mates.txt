@@ -1,0 +1,18 @@
+Guía visual del videotutorial «Puntos, rectas, ángulos y operaciones combinadas»
+
+Este texto describe lo que se ve en pantalla. El autor confirma que la pista de audio contiene únicamente música, sin locución.
+
+00:00–00:05. Portada «Repaso de mates».
+00:05–00:10. El punto.
+00:10–00:15. La recta.
+00:15–00:19. Rectas paralelas.
+00:19–00:24. Rectas secantes.
+00:24–00:29. Rectas perpendiculares y ángulo de 90°.
+00:29–00:34. La semirrecta.
+00:34–00:39. El segmento.
+00:39–00:44. Ángulos recto, agudo y obtuso: 90°, 45° y 120°.
+00:44–00:48. Igualdad y desigualdad: = y ≠.
+00:48–00:53. Orden básico de las operaciones: paréntesis, multiplicación y división, suma y resta.
+00:53–01:08. Invitación a practicar con un QR que lleva a https://wordwall.net/es/resource/53716987.
+
+El vídeo es el material original que Alejandro creó cuando cursaba 4.º de Primaria. Las explicaciones son un repaso breve de aquel momento y no pretenden ser definiciones matemáticas exhaustivas.

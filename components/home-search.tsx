@@ -10,14 +10,14 @@ export function HomeSearch() {
   function submit(event: FormEvent) {
     event.preventDefault();
     const value = query.trim();
-    router.push(value ? `/actividades?q=${encodeURIComponent(value)}` : "/actividades");
+    router.push(value ? `/explorar?q=${encodeURIComponent(value)}` : "/explorar");
   }
   return (
     <form className="home-search" role="search" onSubmit={submit}>
-      <label htmlFor="home-search">Buscar actividades</label>
+      <label htmlFor="home-search">¿Qué quieres repasar?</label>
       <div className="search-field">
         <Search aria-hidden="true" />
-        <input id="home-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Buscar por tema, concepto o actividad" />
+        <input id="home-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Busca una asignatura, un tema o una actividad" />
         <button type="submit">Buscar</button>
       </div>
     </form>

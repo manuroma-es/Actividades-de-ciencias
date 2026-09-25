@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { SiteFooter, SiteHeader } from "@/components/site-shell";
+import { activeSubjects, publicActivities } from "@/lib/catalog/selectors";
 import "./globals.css";
 
+const subjectNames = activeSubjects.map((subject) => subject.name).join(", ");
+
 export const metadata: Metadata = {
-  title: "Actividades de Ciencias",
-  description: "65 actividades de repaso de Ciencias organizadas por temas, disponibles en Wordwall y Educaplay.",
+  title: "Actividades de repaso",
+  description: `${publicActivities.length} actividades de repaso organizadas por asignaturas y temas. Contenido actual: ${subjectNames}.`,
   authors: [{ name: "Alejandro Castaño Medina" }],
   creator: "Alejandro Castaño Medina",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },

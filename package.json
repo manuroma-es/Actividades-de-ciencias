@@ -7,6 +7,11 @@
     "dev": "vite out",
     "build": "next build",
     "start": "serve out",
+    "catalog:migrate": "python3 scripts/migrate-science-data.py",
+    "catalog:migrate:check": "python3 scripts/migrate-science-data.py --check",
+    "catalog:generate": "python3 scripts/generate-catalog.py",
+    "catalog:validate": "python3 scripts/validate-catalog.py",
+    "catalog:check": "npm run catalog:migrate:check && npm run catalog:generate && npm run catalog:validate",
     "test": "npm run build && node --test tests/*.test.mjs",
     "lint": "eslint . --ignore-pattern .next --ignore-pattern out"
   },

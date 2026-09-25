@@ -1,0 +1,5151 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "file": "data/catalogo-actividades.xlsx",
+    "sha256": "385d2172f1f35c5e57fc1b6c5e14ffa6957aa8c72ee644870175a0044d96f309"
+  },
+  "subjects": [
+    {
+      "id": "ciencias",
+      "name": "Ciencias",
+      "shortName": "Ciencias",
+      "slug": "ciencias",
+      "order": 1,
+      "description": "Actividades de Ciencias y Conocimiento del Medio.",
+      "visual": {
+        "accent": "#175B72",
+        "accentSoft": "#E6F1EF",
+        "icon": "microscope"
+      },
+      "status": "active"
+    },
+    {
+      "id": "frances",
+      "name": "Francés",
+      "shortName": "Francés",
+      "slug": "frances",
+      "order": 2,
+      "description": "Actividades de repaso de francés.",
+      "visual": {
+        "accent": "#385F91",
+        "accentSoft": "#EAF0F8",
+        "icon": "languages"
+      },
+      "status": "active"
+    },
+    {
+      "id": "lengua",
+      "name": "Lengua",
+      "shortName": "Lengua",
+      "slug": "lengua",
+      "order": 3,
+      "description": "Actividades de repaso de lengua.",
+      "visual": {
+        "accent": "#994858",
+        "accentSoft": "#FAEDF0",
+        "icon": "book-open"
+      },
+      "status": "active"
+    },
+    {
+      "id": "matematicas",
+      "name": "Matemáticas",
+      "shortName": "Matemáticas",
+      "slug": "matematicas",
+      "order": 4,
+      "description": "Actividades de repaso de matemáticas.",
+      "visual": {
+        "accent": "#34746A",
+        "accentSoft": "#E7F4F0",
+        "icon": "sigma"
+      },
+      "status": "active"
+    },
+    {
+      "id": "ingles",
+      "name": "Inglés",
+      "shortName": "Inglés",
+      "slug": "ingles",
+      "order": 5,
+      "description": "Actividades de repaso de inglés.",
+      "visual": {
+        "accent": "#A36831",
+        "accentSoft": "#FAF1E7",
+        "icon": "languages"
+      },
+      "status": "active"
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-ciencias-001",
+      "subjectId": "ciencias",
+      "name": "Historia",
+      "slug": "historia",
+      "order": 1,
+      "description": "El documento concreta que el bloque corresponde a la Edad Contemporánea.",
+      "visual": {
+        "accent": "#285F79",
+        "accentSoft": "#DFEAF0",
+        "image": "/sections/historia.webp",
+        "imageAlt": "Biblia antigua, brújula y mapa histórico sobre una mesa",
+        "imageObjectPosition": "center 58%",
+        "creditId": "credit-topic-ciencias-001"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-01",
+        "originalName": "Tema de la Historia (el tema de la Edad Contemporánea de 6º PRIMARIA)",
+        "historicalCourse": "6.º de Primaria",
+        "declaredCount": 10
+      }
+    },
+    {
+      "id": "topic-ciencias-002",
+      "subjectId": "ciencias",
+      "name": "Alimentación",
+      "slug": "alimentacion",
+      "order": 2,
+      "description": "El documento indica expresamente que se desconoce el curso de origen.",
+      "visual": {
+        "accent": "#4F722B",
+        "accentSoft": "#E6EFD9",
+        "image": "/sections/alimentacion.webp",
+        "imageAlt": "Platos con verduras, legumbres, frutos secos y otros alimentos",
+        "creditId": "credit-topic-ciencias-002"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-02",
+        "originalName": "TEMA DE LA ALIMENTACIÓN (NO SÉ DE QUÉ CURSO SON LAS ACTIVIDADES)",
+        "historicalCourse": "Curso de origen desconocido",
+        "declaredCount": 3
+      }
+    },
+    {
+      "id": "topic-ciencias-003",
+      "subjectId": "ciencias",
+      "name": "Política y organización de España",
+      "slug": "politica-y-organizacion-de-espana",
+      "order": 3,
+      "description": "Incluye organización territorial, participación política e instituciones.",
+      "visual": {
+        "accent": "#72549A",
+        "accentSoft": "#ECE5F3",
+        "image": "/sections/politica-y-organizacion-de-espana.webp",
+        "imageAlt": "Una persona deposita un sobre en una urna ante la bandera de España",
+        "creditId": "credit-topic-ciencias-003"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-03",
+        "originalName": "POLÍTICA GENERAL Y ORGANIZACIÓN DE ESPAÑA (4, 5 y 6 de primaria)",
+        "historicalCourse": "4.º, 5.º y 6.º de Primaria",
+        "declaredCount": 8
+      }
+    },
+    {
+      "id": "topic-ciencias-004",
+      "subjectId": "ciencias",
+      "name": "Sociedad y población",
+      "slug": "sociedad-y-poblacion",
+      "order": 4,
+      "description": "Nombre ampliado para describir mejor el contenido sin cambiar la clasificación original.",
+      "visual": {
+        "accent": "#A35145",
+        "accentSoft": "#F3E3DE",
+        "image": "/sections/sociedad-y-poblacion.webp",
+        "imageAlt": "Figuras de personas distribuidas sobre un mapa de Europa",
+        "creditId": "credit-topic-ciencias-004"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-04",
+        "originalName": "SOCIEDAD (6 PRIMARIA)",
+        "historicalCourse": "6.º de Primaria",
+        "declaredCount": 4
+      }
+    },
+    {
+      "id": "topic-ciencias-005",
+      "subjectId": "ciencias",
+      "name": "Medio ambiente y sostenibilidad",
+      "slug": "medio-ambiente-y-sostenibilidad",
+      "order": 5,
+      "description": "La actividad de plantas tiene un curso de origen específico de 4.º de Primaria indicado en el propio párrafo.",
+      "visual": {
+        "accent": "#1E725E",
+        "accentSoft": "#D9EEE7",
+        "image": "/sections/medio-ambiente-y-sostenibilidad.webp",
+        "imageAlt": "Manos sostienen símbolos de la Tierra, el agua, la energía y las plantas",
+        "creditId": "credit-topic-ciencias-005"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-05",
+        "originalName": "MEDIO AMBIENTE Y DEMÁS (6 PRIMARIA)",
+        "historicalCourse": "6.º de Primaria",
+        "declaredCount": 7
+      }
+    },
+    {
+      "id": "topic-ciencias-006",
+      "subjectId": "ciencias",
+      "name": "La Transición española",
+      "slug": "la-transicion-espanola",
+      "order": 6,
+      "visual": {
+        "accent": "#946128",
+        "accentSoft": "#F2E8D6",
+        "image": "/sections/la-transicion-espanola.webp",
+        "imageAlt": "Proclamación de Juan Carlos I como rey de España en 1975",
+        "imageObjectPosition": "center 38%",
+        "creditId": "credit-topic-ciencias-006"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-06",
+        "originalName": "LA TRANSICIÓN (6 PRIMARIA)",
+        "historicalCourse": "6.º de Primaria",
+        "declaredCount": 3
+      }
+    },
+    {
+      "id": "topic-ciencias-007",
+      "subjectId": "ciencias",
+      "name": "Derechos y deberes",
+      "slug": "derechos-y-deberes",
+      "order": 7,
+      "visual": {
+        "accent": "#3567A1",
+        "accentSoft": "#DDE9F5",
+        "image": "/sections/derechos-y-deberes.webp",
+        "imageAlt": "Puños alzados de distintos tonos de piel como símbolo de igualdad",
+        "imageObjectPosition": "center 50%",
+        "creditId": "credit-topic-ciencias-007"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-07",
+        "originalName": "DERECHOS Y DEBERES (6 PRIMARIA)",
+        "historicalCourse": "6.º de Primaria",
+        "declaredCount": 5
+      }
+    },
+    {
+      "id": "topic-ciencias-008",
+      "subjectId": "ciencias",
+      "name": "Unión Europea",
+      "slug": "union-europea",
+      "order": 8,
+      "visual": {
+        "accent": "#296B88",
+        "accentSoft": "#DCECF2",
+        "image": "/sections/union-europea.webp",
+        "imageAlt": "Estrellas de la bandera de la Unión Europea sobre un mapa de Europa",
+        "creditId": "credit-topic-ciencias-008"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-08",
+        "originalName": "LA UNIÓN EUROPEA (5 Y 6 DE PRIMARIA)",
+        "historicalCourse": "5.º y 6.º de Primaria",
+        "declaredCount": 7
+      }
+    },
+    {
+      "id": "topic-ciencias-009",
+      "subjectId": "ciencias",
+      "name": "Reproducción humana",
+      "slug": "reproduccion-humana",
+      "order": 9,
+      "visual": {
+        "accent": "#A14468",
+        "accentSoft": "#F3DFE7",
+        "image": "/sections/reproduccion-humana.webp",
+        "imageAlt": "Ilustración científica de espermatozoides aproximándose a un óvulo",
+        "creditId": "credit-topic-ciencias-009"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-09",
+        "originalName": "LA REPRODUCCIÓN (6 PRIMARIA)",
+        "historicalCourse": "6.º de Primaria",
+        "declaredCount": 6
+      }
+    },
+    {
+      "id": "topic-ciencias-010",
+      "subjectId": "ciencias",
+      "name": "Cuerpo humano",
+      "slug": "cuerpo-humano",
+      "order": 10,
+      "visual": {
+        "accent": "#8B5741",
+        "accentSoft": "#EFE3DC",
+        "image": "/sections/cuerpo-humano.webp",
+        "imageAlt": "Ilustración anatómica del esqueleto, los órganos y el sistema circulatorio",
+        "imageObjectPosition": "center 42%",
+        "creditId": "credit-topic-ciencias-010"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-10",
+        "originalName": "EL CUERPO HUMANO (6 PRIMARIA)",
+        "historicalCourse": "6.º de Primaria",
+        "declaredCount": 8
+      }
+    },
+    {
+      "id": "topic-ciencias-011",
+      "subjectId": "ciencias",
+      "name": "Relieve y geografía",
+      "slug": "relieve-y-geografia",
+      "order": 11,
+      "visual": {
+        "accent": "#376D63",
+        "accentSoft": "#DFECE9",
+        "image": "/sections/relieve-y-geografia.webp",
+        "imageAlt": "Brújula sobre un mapa físico y político de Europa",
+        "creditId": "credit-topic-ciencias-011"
+      },
+      "status": "active",
+      "legacy": {
+        "sourceId": "SEC-11",
+        "originalName": "RELIEVE Y GEOGRAFÍA (4, 5 Y 6 DE PRIMARIA)",
+        "historicalCourse": "4.º, 5.º y 6.º de Primaria",
+        "declaredCount": 8
+      }
+    },
+    {
+      "id": "topic-frances-material-escolar",
+      "subjectId": "frances",
+      "name": "Le matériel scolaire",
+      "slug": "material-escolar",
+      "order": 1,
+      "status": "active"
+    },
+    {
+      "id": "topic-frances-vetements",
+      "subjectId": "frances",
+      "name": "Les vêtements",
+      "slug": "vetements",
+      "order": 2,
+      "status": "active"
+    },
+    {
+      "id": "topic-frances-ecole",
+      "subjectId": "frances",
+      "name": "L’école et les matières",
+      "slug": "ecole",
+      "order": 3,
+      "status": "active"
+    },
+    {
+      "id": "topic-frances-prepositions-lieu",
+      "subjectId": "frances",
+      "name": "Les prépositions de lieu",
+      "slug": "prepositions-lieu",
+      "order": 4,
+      "status": "active"
+    },
+    {
+      "id": "topic-frances-heure",
+      "subjectId": "frances",
+      "name": "L’heure",
+      "slug": "heure",
+      "order": 5,
+      "status": "active"
+    },
+    {
+      "id": "topic-frances-verbes-present",
+      "subjectId": "frances",
+      "name": "Les verbes au présent",
+      "slug": "verbes-present",
+      "order": 6,
+      "status": "active"
+    },
+    {
+      "id": "topic-frances-loisirs",
+      "subjectId": "frances",
+      "name": "Les loisirs",
+      "slug": "loisirs",
+      "order": 7,
+      "status": "active"
+    },
+    {
+      "id": "topic-frances-maison",
+      "subjectId": "frances",
+      "name": "Les pièces de la maison",
+      "slug": "maison",
+      "order": 8,
+      "status": "active"
+    },
+    {
+      "id": "topic-frances-transports",
+      "subjectId": "frances",
+      "name": "Les moyens de transport",
+      "slug": "transports",
+      "order": 9,
+      "status": "active"
+    },
+    {
+      "id": "topic-frances-ville",
+      "subjectId": "frances",
+      "name": "Les lieux de la ville",
+      "slug": "ville",
+      "order": 10,
+      "status": "active"
+    },
+    {
+      "id": "topic-frances-itineraires",
+      "subjectId": "frances",
+      "name": "Les itinéraires et la compréhension écrite",
+      "slug": "itineraires",
+      "order": 11,
+      "status": "active"
+    },
+    {
+      "id": "topic-ingles-vocabulary",
+      "subjectId": "ingles",
+      "name": "Vocabulary",
+      "slug": "vocabulary",
+      "order": 1,
+      "status": "active"
+    },
+    {
+      "id": "topic-ingles-comparativos",
+      "subjectId": "ingles",
+      "name": "Comparative adjectives",
+      "slug": "comparativos",
+      "order": 2,
+      "status": "active"
+    },
+    {
+      "id": "topic-lengua-enunciados",
+      "subjectId": "lengua",
+      "name": "Tipos de enunciados",
+      "slug": "enunciados",
+      "order": 1,
+      "status": "active"
+    },
+    {
+      "id": "topic-lengua-tiempos-verbales",
+      "subjectId": "lengua",
+      "name": "Tiempos verbales",
+      "slug": "tiempos-verbales",
+      "order": 2,
+      "status": "active"
+    },
+    {
+      "id": "topic-lengua-recursos-literarios",
+      "subjectId": "lengua",
+      "name": "Recursos literarios",
+      "slug": "recursos-literarios",
+      "order": 3,
+      "status": "active"
+    },
+    {
+      "id": "topic-lengua-palabras-invariables",
+      "subjectId": "lengua",
+      "name": "Palabras invariables",
+      "slug": "palabras-invariables",
+      "order": 4,
+      "status": "active"
+    },
+    {
+      "id": "topic-matematicas-multiplicaciones",
+      "subjectId": "matematicas",
+      "name": "Multiplicación",
+      "slug": "multiplicaciones",
+      "order": 1,
+      "status": "active"
+    },
+    {
+      "id": "topic-matematicas-rectas",
+      "subjectId": "matematicas",
+      "name": "Puntos y rectas",
+      "slug": "rectas",
+      "order": 2,
+      "status": "active"
+    },
+    {
+      "id": "topic-matematicas-angulos",
+      "subjectId": "matematicas",
+      "name": "Ángulos",
+      "slug": "angulos",
+      "order": 3,
+      "status": "active"
+    },
+    {
+      "id": "topic-matematicas-operaciones-combinadas",
+      "subjectId": "matematicas",
+      "name": "Operaciones combinadas",
+      "slug": "operaciones-combinadas",
+      "order": 4,
+      "status": "active"
+    }
+  ],
+  "activityTypes": [
+    {
+      "id": "cuestionario",
+      "name": "Cuestionario",
+      "icon": "circle-help",
+      "order": 1
+    },
+    {
+      "id": "mapa-interactivo",
+      "name": "Mapa interactivo",
+      "icon": "map-pinned",
+      "order": 2
+    },
+    {
+      "id": "clasificar-por-grupos",
+      "name": "Clasificar por grupos",
+      "icon": "group",
+      "order": 3
+    },
+    {
+      "id": "relacionar-columnas",
+      "name": "Relacionar columnas",
+      "icon": "columns-3",
+      "order": 4
+    },
+    {
+      "id": "diagrama-con-etiquetas",
+      "name": "Diagrama con etiquetas",
+      "icon": "tags",
+      "order": 5
+    },
+    {
+      "id": "completar-frases",
+      "name": "Completar frases",
+      "icon": "book-open-check",
+      "order": 6
+    },
+    {
+      "id": "relacionar-grupos",
+      "name": "Relacionar grupos",
+      "icon": "network",
+      "order": 7
+    },
+    {
+      "id": "emparejar",
+      "name": "Emparejar",
+      "icon": "puzzle",
+      "order": 8
+    },
+    {
+      "id": "juego-de-preguntas",
+      "name": "Juego de preguntas",
+      "icon": "mouse-pointer-click",
+      "order": 9
+    },
+    {
+      "id": "ordenar-secuencia",
+      "name": "Ordenar secuencia",
+      "icon": "arrow-down-up",
+      "order": 10
+    },
+    {
+      "id": "concurso-de-preguntas",
+      "name": "Concurso de preguntas",
+      "icon": "list-checks",
+      "order": 11
+    },
+    {
+      "id": "ordenar-palabras",
+      "name": "Ordenar palabras",
+      "icon": "rows-3",
+      "order": 12
+    },
+    {
+      "id": "aplastatopos",
+      "name": "Aplastatopos",
+      "icon": "target",
+      "order": 13
+    }
+  ],
+  "platforms": [
+    {
+      "id": "wordwall",
+      "name": "Wordwall",
+      "hostnames": [
+        "wordwall.net"
+      ],
+      "color": "#1e625d",
+      "order": 1
+    },
+    {
+      "id": "educaplay",
+      "name": "Educaplay",
+      "hostnames": [
+        "es.educaplay.com"
+      ],
+      "color": "#7a3d22",
+      "order": 2
+    }
+  ],
+  "activities": [
+    {
+      "schemaVersion": 1,
+      "id": "WW-105266776",
+      "slug": "la-edad-contemporanea-introduccion-y-siglo-xviii-105266776",
+      "title": "La Edad Contemporánea: introducción y siglo XVIII",
+      "sourceTitle": "LA EDAD CONTEMPORÁNEA (INTRODUCCIÓN, SIGLO XVIII)",
+      "description": "Cuestionario sobre el inicio de la Edad Contemporánea, la Ilustración, la Revolución francesa, la Constitución y la separación de poderes.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-001",
+      "topicIds": [
+        "topic-ciencias-001"
+      ],
+      "language": "es",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Edad Contemporánea",
+        "Ilustración",
+        "Revolución francesa"
+      ],
+      "keywords": [
+        "historia",
+        "siglo XVIII",
+        "liberalismo",
+        "Constitución",
+        "separación de poderes"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "105266776",
+        "url": "https://wordwall.net/es/resource/105266776/ciencias-sociales/la-edad-contempor%C3%A1nea-introducci%C3%B3n-siglo",
+        "canonicalUrl": "https://wordwall.net/es/resource/105266776/ciencias-sociales/la-edad-contempor%C3%A1nea-introducci%C3%B3n-siglo",
+        "originalUrl": "https://wordwall.net/es/resource/105266776",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-105307081",
+      "slug": "1-3-la-oposicion-105307081",
+      "title": "1.3 La oposición",
+      "sourceTitle": "1.3 LA OPOSICIÓN",
+      "description": "Actividad para clasificar rasgos del absolutismo y el liberalismo, incluidos el reparto del poder, la soberanía y los derechos.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-001",
+      "topicIds": [
+        "topic-ciencias-001"
+      ],
+      "language": "es",
+      "typeId": "clasificar-por-grupos",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "absolutismo",
+        "liberalismo",
+        "soberanía"
+      ],
+      "keywords": [
+        "oposición",
+        "Antiguo Régimen",
+        "derechos",
+        "poder político"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "105307081",
+        "url": "https://wordwall.net/es/resource/105307081/ciencias-sociales/13-la-oposici%C3%B3n",
+        "canonicalUrl": "https://wordwall.net/es/resource/105307081/ciencias-sociales/13-la-oposici%C3%B3n",
+        "originalUrl": "https://wordwall.net/es/resource/105307081",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-105308549",
+      "slug": "3-1-la-revolucion-industrial-105308549",
+      "title": "3.1 La Revolución Industrial",
+      "sourceTitle": "3.1. LA REVOLUCIÓN INDUSTRIAL",
+      "description": "Cuestionario sobre la Revolución Industrial, sus transformaciones técnicas y económicas y el paso del trabajo artesanal al industrial.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-001",
+      "topicIds": [
+        "topic-ciencias-001"
+      ],
+      "language": "es",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Revolución Industrial",
+        "industrialización",
+        "siglo XIX"
+      ],
+      "keywords": [
+        "máquinas",
+        "fábricas",
+        "trabajo artesanal",
+        "cambios económicos"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "105308549",
+        "url": "https://wordwall.net/es/resource/105308549/ciencias-sociales/31-la-revoluci%C3%B3n-industrial",
+        "canonicalUrl": "https://wordwall.net/es/resource/105308549/ciencias-sociales/31-la-revoluci%C3%B3n-industrial",
+        "originalUrl": "https://wordwall.net/es/resource/105308549",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-105382734",
+      "slug": "la-guerra-de-la-independencia-y-fernando-vii-105382734",
+      "title": "La Guerra de la Independencia y Fernando VII",
+      "sourceTitle": "LA GUERRA DE LA INDEPENDENCIA Y FERNANDO VII",
+      "description": "Cuestionario sobre la Guerra de la Independencia española, sus fechas y protagonistas, y el reinado de Fernando VII.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-001",
+      "topicIds": [
+        "topic-ciencias-001"
+      ],
+      "language": "es",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Guerra de la Independencia",
+        "Fernando VII",
+        "historia de España"
+      ],
+      "keywords": [
+        "1808",
+        "Napoleón",
+        "Constitución de Cádiz",
+        "siglo XIX"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "105382734",
+        "url": "https://wordwall.net/es/resource/105382734/ciencias-sociales/la-guerra-de-la-independencia-y-fernando",
+        "canonicalUrl": "https://wordwall.net/es/resource/105382734/ciencias-sociales/la-guerra-de-la-independencia-y-fernando",
+        "originalUrl": "https://wordwall.net/es/resource/105382734",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-105522537",
+      "slug": "isabel-ii-y-el-sexenio-democratico-105522537",
+      "title": "Isabel II y el Sexenio Democrático",
+      "sourceTitle": "ISABEL II Y EL SEXENIO DEMOCRÁTICO",
+      "description": "Cuestionario sobre la Primera Guerra Carlista, el reinado de Isabel II y las etapas del Sexenio Democrático.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-001",
+      "topicIds": [
+        "topic-ciencias-001"
+      ],
+      "language": "es",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Isabel II",
+        "Sexenio Democrático",
+        "carlismo"
+      ],
+      "keywords": [
+        "Primera Guerra Carlista",
+        "historia de España",
+        "siglo XIX"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "105522537",
+        "url": "https://wordwall.net/es/resource/105522537/ciencias-sociales/isabel-ii-y-el-sexenio-democr%C3%A1tico",
+        "canonicalUrl": "https://wordwall.net/es/resource/105522537/ciencias-sociales/isabel-ii-y-el-sexenio-democr%C3%A1tico",
+        "originalUrl": "https://wordwall.net/es/resource/105522537",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-27365750",
+      "slug": "eje-cronologico-del-siglo-xix-27365750",
+      "title": "Eje cronológico del siglo XIX",
+      "sourceTitle": "EJE CRONOLÓGICO DEL SIGLO XIX",
+      "description": "Actividad para ordenar cronológicamente las principales etapas de la historia de España en el siglo XIX.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-001",
+      "topicIds": [
+        "topic-ciencias-001"
+      ],
+      "language": "es",
+      "typeId": "ordenar-palabras",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "siglo XIX",
+        "cronología",
+        "historia de España"
+      ],
+      "keywords": [
+        "eje cronológico",
+        "etapas históricas",
+        "orden temporal"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "27365750",
+        "url": "https://es.educaplay.com/recursos-educativos/27365750-eje_cronologico_del_siglo_xix.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/27365750-eje_cronologico_del_siglo_xix.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/27365750-eje_cronologico_del_siglo_xix.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-27597629",
+      "slug": "espana-a-principios-del-siglo-xx-27597629",
+      "title": "España a principios del siglo XX",
+      "sourceTitle": "ESPAÑA A PRINCIPIOS DEL SIGLO XX",
+      "description": "Cuestionario que recorre la historia de España desde el reinado de Alfonso XIII hasta la Guerra Civil.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-001",
+      "topicIds": [
+        "topic-ciencias-001"
+      ],
+      "language": "es",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "siglo XX",
+        "Alfonso XIII",
+        "Guerra Civil"
+      ],
+      "keywords": [
+        "Segunda República",
+        "historia de España",
+        "principios del siglo XX"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "27597629",
+        "url": "https://es.educaplay.com/recursos-educativos/27597629-espana_a_principios_del_siglo_xx.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/27597629-espana_a_principios_del_siglo_xx.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/27597629-espana_a_principios_del_siglo_xx.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-27598505",
+      "slug": "la-dictadura-franquista-27598505",
+      "title": "La dictadura franquista",
+      "sourceTitle": "LA DICTADURA FRANQUISTA",
+      "description": "Cuestionario sobre el régimen de Franco y las características principales de la dictadura franquista.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-001",
+      "topicIds": [
+        "topic-ciencias-001"
+      ],
+      "language": "es",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "franquismo",
+        "dictadura",
+        "Francisco Franco"
+      ],
+      "keywords": [
+        "historia de España",
+        "siglo XX",
+        "régimen franquista"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "27598505",
+        "url": "https://es.educaplay.com/recursos-educativos/27598505-la_dictadura_franquista.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/27598505-la_dictadura_franquista.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/27598505-la_dictadura_franquista.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-27599015",
+      "slug": "la-primera-guerra-mundial-27599015",
+      "title": "La Primera Guerra Mundial",
+      "sourceTitle": "LA PRIMERA GUERRA MUNDIAL",
+      "description": "Cuestionario sobre los hechos y conceptos principales de la Primera Guerra Mundial.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-001",
+      "topicIds": [
+        "topic-ciencias-001"
+      ],
+      "language": "es",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Primera Guerra Mundial",
+        "siglo XX",
+        "historia"
+      ],
+      "keywords": [
+        "Gran Guerra",
+        "alianzas",
+        "conflicto mundial"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "27599015",
+        "url": "https://es.educaplay.com/recursos-educativos/27599015-la_primera_guerra_mundial.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/27599015-la_primera_guerra_mundial.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/27599015-la_primera_guerra_mundial.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-27600203",
+      "slug": "la-segunda-guerra-mundial-y-la-onu-27600203",
+      "title": "La Segunda Guerra Mundial y la ONU",
+      "sourceTitle": "LA SEGUNDA GUERRA MUNDIAL y LA ONU",
+      "description": "Cuestionario sobre la Segunda Guerra Mundial, los bandos enfrentados y el origen de la Organización de las Naciones Unidas.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-001",
+      "topicIds": [
+        "topic-ciencias-001"
+      ],
+      "language": "es",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Segunda Guerra Mundial",
+        "ONU",
+        "siglo XX"
+      ],
+      "keywords": [
+        "Aliados",
+        "potencias del Eje",
+        "Naciones Unidas",
+        "historia"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "27600203",
+        "url": "https://es.educaplay.com/recursos-educativos/27600203-la_segunda_guerra_mundial.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/27600203-la_segunda_guerra_mundial.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/27600203-la_segunda_guerra_mundial.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-86289638",
+      "slug": "the-shopping-basket-86289638",
+      "title": "The Shopping Basket",
+      "sourceTitle": "THE SHOPPING BASKET",
+      "description": "Actividad en inglés para clasificar alimentos según sean unprocessed, semi-processed o processed food.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-002",
+      "topicIds": [
+        "topic-ciencias-002"
+      ],
+      "language": "en",
+      "typeId": "clasificar-por-grupos",
+      "originCourseLabel": "Curso de origen desconocido",
+      "tags": [
+        "food",
+        "processed food",
+        "nutrition"
+      ],
+      "keywords": [
+        "alimentación",
+        "alimentos procesados",
+        "unprocessed",
+        "semi-processed"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "86289638",
+        "url": "https://wordwall.net/es/resource/86289638/ciencias/the-shopping-basket",
+        "canonicalUrl": "https://wordwall.net/es/resource/86289638/ciencias/the-shopping-basket",
+        "originalUrl": "https://wordwall.net/es/resource/86289638?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-72591990",
+      "slug": "enfermedades-y-trastornos-alimenticios-72591990",
+      "title": "Enfermedades y trastornos alimenticios",
+      "sourceTitle": "ENFERMEDADES Y TRASTORNOS ALIMENTICIOS",
+      "description": "Actividad en inglés para relacionar problemas como caries, diabetes o colesterol alto con sus descripciones y causas.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-002",
+      "topicIds": [
+        "topic-ciencias-002"
+      ],
+      "language": "en",
+      "typeId": "emparejar",
+      "originCourseLabel": "Curso de origen desconocido",
+      "tags": [
+        "health",
+        "nutrition",
+        "disorders"
+      ],
+      "keywords": [
+        "enfermedades",
+        "trastornos alimenticios",
+        "cavities",
+        "diabetes",
+        "cholesterol"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "72591990",
+        "url": "https://wordwall.net/es/resource/72591990/ciencias/enfermedades-y-trastornos-alimenticios",
+        "canonicalUrl": "https://wordwall.net/es/resource/72591990/ciencias/enfermedades-y-trastornos-alimenticios",
+        "originalUrl": "https://wordwall.net/es/resource/72591990?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-83691485",
+      "slug": "the-food-nutrients-83691485",
+      "title": "The Food Nutrients",
+      "sourceTitle": "THE FOOD NUTRIENTS",
+      "description": "Actividad en inglés para clasificar alimentos por su nutriente principal: carbohydrates, vitamins and minerals, proteins y fats and oils.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-002",
+      "topicIds": [
+        "topic-ciencias-002"
+      ],
+      "language": "en",
+      "typeId": "clasificar-por-grupos",
+      "originCourseLabel": "Curso de origen desconocido",
+      "tags": [
+        "nutrients",
+        "food",
+        "nutrition"
+      ],
+      "keywords": [
+        "nutrientes",
+        "carbohydrates",
+        "proteins",
+        "vitamins",
+        "minerals",
+        "fats"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "83691485",
+        "url": "https://wordwall.net/es/resource/83691485/the-food-nutrients",
+        "canonicalUrl": "https://wordwall.net/es/resource/83691485/the-food-nutrients",
+        "originalUrl": "https://wordwall.net/es/resource/83691485?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-109848099",
+      "slug": "the-political-organisation-of-spain-and-the-european-union-109848099",
+      "title": "The Political Organisation of Spain and the European Union",
+      "sourceTitle": "THE POLITICAL ORGANISATION OF SPAIN AND THE EUROPEAN UNION",
+      "description": "Cuestionario en inglés sobre elecciones, representantes e instituciones de la organización política de España y la Unión Europea.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-003",
+      "topicIds": [
+        "topic-ciencias-003"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "political organisation",
+        "Spain",
+        "European Union"
+      ],
+      "keywords": [
+        "organización política",
+        "elections",
+        "institutions",
+        "representatives"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "109848099",
+        "url": "https://wordwall.net/es/resource/109848099/ciencias-sociales/the-political-organisation-of-spain-and-the",
+        "canonicalUrl": "https://wordwall.net/es/resource/109848099/ciencias-sociales/the-political-organisation-of-spain-and-the",
+        "originalUrl": "https://wordwall.net/es/resource/109848099?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-109846756",
+      "slug": "the-forms-of-political-participation-and-representation-109846756",
+      "title": "The Forms of Political Participation and Representation",
+      "sourceTitle": "THE FORMS OF POLITICAL PARTICIPATION AND REPRESENTATION",
+      "description": "Actividad en inglés para relacionar elecciones, referéndums, peticiones y otras formas de participación política con su significado.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-003",
+      "topicIds": [
+        "topic-ciencias-003"
+      ],
+      "language": "en",
+      "typeId": "emparejar",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "political participation",
+        "elections",
+        "representation"
+      ],
+      "keywords": [
+        "participación política",
+        "referendum",
+        "petition",
+        "demonstration"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "109846756",
+        "url": "https://wordwall.net/es/resource/109846756/ciencias-sociales/the-forms-of-political-participation-and",
+        "canonicalUrl": "https://wordwall.net/es/resource/109846756/ciencias-sociales/the-forms-of-political-participation-and",
+        "originalUrl": "https://wordwall.net/es/resource/109846756?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-106271072",
+      "slug": "la-division-de-poderes-106271072",
+      "title": "La división de poderes",
+      "sourceTitle": "LA DIVISIÓN DE PODERES",
+      "description": "Actividad para clasificar instituciones y cargos dentro de los poderes ejecutivo, legislativo y judicial.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-003",
+      "topicIds": [
+        "topic-ciencias-003"
+      ],
+      "language": "es",
+      "typeId": "clasificar-por-grupos",
+      "originCourseLabel": "4.º, 5.º y 6.º de Primaria",
+      "tags": [
+        "división de poderes",
+        "instituciones",
+        "Estado"
+      ],
+      "keywords": [
+        "poder ejecutivo",
+        "poder legislativo",
+        "poder judicial",
+        "Congreso",
+        "Gobierno"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "106271072",
+        "url": "https://wordwall.net/es/resource/106271072/historia/la-divisi%C3%B3n-de-poderes",
+        "canonicalUrl": "https://wordwall.net/es/resource/106271072/historia/la-divisi%C3%B3n-de-poderes",
+        "originalUrl": "https://wordwall.net/es/resource/106271072?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-92809031",
+      "slug": "which-organisations-can-help-us-to-sort-out-problems-in-our-locality-92809031",
+      "title": "Which Organisations Can Help Us to Sort Out Problems in Our Locality?",
+      "sourceTitle": "WHICH ORGANISATIONS CAN HELP US TO SORT OUT PROBLEMS IN OUR LOCALITY?",
+      "description": "Actividad en inglés para relacionar problemas cotidianos de una localidad con el organismo o servicio público que puede atenderlos.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-003",
+      "topicIds": [
+        "topic-ciencias-003"
+      ],
+      "language": "en",
+      "typeId": "clasificar-por-grupos",
+      "originCourseLabel": "5.º y 6.º de Primaria",
+      "tags": [
+        "local government",
+        "public services",
+        "citizens"
+      ],
+      "keywords": [
+        "organismos públicos",
+        "locality",
+        "citizen service",
+        "local problems"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "92809031",
+        "url": "https://wordwall.net/es/resource/92809031/ciencias/which-organisations-can-help-us-to-sort-out-problems",
+        "canonicalUrl": "https://wordwall.net/es/resource/92809031/ciencias/which-organisations-can-help-us-to-sort-out-problems",
+        "originalUrl": "https://wordwall.net/es/resource/92809031?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-92808558",
+      "slug": "who-governs-autonomous-communities-92808558",
+      "title": "Who Governs Autonomous Communities?",
+      "sourceTitle": "WHO GOVERNS AUTONOMOUS COMMUNITIES",
+      "description": "Cuestionario en inglés sobre el Estatuto de Autonomía y las instituciones que gobiernan las comunidades autónomas.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-003",
+      "topicIds": [
+        "topic-ciencias-003"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "5.º de Primaria",
+      "tags": [
+        "autonomous communities",
+        "government",
+        "Spain"
+      ],
+      "keywords": [
+        "comunidades autónomas",
+        "Estatuto de Autonomía",
+        "regional government"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "92808558",
+        "url": "https://wordwall.net/es/resource/92808558/ciencias/who-governs-autonomous-communities",
+        "canonicalUrl": "https://wordwall.net/es/resource/92808558/ciencias/who-governs-autonomous-communities",
+        "originalUrl": "https://wordwall.net/es/resource/92808558?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-91858801",
+      "slug": "spain-s-political-organisation-91858801",
+      "title": "Spain's Political Organisation",
+      "sourceTitle": "SPAIN'S POLITICAL ORGANISATION",
+      "description": "Cuestionario en inglés sobre la Constitución española, la monarquía parlamentaria, los derechos y deberes y los poderes del Estado.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-003",
+      "topicIds": [
+        "topic-ciencias-003"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "5.º de Primaria",
+      "tags": [
+        "Spain",
+        "Constitution",
+        "political organisation"
+      ],
+      "keywords": [
+        "Constitución española",
+        "parliamentary monarchy",
+        "rights",
+        "duties",
+        "three powers"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "91858801",
+        "url": "https://wordwall.net/es/resource/91858801/ciencias/spains-political-organisation",
+        "canonicalUrl": "https://wordwall.net/es/resource/91858801/ciencias/spains-political-organisation",
+        "originalUrl": "https://wordwall.net/es/resource/91858801?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28023550",
+      "slug": "the-protagonists-of-the-transition-and-the-constitution-titles-28023550",
+      "title": "The Protagonists of the Transition and the Constitution Titles",
+      "sourceTitle": "THE PROTAGONISTS OF THE TRANSITION AND THE CONSTITUTION TITLES",
+      "description": "Actividad para relacionar figuras clave de la Transición española y títulos de la Constitución con sus descripciones o significados.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-003",
+      "topicIds": [
+        "topic-ciencias-003",
+        "topic-ciencias-006"
+      ],
+      "language": "en",
+      "typeId": "relacionar-columnas",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Spanish Transition",
+        "Constitution",
+        "political figures"
+      ],
+      "keywords": [
+        "Transición española",
+        "protagonistas",
+        "Constitución",
+        "títulos constitucionales"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28023550",
+        "url": "https://es.educaplay.com/recursos-educativos/28023550-the_protagonists_of_the_transition_and_the_constitution_titles.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28023550-the_protagonists_of_the_transition_and_the_constitution_titles.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28023550-the_protagonists_of_the_transition_and_the_constitution_titles.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública",
+        "verificationNote": "Duplicado consolidado por plataforma e ID de recurso; se conservan todas las secciones."
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28401434",
+      "slug": "the-culture-of-peace-28401434",
+      "title": "The Culture of Peace",
+      "sourceTitle": "THE CULTURE OF PEACE",
+      "description": "Cuestionario en inglés sobre la cultura de paz y los principios que favorecen la convivencia y la resolución pacífica de conflictos.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-003",
+      "topicIds": [
+        "topic-ciencias-003",
+        "topic-ciencias-004"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "culture of peace",
+        "coexistence",
+        "conflict resolution"
+      ],
+      "keywords": [
+        "cultura de paz",
+        "convivencia",
+        "no violencia",
+        "peace"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28401434",
+        "url": "https://es.educaplay.com/recursos-educativos/28401434-the_culture_of_peace.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28401434-the_culture_of_peace.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28401434-the_culture_of_peace.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública",
+        "verificationNote": "Duplicado consolidado por plataforma e ID de recurso; se conservan todas las secciones."
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-29135288",
+      "slug": "the-fight-against-poverty-29135288",
+      "title": "The Fight Against Poverty",
+      "sourceTitle": "THE FIGHT AGAINST POVERTY",
+      "description": "Cuestionario en inglés sobre necesidades básicas, bienes y servicios, pobreza y medidas que contribuyen al bienestar de las personas.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-004",
+      "topicIds": [
+        "topic-ciencias-004"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "poverty",
+        "basic needs",
+        "well-being"
+      ],
+      "keywords": [
+        "pobreza",
+        "food",
+        "clothing",
+        "education",
+        "health care",
+        "public services"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "29135288",
+        "url": "https://es.educaplay.com/recursos-educativos/29135288-the_fight_against_poverty.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/29135288-the_fight_against_poverty.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/29135288-the_fight_against_poverty.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28731588",
+      "slug": "1-changes-in-society-and-population-28731588",
+      "title": "1. Changes in Society and Population",
+      "sourceTitle": "1. CHANGES IN SOCIETY AND POPULATION",
+      "description": "Cuestionario en inglés sobre los cambios recientes de la sociedad y las características de la población.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-004",
+      "topicIds": [
+        "topic-ciencias-004"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "society",
+        "population",
+        "social change"
+      ],
+      "keywords": [
+        "sociedad",
+        "población",
+        "demography",
+        "cambios sociales"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28731588",
+        "url": "https://es.educaplay.com/recursos-educativos/28731588-1_changes_in_society_and_population.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28731588-1_changes_in_society_and_population.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28731588-1_changes_in_society_and_population.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28734734",
+      "slug": "the-spanish-population-28734734",
+      "title": "The Spanish Population",
+      "sourceTitle": "THE SPANISH POPULATION",
+      "description": "Actividad en inglés para completar un texto sobre baja natalidad, envejecimiento, crecimiento natural y migración en la población española.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-004",
+      "topicIds": [
+        "topic-ciencias-004"
+      ],
+      "language": "en",
+      "typeId": "completar-frases",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Spanish population",
+        "demography",
+        "migration"
+      ],
+      "keywords": [
+        "población española",
+        "birth rate",
+        "ageing",
+        "natural growth",
+        "immigration"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28734734",
+        "url": "https://es.educaplay.com/recursos-educativos/28734734-the_spanish_population.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28734734-the_spanish_population.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28734734-the_spanish_population.html",
+        "linkStatus": "limited",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública",
+        "verificationNote": "El título se verificó en la página; la vista pública devolvió el cuerpo vacío tras un segundo intento. El contenido se contrastó con el índice público de la misma URL."
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Accesible pero información limitada"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-29200890",
+      "slug": "improving-the-well-being-of-all-people-29200890",
+      "title": "Improving the Well-Being of All People",
+      "sourceTitle": "IMPROVING THE WELL-BEING OF ALL PEOPLE",
+      "description": "Actividad en inglés para completar frases sobre bienestar, igualdad, derechos y condiciones de vida de las personas.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-005",
+      "topicIds": [
+        "topic-ciencias-005",
+        "topic-ciencias-007"
+      ],
+      "language": "en",
+      "typeId": "completar-frases",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "well-being",
+        "equality",
+        "human rights"
+      ],
+      "keywords": [
+        "bienestar",
+        "igualdad",
+        "derechos",
+        "quality of life"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "29200890",
+        "url": "https://es.educaplay.com/recursos-educativos/29200890-improving_the_well_being_of_all_people.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/29200890-improving_the_well_being_of_all_people.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/29200890-improving_the_well_being_of_all_people.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública",
+        "verificationNote": "Duplicado consolidado por plataforma e ID de recurso; se conservan todas las secciones."
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-29169918",
+      "slug": "protecting-the-planet-29169918",
+      "title": "Protecting the Planet",
+      "sourceTitle": "PROTECTING THE PLANET",
+      "description": "Cuestionario en inglés sobre la protección del planeta y las acciones relacionadas con la conservación del medio ambiente.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-005",
+      "topicIds": [
+        "topic-ciencias-005"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "environment",
+        "planet",
+        "conservation"
+      ],
+      "keywords": [
+        "medio ambiente",
+        "protección del planeta",
+        "sustainability",
+        "natural resources"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "29169918",
+        "url": "https://es.educaplay.com/recursos-educativos/29169918-protecting_the_planet.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/29169918-protecting_the_planet.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/29169918-protecting_the_planet.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-29073305",
+      "slug": "living-in-a-sustainable-world-29073305",
+      "title": "Living in a Sustainable World",
+      "sourceTitle": "LIVING IN A SUSTAINABLE WORLD",
+      "description": "Actividad en inglés para completar frases sobre el agotamiento de los recursos naturales y la vida en un mundo sostenible.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-005",
+      "topicIds": [
+        "topic-ciencias-005"
+      ],
+      "language": "en",
+      "typeId": "completar-frases",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "sustainability",
+        "natural resources",
+        "environment"
+      ],
+      "keywords": [
+        "sostenibilidad",
+        "recursos naturales",
+        "resource depletion",
+        "sustainable world"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "29073305",
+        "url": "https://es.educaplay.com/recursos-educativos/29073305-living_in_a_sustainable_world.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/29073305-living_in_a_sustainable_world.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/29073305-living_in_a_sustainable_world.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-29072697",
+      "slug": "the-sdgs-asegurar-29072697",
+      "title": "The SDGs (asegurar)",
+      "sourceTitle": "THE SDGs (asegurar)",
+      "description": "Cuestionario en inglés para identificar los Objetivos de Desarrollo Sostenible mediante sus números.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-005",
+      "topicIds": [
+        "topic-ciencias-005"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "SDGs",
+        "sustainable development",
+        "global goals"
+      ],
+      "keywords": [
+        "ODS",
+        "Objetivos de Desarrollo Sostenible",
+        "Agenda 2030",
+        "numbers"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "29072697",
+        "url": "https://es.educaplay.com/recursos-educativos/29072697-the_sdgs_asegurar.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/29072697-the_sdgs_asegurar.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/29072697-the_sdgs_asegurar.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-29043257",
+      "slug": "the-sdgs-estudio-29043257",
+      "title": "The SDGs (estudio)",
+      "sourceTitle": "The SDGs (ESTUDIO)",
+      "description": "Juego de preguntas en inglés para estudiar y reconocer los 17 Objetivos de Desarrollo Sostenible.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-005",
+      "topicIds": [
+        "topic-ciencias-005"
+      ],
+      "language": "en",
+      "typeId": "juego-de-preguntas",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "SDGs",
+        "study",
+        "global goals"
+      ],
+      "keywords": [
+        "ODS",
+        "17 objetivos",
+        "Agenda 2030",
+        "sustainable development"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "29043257",
+        "url": "https://es.educaplay.com/recursos-educativos/29043257-sdg_sprint_all_17_in_focus.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/29043257-sdg_sprint_all_17_in_focus.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/29043257-sdg_sprint_all_17_in_focus.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-29042616",
+      "slug": "the-global-goals-for-sustainable-development-29042616",
+      "title": "The Global Goals for Sustainable Development",
+      "sourceTitle": "The Global Goals for Sustainable Development",
+      "description": "Juego de preguntas en inglés para comprobar el conocimiento de los Objetivos de Desarrollo Sostenible.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-005",
+      "topicIds": [
+        "topic-ciencias-005"
+      ],
+      "language": "en",
+      "typeId": "juego-de-preguntas",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "global goals",
+        "SDGs",
+        "sustainable development"
+      ],
+      "keywords": [
+        "ODS",
+        "Objetivos de Desarrollo Sostenible",
+        "Agenda 2030"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "29042616",
+        "url": "https://es.educaplay.com/recursos-educativos/29042616-sdg_sprint_all_17_in_focus.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/29042616-sdg_sprint_all_17_in_focus.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/29042616-sdg_sprint_all_17_in_focus.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-71215840",
+      "slug": "plants-4th-grade-science-71215840",
+      "title": "Plants: 4th Grade Science",
+      "sourceTitle": "PLANTS 4th Grade. Science.",
+      "description": "Cuestionario en inglés sobre las partes de las plantas y sus funciones, como hojas, raíces, tallo y flor.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-005",
+      "topicIds": [
+        "topic-ciencias-005"
+      ],
+      "language": "en",
+      "typeId": "concurso-de-preguntas",
+      "originCourseLabel": "4.º de Primaria",
+      "tags": [
+        "plants",
+        "plant parts",
+        "science"
+      ],
+      "keywords": [
+        "plantas",
+        "leaves",
+        "roots",
+        "stem",
+        "flower",
+        "chlorophyll"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "71215840",
+        "url": "https://wordwall.net/es/resource/71215840/plants-4th-grade-science",
+        "canonicalUrl": "https://wordwall.net/es/resource/71215840/plants-4th-grade-science",
+        "originalUrl": "https://wordwall.net/es/resource/71215840?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública",
+        "verificationNote": "La primera carga devolvió un error 502 temporal; la segunda carga fue correcta."
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28020441",
+      "slug": "timeline-of-the-spanish-transition-28020441",
+      "title": "Timeline of the Spanish Transition",
+      "sourceTitle": "TIMELINE OF THE SPANISH TRANSITION",
+      "description": "Actividad en inglés para ordenar acontecimientos de la Transición española en una línea temporal.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-006",
+      "topicIds": [
+        "topic-ciencias-006"
+      ],
+      "language": "en",
+      "typeId": "ordenar-secuencia",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Spanish Transition",
+        "timeline",
+        "history"
+      ],
+      "keywords": [
+        "Transición española",
+        "cronología",
+        "acontecimientos",
+        "orden temporal"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28020441",
+        "url": "https://es.educaplay.com/recursos-educativos/28020441-timeline_of_the_spanish_transition.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28020441-timeline_of_the_spanish_transition.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28020441-timeline_of_the_spanish_transition.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28015495",
+      "slug": "life-during-the-transition-28015495",
+      "title": "Life During the Transition",
+      "sourceTitle": "LIFE DURING THE TRANSITION",
+      "description": "Cuestionario en inglés sobre la vida y los cambios políticos y sociales durante la Transición española.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-006",
+      "topicIds": [
+        "topic-ciencias-006"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Spanish Transition",
+        "society",
+        "history"
+      ],
+      "keywords": [
+        "Transición española",
+        "vida cotidiana",
+        "cambios políticos",
+        "cambios sociales"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28015495",
+        "url": "https://es.educaplay.com/recursos-educativos/28015495-life_during_the_transition.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28015495-life_during_the_transition.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28015495-life_during_the_transition.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-29134063",
+      "slug": "promoting-equality-29134063",
+      "title": "Promoting Equality",
+      "sourceTitle": "PROMOTING EQUALITY",
+      "description": "Cuestionario en inglés sobre la igualdad y las acciones que ayudan a evitar la discriminación.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-007",
+      "topicIds": [
+        "topic-ciencias-007"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "equality",
+        "rights",
+        "non-discrimination"
+      ],
+      "keywords": [
+        "igualdad",
+        "discriminación",
+        "equal opportunities",
+        "derechos"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "29134063",
+        "url": "https://es.educaplay.com/recursos-educativos/29134063-promoting_equ.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/29134063-promoting_equ.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/29134063-promoting_equ.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28028301",
+      "slug": "basic-duties-and-principles-of-human-rights-28028301",
+      "title": "Basic Duties and Principles of Human Rights",
+      "sourceTitle": "BASIC DUTIES AND PRINCIPLES OF HUMAN RIGHTS",
+      "description": "Actividad en inglés para clasificar principios y distinguir los que corresponden a deberes básicos vinculados con los derechos humanos.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-007",
+      "topicIds": [
+        "topic-ciencias-007"
+      ],
+      "language": "en",
+      "typeId": "relacionar-grupos",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "human rights",
+        "duties",
+        "principles"
+      ],
+      "keywords": [
+        "derechos humanos",
+        "deberes",
+        "principios básicos",
+        "classification"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28028301",
+        "url": "https://es.educaplay.com/recursos-educativos/28028301-basic_duties_and_princip.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28028301-basic_duties_and_princip.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28028301-basic_duties_and_princip.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28028069",
+      "slug": "human-rights-28028069",
+      "title": "Human Rights",
+      "sourceTitle": "HUMAN RIGHTS",
+      "description": "Actividad en inglés para relacionar cada derecho humano con un ejemplo concreto.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-007",
+      "topicIds": [
+        "topic-ciencias-007"
+      ],
+      "language": "en",
+      "typeId": "relacionar-columnas",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "human rights",
+        "rights",
+        "examples"
+      ],
+      "keywords": [
+        "derechos humanos",
+        "ejemplos",
+        "libertad",
+        "igualdad"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28028069",
+        "url": "https://es.educaplay.com/recursos-educativos/28028069-human_rights.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28028069-human_rights.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28028069-human_rights.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28030510",
+      "slug": "the-children-s-rights-and-duties-28030510",
+      "title": "The Children's Rights and Duties",
+      "sourceTitle": "THE CHILDREN’S RIGHTS AND DUTIES",
+      "description": "Actividad en inglés para clasificar distintos principios como derechos o deberes de la infancia.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-007",
+      "topicIds": [
+        "topic-ciencias-007"
+      ],
+      "language": "en",
+      "typeId": "relacionar-grupos",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "children's rights",
+        "duties",
+        "childhood"
+      ],
+      "keywords": [
+        "derechos de la infancia",
+        "deberes",
+        "children",
+        "classification"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28030510",
+        "url": "https://es.educaplay.com/recursos-educativos/28030510-the_children_s_rights_and_duties.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28030510-the_children_s_rights_and_duties.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28030510-the_children_s_rights_and_duties.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-92810783",
+      "slug": "the-european-union-92810783",
+      "title": "The European Union",
+      "sourceTitle": "THE EUROPEAN UNION",
+      "description": "Cuestionario en inglés sobre los países miembros y algunas características básicas de la Unión Europea.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-008",
+      "topicIds": [
+        "topic-ciencias-008"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "5.º de Primaria",
+      "tags": [
+        "European Union",
+        "member states",
+        "Europe"
+      ],
+      "keywords": [
+        "Unión Europea",
+        "27 countries",
+        "passport",
+        "EU"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "92810783",
+        "url": "https://wordwall.net/es/resource/92810783/ciencias/the-european-union",
+        "canonicalUrl": "https://wordwall.net/es/resource/92810783/ciencias/the-european-union",
+        "originalUrl": "https://wordwall.net/es/resource/92810783?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-92938094",
+      "slug": "the-european-union-92938094",
+      "title": "The European Union",
+      "sourceTitle": "THE EUROPEAN UNION",
+      "description": "Actividad en inglés para clasificar como verdaderas o falsas afirmaciones sobre estudiar, trabajar, viajar y recibir atención dentro de la Unión Europea.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-008",
+      "topicIds": [
+        "topic-ciencias-008"
+      ],
+      "language": "en",
+      "typeId": "clasificar-por-grupos",
+      "originCourseLabel": "5.º de Primaria",
+      "tags": [
+        "European Union",
+        "citizenship",
+        "true or false"
+      ],
+      "keywords": [
+        "Unión Europea",
+        "travel",
+        "work",
+        "study",
+        "medical care"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "92938094",
+        "url": "https://wordwall.net/es/resource/92938094/the-european-union",
+        "canonicalUrl": "https://wordwall.net/es/resource/92938094/the-european-union",
+        "originalUrl": "https://wordwall.net/es/resource/92938094?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-109846280",
+      "slug": "formation-of-the-european-union-key-treaties-109846280",
+      "title": "Formation of the European Union: Key Treaties",
+      "sourceTitle": "FORMATION OF THE EUROPEAN UNION: KEY TREATIES",
+      "description": "Actividad en inglés para clasificar hechos y características según los principales tratados de formación de la Unión Europea.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-008",
+      "topicIds": [
+        "topic-ciencias-008"
+      ],
+      "language": "en",
+      "typeId": "clasificar-por-grupos",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "European Union",
+        "treaties",
+        "European integration"
+      ],
+      "keywords": [
+        "Unión Europea",
+        "Treaty of Paris",
+        "Treaty of Rome",
+        "Maastricht",
+        "tratados"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "109846280",
+        "url": "https://wordwall.net/es/resource/109846280/ciencias-sociales/formation-of-the-european-union-key",
+        "canonicalUrl": "https://wordwall.net/es/resource/109846280/ciencias-sociales/formation-of-the-european-union-key",
+        "originalUrl": "https://wordwall.net/es/resource/109846280?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28400419",
+      "slug": "banderas-de-la-ue-28400419",
+      "title": "Banderas de la UE",
+      "sourceTitle": "Banderas de la UE",
+      "description": "Mapa interactivo para identificar las banderas de los Estados miembros de la Unión Europea.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-008",
+      "topicIds": [
+        "topic-ciencias-008"
+      ],
+      "language": "es",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "banderas",
+        "Unión Europea",
+        "Estados miembros"
+      ],
+      "keywords": [
+        "UE",
+        "países europeos",
+        "flags",
+        "mapa"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28400419",
+        "url": "https://es.educaplay.com/recursos-educativos/28400419-banderas_de_la_ue.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28400419-banderas_de_la_ue.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28400419-banderas_de_la_ue.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28371465",
+      "slug": "european-union-key-treaties-and-symbols-28371465",
+      "title": "European Union Key Treaties and Symbols",
+      "sourceTitle": "EUROPEAN UNION KEY TREATIES AND SYMBOLS",
+      "description": "Cuestionario en inglés sobre los tratados principales, la bandera, el himno y otros símbolos de la Unión Europea.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-008",
+      "topicIds": [
+        "topic-ciencias-008"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "European Union",
+        "treaties",
+        "symbols"
+      ],
+      "keywords": [
+        "Unión Europea",
+        "tratados",
+        "bandera",
+        "himno",
+        "euro"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28371465",
+        "url": "https://es.educaplay.com/recursos-educativos/28371465-european_union_key_treaties_and_symbols.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28371465-european_union_key_treaties_and_symbols.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28371465-european_union_key_treaties_and_symbols.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28371153",
+      "slug": "the-european-union-institutions-28371153",
+      "title": "The European Union Institutions",
+      "sourceTitle": "THE EUROPEAN UNION INSTITUTIONS",
+      "description": "Actividad en inglés para relacionar las características y funciones con cada institución de la Unión Europea.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-008",
+      "topicIds": [
+        "topic-ciencias-008"
+      ],
+      "language": "en",
+      "typeId": "relacionar-grupos",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "European Union",
+        "institutions",
+        "functions"
+      ],
+      "keywords": [
+        "Unión Europea",
+        "instituciones europeas",
+        "Parliament",
+        "Commission",
+        "Council"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28371153",
+        "url": "https://es.educaplay.com/recursos-educativos/28371153-the_european_union_institutions.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28371153-the_european_union_institutions.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28371153-the_european_union_institutions.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28397214",
+      "slug": "paises-de-la-union-europea-28397214",
+      "title": "Países de la Unión Europea",
+      "sourceTitle": "Países de la Unión Europea",
+      "description": "Mapa interactivo para localizar los países que forman parte de la Unión Europea.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-008",
+      "topicIds": [
+        "topic-ciencias-008",
+        "topic-ciencias-011"
+      ],
+      "language": "es",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "Unión Europea",
+        "países",
+        "mapa"
+      ],
+      "keywords": [
+        "UE",
+        "Estados miembros",
+        "geografía de Europa",
+        "localizar países"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28397214",
+        "url": "https://es.educaplay.com/recursos-educativos/28397214-paises_de_la_union_europea.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28397214-paises_de_la_union_europea.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28397214-paises_de_la_union_europea.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública",
+        "verificationNote": "Duplicado consolidado por plataforma e ID de recurso; se conservan todas las secciones."
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26861470",
+      "slug": "el-aparato-reproductor-femenino-26861470",
+      "title": "El aparato reproductor femenino",
+      "sourceTitle": "EL APARATO REPRODUCTOR FEMENINO",
+      "description": "Mapa interactivo para escribir el nombre de las partes del aparato reproductor femenino.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-009",
+      "topicIds": [
+        "topic-ciencias-009"
+      ],
+      "language": "es",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "reproducción",
+        "aparato reproductor femenino",
+        "anatomía"
+      ],
+      "keywords": [
+        "ovarios",
+        "útero",
+        "trompas de Falopio",
+        "vagina"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26861470",
+        "url": "https://es.educaplay.com/recursos-educativos/26861470-el_aparato_reproductor_femenino.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26861470-el_aparato_reproductor_femenino.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26861470-el_aparato_reproductor_femenino.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26886816",
+      "slug": "el-aparato-reproductor-masculino-26886816",
+      "title": "El aparato reproductor masculino",
+      "sourceTitle": "EL APARATO REPRODUCTOR MASCULINO",
+      "description": "Mapa interactivo para escribir el nombre de las partes del aparato reproductor masculino.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-009",
+      "topicIds": [
+        "topic-ciencias-009"
+      ],
+      "language": "es",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "reproducción",
+        "aparato reproductor masculino",
+        "anatomía"
+      ],
+      "keywords": [
+        "testículos",
+        "pene",
+        "próstata",
+        "conductos deferentes"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26886816",
+        "url": "https://es.educaplay.com/recursos-educativos/26886816-el_aparato_reproductor_masculino.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26886816-el_aparato_reproductor_masculino.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26886816-el_aparato_reproductor_masculino.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26892016",
+      "slug": "el-aparato-reproductor-masculino-definiciones-26892016",
+      "title": "El aparato reproductor masculino: definiciones",
+      "sourceTitle": "EL APARATO REPRODUCTOR MASCULINO (DEFINICIONES)",
+      "description": "Actividad para relacionar cada parte del aparato reproductor masculino con su definición.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-009",
+      "topicIds": [
+        "topic-ciencias-009"
+      ],
+      "language": "es",
+      "typeId": "relacionar-columnas",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "reproducción",
+        "aparato reproductor masculino",
+        "definiciones"
+      ],
+      "keywords": [
+        "anatomía",
+        "funciones",
+        "órganos reproductores masculinos"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26892016",
+        "url": "https://es.educaplay.com/recursos-educativos/26892016-el_aparato_reproductor_masculino_definiciones.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26892016-el_aparato_reproductor_masculino_definiciones.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26892016-el_aparato_reproductor_masculino_definiciones.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26891641",
+      "slug": "el-aparato-reproductor-femenino-definiciones-26891641",
+      "title": "El aparato reproductor femenino: definiciones",
+      "sourceTitle": "EL APARATO REPRODUCTOR FEMENINO (DEFINICIONES)",
+      "description": "Actividad para relacionar las partes internas y externas del aparato reproductor femenino con sus definiciones.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-009",
+      "topicIds": [
+        "topic-ciencias-009"
+      ],
+      "language": "es",
+      "typeId": "relacionar-columnas",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "reproducción",
+        "aparato reproductor femenino",
+        "definiciones"
+      ],
+      "keywords": [
+        "anatomía",
+        "funciones",
+        "órganos reproductores femeninos"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26891641",
+        "url": "https://es.educaplay.com/recursos-educativos/26891641-el_aparato_reproductor_femenino_definiciones.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26891641-el_aparato_reproductor_femenino_definiciones.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26891641-el_aparato_reproductor_femenino_definiciones.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26892683",
+      "slug": "la-fertilidad-y-la-fecundacion-26892683",
+      "title": "La fertilidad y la fecundación",
+      "sourceTitle": "LA FERTILIDAD Y LA FECUNDACIÓN",
+      "description": "Cuestionario sobre la fertilidad, la fecundación y los procesos básicos que intervienen en la reproducción humana.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-009",
+      "topicIds": [
+        "topic-ciencias-009"
+      ],
+      "language": "es",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "fertilidad",
+        "fecundación",
+        "reproducción humana"
+      ],
+      "keywords": [
+        "óvulo",
+        "espermatozoide",
+        "concepción",
+        "reproducción"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26892683",
+        "url": "https://es.educaplay.com/recursos-educativos/26892683-la_fertilidad_y_la_fecundacion.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26892683-la_fertilidad_y_la_fecundacion.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26892683-la_fertilidad_y_la_fecundacion.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26902359",
+      "slug": "embarazo-y-gemelos-26902359",
+      "title": "Embarazo y gemelos",
+      "sourceTitle": "EMBARAZO Y GEMELOS",
+      "description": "Cuestionario sobre el embarazo y la formación de gemelos.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-009",
+      "topicIds": [
+        "topic-ciencias-009"
+      ],
+      "language": "es",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "embarazo",
+        "gemelos",
+        "reproducción humana"
+      ],
+      "keywords": [
+        "gestación",
+        "desarrollo embrionario",
+        "mellizos"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26902359",
+        "url": "https://es.educaplay.com/recursos-educativos/26902359-embarazo_y_gemelos.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26902359-embarazo_y_gemelos.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26902359-embarazo_y_gemelos.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-25849160",
+      "slug": "the-interaction-function-from-the-beginning-to-the-sense-of-sight-25849160",
+      "title": "The Interaction Function (from the Beginning to the Sense of Sight)",
+      "sourceTitle": "THE INTERACTON FUNCTION (From the beginning to the sense of sight)",
+      "description": "Cuestionario en inglés sobre la función de relación, los estímulos y respuestas y el sentido de la vista.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-010",
+      "topicIds": [
+        "topic-ciencias-010"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "interaction function",
+        "stimuli",
+        "sight"
+      ],
+      "keywords": [
+        "función de relación",
+        "responses",
+        "sense organs",
+        "visión"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "25849160",
+        "url": "https://es.educaplay.com/recursos-educativos/25849160-the_interacton_function.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/25849160-the_interacton_function.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/25849160-the_interacton_function.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública",
+        "verificationNote": "El título para la web corrige la errata original “INTERACTON”."
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-25955166",
+      "slug": "the-4-senses-the-sense-of-sight-is-missing-25955166",
+      "title": "The 4 Senses (the Sense of Sight Is Missing)",
+      "sourceTitle": "THE 4 SENSES (THE SENSE OF SIGHT IS MISSING)",
+      "description": "Actividad en inglés para relacionar partes y funciones de los sentidos del oído, olfato, gusto y tacto; la vista se trabaja en otra actividad.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-010",
+      "topicIds": [
+        "topic-ciencias-010"
+      ],
+      "language": "en",
+      "typeId": "relacionar-columnas",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "senses",
+        "sense organs",
+        "human body"
+      ],
+      "keywords": [
+        "sentidos",
+        "hearing",
+        "smell",
+        "taste",
+        "touch"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "25955166",
+        "url": "https://es.educaplay.com/recursos-educativos/25955166-the_4_senses.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/25955166-the_4_senses.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/25955166-the_4_senses.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26052230",
+      "slug": "stimuli-and-responses-in-our-body-26052230",
+      "title": "Stimuli and Responses in Our Body",
+      "sourceTitle": "STIMULI AND RESPONSES IN OUR BODY",
+      "description": "Actividad en inglés para ordenar la secuencia que sigue el cuerpo desde que recibe un estímulo hasta que produce una respuesta motora o glandular.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-010",
+      "topicIds": [
+        "topic-ciencias-010"
+      ],
+      "language": "en",
+      "typeId": "ordenar-secuencia",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "stimuli",
+        "responses",
+        "interaction function"
+      ],
+      "keywords": [
+        "estímulos",
+        "respuestas",
+        "receptors",
+        "nervous system",
+        "effectors"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26052230",
+        "url": "https://es.educaplay.com/recursos-educativos/26052230-stimulus_and_responses.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26052230-stimulus_and_responses.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26052230-stimulus_and_responses.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26216986",
+      "slug": "muscles-and-bones-to-write-and-review-26216986",
+      "title": "Muscles and Bones (to Write and Review)",
+      "sourceTitle": "MUSCLES AND BONES (TO WRITE AND REWIEV)",
+      "description": "Mapa interactivo en inglés para escribir el nombre correcto de músculos y huesos en su posición.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-010",
+      "topicIds": [
+        "topic-ciencias-010"
+      ],
+      "language": "en",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "muscles",
+        "bones",
+        "musculoskeletal system"
+      ],
+      "keywords": [
+        "músculos",
+        "huesos",
+        "anatomía",
+        "write",
+        "review"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26216986",
+        "url": "https://es.educaplay.com/recursos-educativos/26216986-muscles_and_bones.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26216986-muscles_and_bones.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26216986-muscles_and_bones.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública",
+        "verificationNote": "El título para la web corrige la errata original “REWIEV”."
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26233145",
+      "slug": "muscles-and-bones-to-learn-26233145",
+      "title": "Muscles and Bones (to Learn)",
+      "sourceTitle": "MUSCLES AND BONES (TO LEARN)",
+      "description": "Mapa interactivo en inglés para explorar músculos y huesos: al seleccionar una zona aparece su nombre.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-010",
+      "topicIds": [
+        "topic-ciencias-010"
+      ],
+      "language": "en",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "muscles",
+        "bones",
+        "learning map"
+      ],
+      "keywords": [
+        "músculos",
+        "huesos",
+        "anatomía",
+        "explore",
+        "learn"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26233145",
+        "url": "https://es.educaplay.com/recursos-educativos/26233145-muscles_and_bones.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26233145-muscles_and_bones.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26233145-muscles_and_bones.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26268544",
+      "slug": "muscles-and-bones-to-select-and-explore-further-26268544",
+      "title": "Muscles and Bones (to Select and Explore Further)",
+      "sourceTitle": "MUSCLES AND BONES (TO SELECT AND EXPLORE FURTHER)",
+      "description": "Mapa interactivo en inglés para seleccionar la posición correcta de distintos músculos y huesos.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-010",
+      "topicIds": [
+        "topic-ciencias-010"
+      ],
+      "language": "en",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "muscles",
+        "bones",
+        "interactive map"
+      ],
+      "keywords": [
+        "músculos",
+        "huesos",
+        "anatomía",
+        "select",
+        "practice"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26268544",
+        "url": "https://es.educaplay.com/recursos-educativos/26268544-muscles_and_bones.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26268544-muscles_and_bones.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26268544-muscles_and_bones.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26399026",
+      "slug": "muscles-and-bones-to-select-and-review-26399026",
+      "title": "Muscles and Bones (to Select and Review)",
+      "sourceTitle": "MUSCLES AND BONES (TO SELECT AND REWIEV)",
+      "description": "Mapa interactivo en inglés para repasar la localización de músculos y huesos seleccionando su posición correcta.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-010",
+      "topicIds": [
+        "topic-ciencias-010"
+      ],
+      "language": "en",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "muscles",
+        "bones",
+        "review"
+      ],
+      "keywords": [
+        "músculos",
+        "huesos",
+        "anatomía",
+        "select",
+        "repaso"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26399026",
+        "url": "https://es.educaplay.com/recursos-educativos/26399026-muscles_and_bones.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26399026-muscles_and_bones.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26399026-muscles_and_bones.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública",
+        "verificationNote": "El título para la web corrige la errata original “REWIEV”."
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26321670",
+      "slug": "3-the-nervous-system-and-effector-organs-26321670",
+      "title": "3. The Nervous System and Effector Organs",
+      "sourceTitle": "3. THE NERVOUS SYSTEM AND EFFECTOR ORGANS",
+      "description": "Cuestionario en inglés sobre el sistema nervioso, los órganos efectores y su relación con músculos y huesos.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-010",
+      "topicIds": [
+        "topic-ciencias-010"
+      ],
+      "language": "en",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "nervous system",
+        "effector organs",
+        "human body"
+      ],
+      "keywords": [
+        "sistema nervioso",
+        "órganos efectores",
+        "muscles",
+        "bones",
+        "responses"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26321670",
+        "url": "https://es.educaplay.com/recursos-educativos/26321670-3_the_nervous_system_and_effector_organs.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26321670-3_the_nervous_system_and_effector_organs.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26321670-3_the_nervous_system_and_effector_organs.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-53717982",
+      "slug": "mountains-of-spain-53717982",
+      "title": "Mountains of Spain",
+      "sourceTitle": "MOUNTAINS OF SPAIN",
+      "description": "Diagrama para colocar los principales sistemas montañosos y unidades de relieve de España en el mapa.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-011",
+      "topicIds": [
+        "topic-ciencias-011"
+      ],
+      "language": "es",
+      "typeId": "diagrama-con-etiquetas",
+      "originCourseLabel": "Curso de origen desconocido",
+      "tags": [
+        "relieve de España",
+        "montañas",
+        "mapa"
+      ],
+      "keywords": [
+        "cordilleras",
+        "Pirineos",
+        "Sistema Central",
+        "Sierra Morena",
+        "depresiones"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "53717982",
+        "url": "https://wordwall.net/es/resource/53717982/ciencias/mountains-of-spain",
+        "canonicalUrl": "https://wordwall.net/es/resource/53717982/ciencias/mountains-of-spain",
+        "originalUrl": "https://wordwall.net/es/resource/53717982?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-83201075",
+      "slug": "mares-de-europa-83201075",
+      "title": "Mares de Europa",
+      "sourceTitle": "MARES DE EUROPA",
+      "description": "Diagrama para situar en el mapa los principales mares y océanos de Europa.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-011",
+      "topicIds": [
+        "topic-ciencias-011"
+      ],
+      "language": "es",
+      "typeId": "diagrama-con-etiquetas",
+      "originCourseLabel": "Curso de origen desconocido",
+      "tags": [
+        "mares de Europa",
+        "océanos",
+        "mapa"
+      ],
+      "keywords": [
+        "Atlántico",
+        "Mediterráneo",
+        "Báltico",
+        "mar Negro",
+        "geografía"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "83201075",
+        "url": "https://wordwall.net/es/resource/83201075/ciencias/mares-de-europa",
+        "canonicalUrl": "https://wordwall.net/es/resource/83201075/ciencias/mares-de-europa",
+        "originalUrl": "https://wordwall.net/es/resource/83201075?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-83426552",
+      "slug": "relieve-de-europa-83426552",
+      "title": "Relieve de Europa",
+      "sourceTitle": "RELIEVE DE EUROPA",
+      "description": "Diagrama para localizar llanuras, mesetas y sistemas montañosos principales del relieve europeo.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-011",
+      "topicIds": [
+        "topic-ciencias-011"
+      ],
+      "language": "es",
+      "typeId": "diagrama-con-etiquetas",
+      "originCourseLabel": "Curso de origen desconocido",
+      "tags": [
+        "relieve de Europa",
+        "montañas",
+        "llanuras"
+      ],
+      "keywords": [
+        "Alpes",
+        "Pirineos",
+        "Cárpatos",
+        "Gran Llanura Europea",
+        "geografía"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "83426552",
+        "url": "https://wordwall.net/es/resource/83426552/ciencias/relieve-de-europa",
+        "canonicalUrl": "https://wordwall.net/es/resource/83426552/ciencias/relieve-de-europa",
+        "originalUrl": "https://wordwall.net/es/resource/83426552?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-83837307",
+      "slug": "rios-de-europa-83837307",
+      "title": "Ríos de Europa",
+      "sourceTitle": "RÍOS DE EUROPA",
+      "description": "Diagrama para situar en el mapa los principales ríos de Europa.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-011",
+      "topicIds": [
+        "topic-ciencias-011"
+      ],
+      "language": "es",
+      "typeId": "diagrama-con-etiquetas",
+      "originCourseLabel": "Curso de origen desconocido",
+      "tags": [
+        "ríos de Europa",
+        "hidrografía",
+        "mapa"
+      ],
+      "keywords": [
+        "Danubio",
+        "Rin",
+        "Volga",
+        "Sena",
+        "Támesis",
+        "geografía"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "83837307",
+        "url": "https://wordwall.net/es/resource/83837307/ciencias/r%C3%ADos-de-europa",
+        "canonicalUrl": "https://wordwall.net/es/resource/83837307/ciencias/r%C3%ADos-de-europa",
+        "originalUrl": "https://wordwall.net/es/resource/83837307?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-23930394",
+      "slug": "provincias-de-espana-en-orden-23930394",
+      "title": "Provincias de España (en orden)",
+      "sourceTitle": "PROVINCIAS ESPAÑA (EN ORDEN)",
+      "description": "Mapa interactivo para localizar provincias de España siguiendo un orden fijo.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-011",
+      "topicIds": [
+        "topic-ciencias-011"
+      ],
+      "language": "es",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "5.º y 6.º de Primaria",
+      "tags": [
+        "provincias de España",
+        "mapa",
+        "geografía"
+      ],
+      "keywords": [
+        "localizar provincias",
+        "división territorial",
+        "España",
+        "orden"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "23930394",
+        "url": "https://es.educaplay.com/recursos-educativos/23930394-provincias_espana.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/23930394-provincias_espana.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/23930394-provincias_espana.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-23949842",
+      "slug": "provincias-de-espana-desordenadas-23949842",
+      "title": "Provincias de España (desordenadas)",
+      "sourceTitle": "PROVINCIAS ESPAÑA (DESORDENADAS)",
+      "description": "Mapa interactivo para localizar provincias de España presentadas en orden aleatorio.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-011",
+      "topicIds": [
+        "topic-ciencias-011"
+      ],
+      "language": "es",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "5.º y 6.º de Primaria",
+      "tags": [
+        "provincias de España",
+        "mapa",
+        "geografía"
+      ],
+      "keywords": [
+        "localizar provincias",
+        "división territorial",
+        "España",
+        "aleatorio"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "23949842",
+        "url": "https://es.educaplay.com/recursos-educativos/23949842-provincias_espana.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/23949842-provincias_espana.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/23949842-provincias_espana.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-23952079",
+      "slug": "provincias-de-espana-escrito-23952079",
+      "title": "Provincias de España (escrito)",
+      "sourceTitle": "PROVINCIAS ESPAÑA (ESCRITO)",
+      "description": "Mapa interactivo para escribir el nombre de la provincia seleccionada en el mapa de España.",
+      "primarySubjectId": "ciencias",
+      "subjectIds": [
+        "ciencias"
+      ],
+      "primaryTopicId": "topic-ciencias-011",
+      "topicIds": [
+        "topic-ciencias-011"
+      ],
+      "language": "es",
+      "typeId": "mapa-interactivo",
+      "originCourseLabel": "5.º y 6.º de Primaria",
+      "tags": [
+        "provincias de España",
+        "mapa",
+        "geografía"
+      ],
+      "keywords": [
+        "escribir provincias",
+        "división territorial",
+        "España",
+        "mapa interactivo"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-06",
+        "updatedAt": "2026-09-06"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "23952079",
+        "url": "https://es.educaplay.com/recursos-educativos/23952079-provincias_espana.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/23952079-provincias_espana.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/23952079-provincias_espana.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-05",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad",
+        "descriptionSource": "Síntesis basada en la página pública"
+      },
+      "legacy": {
+        "subjectLabel": "Ciencias / Conocimiento del Medio",
+        "linkStatusLabel": "Verificado"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-73932172",
+      "slug": "materiel-scolaire-73932172",
+      "title": "Le matériel scolaire",
+      "sourceTitle": "MATERIAL ESCOLAR FRANCÉS",
+      "description": "Relaciona nombres de material escolar en francés con sus equivalentes en español.",
+      "primarySubjectId": "frances",
+      "subjectIds": [
+        "frances"
+      ],
+      "primaryTopicId": "topic-frances-material-escolar",
+      "topicIds": [
+        "topic-frances-material-escolar"
+      ],
+      "language": "fr",
+      "typeId": "emparejar",
+      "originCourseLabel": "5.º de Primaria",
+      "tags": [
+        "vocabulario escolar",
+        "traducción"
+      ],
+      "keywords": [
+        "vocabulario escolar",
+        "traducción"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "73932172",
+        "url": "https://wordwall.net/es/resource/73932172/espa%C3%B1ol/material-escolar-franc%C3%A9s",
+        "canonicalUrl": "https://wordwall.net/es/resource/73932172/espa%C3%B1ol/material-escolar-franc%C3%A9s",
+        "originalUrl": "https://wordwall.net/es/resource/73932172?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Francés"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26019778",
+      "slug": "vetements-26019778",
+      "title": "Les vêtements",
+      "sourceTitle": "LES VÊTEMENTS",
+      "description": "Associe le nom des vêtements en français à leur image ou à leur traduction espagnole.",
+      "primarySubjectId": "frances",
+      "subjectIds": [
+        "frances"
+      ],
+      "primaryTopicId": "topic-frances-vetements",
+      "topicIds": [
+        "topic-frances-vetements"
+      ],
+      "language": "fr",
+      "typeId": "relacionar-columnas",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "vêtements",
+        "association"
+      ],
+      "keywords": [
+        "vêtements",
+        "association"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26019778",
+        "url": "https://es.educaplay.com/recursos-educativos/26019778-prendas_de_vestir_en_frances.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26019778-prendas_de_vestir_en_frances.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26019778-prendas_de_vestir_en_frances.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Francés"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26879995",
+      "slug": "a-lecole-revision-26879995",
+      "title": "À l’école : matières, prépositions et heure",
+      "sourceTitle": "RÈVISION THÈME 2 ( À L’ÉCOLE)",
+      "description": "Écris en français des matières scolaires, des prépositions de lieu et des phrases pour indiquer l’heure.",
+      "primarySubjectId": "frances",
+      "subjectIds": [
+        "frances"
+      ],
+      "primaryTopicId": "topic-frances-ecole",
+      "topicIds": [
+        "topic-frances-ecole",
+        "topic-frances-prepositions-lieu",
+        "topic-frances-heure",
+        "topic-frances-material-escolar"
+      ],
+      "language": "fr",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "matières scolaires",
+        "prépositions",
+        "heure"
+      ],
+      "keywords": [
+        "matières scolaires",
+        "prépositions",
+        "heure"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26879995",
+        "url": "https://es.educaplay.com/recursos-educativos/26879995-les_matieres_scolaires.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26879995-les_matieres_scolaires.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26879995-les_matieres_scolaires.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Francés"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-27609018",
+      "slug": "aller-jouer-faire-27609018",
+      "title": "Aller, jouer et faire au présent",
+      "sourceTitle": "VERBOS “ALLER”, “JOUER” Y “FAIRE”",
+      "description": "Conjugue aller, jouer et faire au présent selon le pronom proposé.",
+      "primarySubjectId": "frances",
+      "subjectIds": [
+        "frances"
+      ],
+      "primaryTopicId": "topic-frances-verbes-present",
+      "topicIds": [
+        "topic-frances-verbes-present"
+      ],
+      "language": "fr",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "aller",
+        "jouer",
+        "faire"
+      ],
+      "keywords": [
+        "aller",
+        "jouer",
+        "faire"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "27609018",
+        "url": "https://es.educaplay.com/recursos-educativos/27609018-quiz_verbes_francais_au_present_1s_2s_3s.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/27609018-quiz_verbes_francais_au_present_1s_2s_3s.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/27609018-quiz_verbes_francais_au_present_1s_2s_3s.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Francés"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-27611495",
+      "slug": "loisirs-27611495",
+      "title": "Les loisirs : aimer, aller, faire et jouer",
+      "sourceTitle": "LES LOISIRS (AIMER, ALLER, FAIRE ET JOUER)",
+      "description": "Complète des phrases sur les loisirs à partir d’images en choisissant la forme verbale adaptée.",
+      "primarySubjectId": "frances",
+      "subjectIds": [
+        "frances"
+      ],
+      "primaryTopicId": "topic-frances-loisirs",
+      "topicIds": [
+        "topic-frances-loisirs",
+        "topic-frances-verbes-present"
+      ],
+      "language": "fr",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "loisirs",
+        "aimer",
+        "aller",
+        "faire",
+        "jouer"
+      ],
+      "keywords": [
+        "loisirs",
+        "aimer",
+        "aller",
+        "faire",
+        "jouer"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "27611495",
+        "url": "https://es.educaplay.com/recursos-educativos/27611495-les_loisirs.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/27611495-les_loisirs.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/27611495-les_loisirs.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Francés"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-27925635",
+      "slug": "pieces-maison-27925635",
+      "title": "Les pièces de la maison",
+      "sourceTitle": "LES PIÈCES DE LA MAISON",
+      "description": "Écris en français le nom des pièces de la maison présentées dans les questions.",
+      "primarySubjectId": "frances",
+      "subjectIds": [
+        "frances"
+      ],
+      "primaryTopicId": "topic-frances-maison",
+      "topicIds": [
+        "topic-frances-maison"
+      ],
+      "language": "fr",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "maison",
+        "pièces"
+      ],
+      "keywords": [
+        "maison",
+        "pièces"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "27925635",
+        "url": "https://es.educaplay.com/recursos-educativos/27925635-les_pieces_de_la_maison.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/27925635-les_pieces_de_la_maison.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/27925635-les_pieces_de_la_maison.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Francés"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28722082",
+      "slug": "moyens-transport-28722082",
+      "title": "Les moyens de transport",
+      "sourceTitle": "LES MOYENS DE TRANSPORT",
+      "description": "Nomme en français les moyens de transport présentés dans les questions.",
+      "primarySubjectId": "frances",
+      "subjectIds": [
+        "frances"
+      ],
+      "primaryTopicId": "topic-frances-transports",
+      "topicIds": [
+        "topic-frances-transports"
+      ],
+      "language": "fr",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "transports",
+        "vocabulaire"
+      ],
+      "keywords": [
+        "transports",
+        "vocabulaire"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28722082",
+        "url": "https://es.educaplay.com/recursos-educativos/28722082-les_moyens_de_transport.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28722082-les_moyens_de_transport.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28722082-les_moyens_de_transport.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Francés"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28722363",
+      "slug": "lieux-ville-28722363",
+      "title": "Les lieux de la ville",
+      "sourceTitle": "LA VILLE (francés hasta en la sopa)",
+      "description": "Écris en français le nom des lieux de la ville proposés dans le quiz.",
+      "primarySubjectId": "frances",
+      "subjectIds": [
+        "frances"
+      ],
+      "primaryTopicId": "topic-frances-ville",
+      "topicIds": [
+        "topic-frances-ville"
+      ],
+      "language": "fr",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "ville",
+        "lieux"
+      ],
+      "keywords": [
+        "ville",
+        "lieux"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28722363",
+        "url": "https://es.educaplay.com/recursos-educativos/28722363-la_ville_frances_hasta_en_la_sopa.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28722363-la_ville_frances_hasta_en_la_sopa.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28722363-la_ville_frances_hasta_en_la_sopa.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Francés"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-28731092",
+      "slug": "comment-on-va-bibliotheque-28731092",
+      "title": "Comment on va à la bibliothèque ?",
+      "sourceTitle": "COMMENT ON VA À LA BIBLIOTHÉQUE ?",
+      "description": "Lis un texte sur un trajet vers la bibliothèque et réponds par écrit aux questions en français.",
+      "primarySubjectId": "frances",
+      "subjectIds": [
+        "frances"
+      ],
+      "primaryTopicId": "topic-frances-itineraires",
+      "topicIds": [
+        "topic-frances-itineraires",
+        "topic-frances-ville"
+      ],
+      "language": "fr",
+      "typeId": "cuestionario",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "bibliothèque",
+        "trajet",
+        "lecture"
+      ],
+      "keywords": [
+        "bibliothèque",
+        "trajet",
+        "lecture"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "28731092",
+        "url": "https://es.educaplay.com/recursos-educativos/28731092-comment_on_va_a_la_bibliotheque.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/28731092-comment_on_va_a_la_bibliotheque.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/28731092-comment_on_va_a_la_bibliotheque.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión.  La actividad depende de un texto del libro; comprobar que el texto esté visible para el alumno."
+      },
+      "legacy": {
+        "subjectLabel": "Francés"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-53716089",
+      "slug": "tipos-enunciados-53716089",
+      "title": "Tipos de enunciados",
+      "sourceTitle": "TIPOS DE ENUNCIADOS",
+      "description": "Relaciona los enunciados enunciativos, interrogativos, exclamativos e imperativos con su función.",
+      "primarySubjectId": "lengua",
+      "subjectIds": [
+        "lengua"
+      ],
+      "primaryTopicId": "topic-lengua-enunciados",
+      "topicIds": [
+        "topic-lengua-enunciados"
+      ],
+      "language": "es",
+      "typeId": "emparejar",
+      "originCourseLabel": "4.º de Primaria",
+      "tags": [
+        "enunciados",
+        "función comunicativa"
+      ],
+      "keywords": [
+        "enunciados",
+        "función comunicativa"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "53716089",
+        "url": "https://wordwall.net/es/resource/53716089/tipos-de-enunciados",
+        "canonicalUrl": "https://wordwall.net/es/resource/53716089/tipos-de-enunciados",
+        "originalUrl": "https://wordwall.net/es/resource/53716089?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Lengua"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-55342703",
+      "slug": "tiempos-verbales-indicativo-55342703",
+      "title": "Tiempos verbales del indicativo",
+      "sourceTitle": "TIEMPOS VERBALES EN ESPAÑOL",
+      "description": "Relaciona formas verbales con el presente, el pretérito imperfecto, el pretérito perfecto simple y el futuro del indicativo.",
+      "primarySubjectId": "lengua",
+      "subjectIds": [
+        "lengua"
+      ],
+      "primaryTopicId": "topic-lengua-tiempos-verbales",
+      "topicIds": [
+        "topic-lengua-tiempos-verbales"
+      ],
+      "language": "es",
+      "typeId": "emparejar",
+      "originCourseLabel": "5.º de Primaria",
+      "tags": [
+        "indicativo",
+        "conjugación"
+      ],
+      "keywords": [
+        "indicativo",
+        "conjugación"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "55342703",
+        "url": "https://wordwall.net/es/resource/55342703/espa%C3%B1ol/tiempos-verbales-en-espa%C3%B1ol",
+        "canonicalUrl": "https://wordwall.net/es/resource/55342703/espa%C3%B1ol/tiempos-verbales-en-espa%C3%B1ol",
+        "originalUrl": "https://wordwall.net/es/resource/55342703?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Lengua"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-26938828",
+      "slug": "recursos-literarios-26938828",
+      "title": "Recursos literarios",
+      "sourceTitle": "LOS RECURSOS LITERARIOS",
+      "description": "Completa definiciones e identifica recursos literarios en ejemplos de frases.",
+      "primarySubjectId": "lengua",
+      "subjectIds": [
+        "lengua"
+      ],
+      "primaryTopicId": "topic-lengua-recursos-literarios",
+      "topicIds": [
+        "topic-lengua-recursos-literarios"
+      ],
+      "language": "es",
+      "typeId": "completar-frases",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "recursos literarios",
+        "ejemplos"
+      ],
+      "keywords": [
+        "recursos literarios",
+        "ejemplos"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "26938828",
+        "url": "https://es.educaplay.com/recursos-educativos/26938828-los_recursos_literarios.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/26938828-los_recursos_literarios.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/26938828-los_recursos_literarios.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Lengua"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-27395921",
+      "slug": "palabras-invariables-27395921",
+      "title": "Palabras invariables",
+      "sourceTitle": "LAS PALABRAS INVARIABLES",
+      "description": "Completa listas de preposiciones, adverbios, conjunciones e interjecciones y reconoce ejemplos.",
+      "primarySubjectId": "lengua",
+      "subjectIds": [
+        "lengua"
+      ],
+      "primaryTopicId": "topic-lengua-palabras-invariables",
+      "topicIds": [
+        "topic-lengua-palabras-invariables"
+      ],
+      "language": "es",
+      "typeId": "completar-frases",
+      "originCourseLabel": "6.º de Primaria",
+      "tags": [
+        "preposiciones",
+        "adverbios",
+        "conjunciones",
+        "interjecciones"
+      ],
+      "keywords": [
+        "preposiciones",
+        "adverbios",
+        "conjunciones",
+        "interjecciones"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "27395921",
+        "url": "https://es.educaplay.com/recursos-educativos/27395921-preposiciones_completas.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/27395921-preposiciones_completas.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/27395921-preposiciones_completas.html",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Lengua"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-45753481",
+      "slug": "tablas-multiplicar-45753481",
+      "title": "Tablas y multiplicaciones por 10, 100 y 1000",
+      "sourceTitle": "Tablas de multiplicar y multiplicaciones por 1 seguido de 0.",
+      "description": "Distingue multiplicaciones correctas e incorrectas de las tablas y de números por 10, 100 y 1000.",
+      "primarySubjectId": "matematicas",
+      "subjectIds": [
+        "matematicas"
+      ],
+      "primaryTopicId": "topic-matematicas-multiplicaciones",
+      "topicIds": [
+        "topic-matematicas-multiplicaciones"
+      ],
+      "language": "es",
+      "typeId": "aplastatopos",
+      "originCourseLabel": "3.º de Primaria",
+      "tags": [
+        "tablas",
+        "potencias de diez"
+      ],
+      "keywords": [
+        "tablas",
+        "potencias de diez"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "45753481",
+        "url": "https://wordwall.net/es/resource/45753481/tablas-de-multiplicar-y-multiplicaciones-por-1-seguido-de-0",
+        "canonicalUrl": "https://wordwall.net/es/resource/45753481/tablas-de-multiplicar-y-multiplicaciones-por-1-seguido-de-0",
+        "originalUrl": "https://wordwall.net/es/resource/45753481",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Matemáticas"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-53716987",
+      "slug": "geometria-operaciones-combinadas-53716987",
+      "title": "Geometría y operaciones combinadas · temas 4 y 5",
+      "sourceTitle": "MATESMÁTICAS Temas 4 y 5 REVUELA",
+      "description": "Relaciona puntos, rectas y ángulos con sus definiciones y repasa el orden de las operaciones combinadas.",
+      "primarySubjectId": "matematicas",
+      "subjectIds": [
+        "matematicas"
+      ],
+      "primaryTopicId": "topic-matematicas-rectas",
+      "topicIds": [
+        "topic-matematicas-rectas",
+        "topic-matematicas-angulos",
+        "topic-matematicas-operaciones-combinadas"
+      ],
+      "language": "es",
+      "typeId": "emparejar",
+      "originCourseLabel": "4.º de Primaria",
+      "tags": [
+        "geometría",
+        "operaciones combinadas",
+        "Revuela"
+      ],
+      "keywords": [
+        "geometría",
+        "operaciones combinadas",
+        "Revuela"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "53716987",
+        "url": "https://wordwall.net/es/resource/53716987/matem%C3%A1ticas/matesm%C3%A1ticas-temas-4-y-5-revuela",
+        "canonicalUrl": "https://wordwall.net/es/resource/53716987/matem%C3%A1ticas/matesm%C3%A1ticas-temas-4-y-5-revuela",
+        "originalUrl": "https://wordwall.net/es/resource/53716987?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Matemáticas"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-55409289",
+      "slug": "unit-7-vocabulary-kids-box-3-55409289",
+      "title": "Unit 7 vocabulary · Kid’s Box 3",
+      "sourceTitle": "Unit 7 ENGLISH|Kid's Box 3 VOCABULARIO",
+      "description": "Review the general vocabulary from Unit 7 of Kid’s Box 3 through a matching activity.",
+      "primarySubjectId": "ingles",
+      "subjectIds": [
+        "ingles"
+      ],
+      "primaryTopicId": "topic-ingles-vocabulary",
+      "topicIds": [
+        "topic-ingles-vocabulary"
+      ],
+      "language": "en",
+      "typeId": "emparejar",
+      "originCourseLabel": "3.º de Primaria",
+      "tags": [
+        "vocabulary",
+        "Unit 7",
+        "Kid’s Box 3"
+      ],
+      "keywords": [
+        "vocabulary",
+        "Unit 7",
+        "Kid’s Box 3",
+        "English"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "55409289",
+        "url": "https://wordwall.net/es/resource/55409289/ingl%C3%A9s/unit-7-englishkids-box-3-vocabulario",
+        "canonicalUrl": "https://wordwall.net/es/resource/55409289/ingl%C3%A9s/unit-7-englishkids-box-3-vocabulario",
+        "originalUrl": "https://wordwall.net/es/resource/55409289?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "Alcance confirmado por Alejandro, autor: vocabulario general de Unit 7. Título de origen comprobado en Wordwall."
+      },
+      "legacy": {
+        "subjectLabel": "Inglés"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-55344112",
+      "slug": "comparative-adjectives-55344112",
+      "title": "Comparative adjectives · Kid’s Box 3",
+      "sourceTitle": "COMPARATIVES|Unit 7 Kids Box 3",
+      "description": "Relaciona adjetivos ingleses con sus formas comparativas, como big/bigger y happy/happier.",
+      "primarySubjectId": "ingles",
+      "subjectIds": [
+        "ingles"
+      ],
+      "primaryTopicId": "topic-ingles-comparativos",
+      "topicIds": [
+        "topic-ingles-comparativos"
+      ],
+      "language": "en",
+      "typeId": "emparejar",
+      "originCourseLabel": "3.º de Primaria",
+      "tags": [
+        "comparatives",
+        "adjectives",
+        "Kid’s Box 3"
+      ],
+      "keywords": [
+        "comparatives",
+        "adjectives",
+        "Kid’s Box 3"
+      ],
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-09-24",
+        "updatedAt": "2026-09-24"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "55344112",
+        "url": "https://wordwall.net/es/resource/55344112/ingl%C3%A9s/comparativesunit-7-kids-box-3",
+        "canonicalUrl": "https://wordwall.net/es/resource/55344112/ingl%C3%A9s/comparativesunit-7-kids-box-3",
+        "originalUrl": "https://wordwall.net/es/resource/55344112?wwmethod=link",
+        "linkStatus": "verified",
+        "lastVerifiedAt": "2026-09-24",
+        "titleVerified": true,
+        "titleSource": "Página pública de la actividad, título visible o metadatos",
+        "descriptionSource": "Síntesis editorial del contenido público y notas del Markdown",
+        "verificationNote": "HTTP 200; recursos interactivos no completados en sesión."
+      },
+      "legacy": {
+        "subjectLabel": "Inglés"
+      }
+    }
+  ],
+  "mediaResources": [
+    {
+      "id": "MEDIA-MATES-53716987",
+      "kind": "video",
+      "title": "Puntos, rectas, ángulos y operaciones combinadas",
+      "description": "Vídeo original de repaso creado en 4.º de Primaria: puntos, rectas, ángulos y orden básico de operaciones. Al terminar, practica con la actividad relacionada.",
+      "language": "es",
+      "subjectId": "matematicas",
+      "primaryTopicId": "topic-matematicas-rectas",
+      "topicIds": [
+        "topic-matematicas-rectas",
+        "topic-matematicas-angulos",
+        "topic-matematicas-operaciones-combinadas"
+      ],
+      "relatedActivityIds": [
+        "WW-53716987"
+      ],
+      "originCourseLabel": "4.º de Primaria",
+      "src": "/media/repaso-mates-web.mp4",
+      "poster": "/media/poster-repaso-mates.png",
+      "visualDescriptionPath": "/media/guia-visual-repaso-mates.txt",
+      "status": "active"
+    }
+  ],
+  "credits": [
+    {
+      "id": "credit-topic-ciencias-001",
+      "title": "Historia",
+      "author": "rawpixel.com",
+      "sourceName": "Magnific",
+      "sourceUrl": "https://www.magnific.com/es/foto-gratis/vieja-biblia-mesa-madera_3012291.htm",
+      "license": "Licencia gratuita de Magnific para uso comercial con atribución, según el certificado aportado."
+    },
+    {
+      "id": "credit-topic-ciencias-002",
+      "title": "Alimentación",
+      "author": "jcomp",
+      "sourceName": "Magnific",
+      "sourceUrl": "https://www.magnific.com/es/foto-gratis/plato-tazon-fuente-buda-verduras-legumbres-vista-superior_13807905.htm",
+      "license": "Licencia gratuita de Magnific para uso comercial con atribución, según el certificado aportado."
+    },
+    {
+      "id": "credit-topic-ciencias-003",
+      "title": "Política y organización de España",
+      "author": "Magnific",
+      "sourceName": "Magnific",
+      "sourceUrl": "https://www.magnific.com/es/foto-gratis/persona-poniendo-sobre-cuadro-votacion-fondo-bandera-espanola_5866126.htm",
+      "license": "Licencia gratuita de Magnific para uso comercial con atribución, según el certificado aportado."
+    },
+    {
+      "id": "credit-topic-ciencias-004",
+      "title": "Sociedad y población",
+      "author": "Magnific",
+      "sourceName": "Magnific",
+      "sourceUrl": "https://www.magnific.com/es/foto-gratis/vista-superior-comunidad-estilo-papel-mapa_25403800.htm",
+      "license": "Licencia gratuita de Magnific para uso comercial con atribución, según el certificado aportado."
+    },
+    {
+      "id": "credit-topic-ciencias-005",
+      "title": "Medio ambiente y sostenibilidad",
+      "author": "rawpixel.com",
+      "sourceName": "Magnific",
+      "sourceUrl": "https://www.magnific.com/es/foto-gratis/presentando-mano-remix-medio-ambiente-sostenible-tierra_17602071.htm",
+      "license": "Licencia gratuita de Magnific para uso comercial con atribución, según el certificado aportado."
+    },
+    {
+      "id": "credit-topic-ciencias-006",
+      "title": "La Transición española",
+      "author": "Autoría no indicada en la documentación aportada",
+      "sourceName": "EL PAÍS",
+      "sourceUrl": "https://elpais.com/elpais/2006/02/07/album/1139297868_910215.html",
+      "license": "La documentación aportada no especifica la licencia de reutilización.",
+      "note": "Pendiente de aclaración antes de una publicación futura."
+    },
+    {
+      "id": "credit-topic-ciencias-007",
+      "title": "Derechos y deberes",
+      "author": "Magnific",
+      "sourceName": "Magnific",
+      "sourceUrl": "https://www.magnific.com/es/vector-gratis/detener-concepto-racismo_8850000.htm",
+      "license": "Licencia gratuita de Magnific para uso comercial con atribución, según el certificado aportado."
+    },
+    {
+      "id": "credit-topic-ciencias-008",
+      "title": "Unión Europea",
+      "author": "Autoría no indicada en la documentación aportada",
+      "sourceName": "MARCA",
+      "sourceUrl": "https://www.marca.com/futbol/primera-division/2025/05/10/bandera-union-europea-lado-marcadores-retransmision-partidos-futbol.html",
+      "license": "La documentación aportada no especifica la licencia de reutilización.",
+      "note": "Pendiente de aclaración antes de una publicación futura."
+    },
+    {
+      "id": "credit-topic-ciencias-009",
+      "title": "Reproducción humana",
+      "author": "Autoría no indicada en la documentación aportada",
+      "sourceName": "Archivo facilitado para el proyecto",
+      "license": "No se aportó información de procedencia o licencia para esta imagen.",
+      "note": "Pendiente de aclaración antes de una publicación futura."
+    },
+    {
+      "id": "credit-topic-ciencias-010",
+      "title": "Cuerpo humano",
+      "author": "brgfx",
+      "sourceName": "Magnific",
+      "sourceUrl": "https://www.magnific.com/es/vector-gratis/estructura-anatomica-cuerpos-humanos_26353260.htm",
+      "license": "Licencia gratuita de Magnific para uso comercial con atribución, según el certificado aportado."
+    },
+    {
+      "id": "credit-topic-ciencias-011",
+      "title": "Relieve y geografía",
+      "author": "snowing",
+      "sourceName": "Magnific",
+      "sourceUrl": "https://www.magnific.com/es/foto-gratis/ompass-mapa-turistico-enfoque-aguja-brujula_1203158.htm",
+      "license": "Licencia gratuita de Magnific para uso comercial con atribución, según el certificado aportado."
+    }
+  ],
+  "qualityIssues": [
+    {
+      "activityId": "EP-28734734",
+      "url": "https://es.educaplay.com/recursos-educativos/28734734-the_spanish_population.html",
+      "issueType": "Información pública limitada en el navegador",
+      "explanation": "La página mostró el título, pero el cuerpo quedó vacío en dos cargas. El tipo y el contenido se contrastaron con el índice público de la misma URL.",
+      "recommendedAction": "Abrir la actividad manualmente antes de publicar la web y confirmar que sigue completando frases sobre la población española.",
+      "status": "open"
+    }
+  ],
+  "information": [
+    {
+      "field": "Finalidad",
+      "explanation": "Fuente editable multiasignatura para generar el catálogo estático."
+    },
+    {
+      "field": "Fuente histórica",
+      "explanation": "Actividades_Ciencias_para_Sites.xlsx"
+    },
+    {
+      "field": "SHA-256 de la fuente histórica",
+      "explanation": "a83a3fed5cc7606e3ab18e5eba0c2ff948d10c01eccd49ce8d05376568b45263"
+    },
+    {
+      "field": "Versión de esquema",
+      "explanation": 1
+    },
+    {
+      "field": "Separador multivalor",
+      "explanation": "|"
+    },
+    {
+      "field": "Asignatura inicial",
+      "explanation": "ciencias"
+    },
+    {
+      "field": "Fechas heredadas",
+      "explanation": "createdAt desconocida; publishedAt y updatedAt 2026-09-06; lastVerifiedAt 2026-09-05."
+    },
+    {
+      "field": "IDs de tema",
+      "explanation": "El mapeo SEC-xx → topic-ciencias-xxx se conserva en MIGRACIÓN_TEMAS."
+    },
+    {
+      "field": "Actividades externas",
+      "explanation": "Las 65 actividades actuales usan Clase de origen = external."
+    },
+    {
+      "field": "Actividades nativas",
+      "explanation": "El esquema las admite; este libro inicial no contiene ninguna."
+    },
+    {
+      "field": "Curso histórico",
+      "explanation": "Contexto personal de creación. No representa nivel recomendado."
+    },
+    {
+      "field": "Edición",
+      "explanation": "Editar este libro y ejecutar npm run catalog:generate. No editar los JSON generados a mano."
+    },
+    {
+      "field": "Incorporación Fase 4B",
+      "explanation": "El 2026-09-24 se añadieron 17 actividades y cuatro asignaturas; el libro histórico de Ciencias sigue en su fuente original."
+    },
+    {
+      "field": "Recursos multimedia",
+      "explanation": "RECURSOS_RELACIONADOS es fuente editable de MediaResource; se genera separado de las actividades."
+    },
+    {
+      "field": "Corrección del autor WW-55409289",
+      "explanation": "Vocabulario general de Unit 7 de Kid’s Box 3; el encabezado provisional «Adjetivos» consta en ENTRADA_ORIGINAL."
+    }
+  ],
+  "migration": {
+    "legacySource": "Actividades_Ciencias_para_Sites.xlsx",
+    "legacySourceSha256": "a83a3fed5cc7606e3ab18e5eba0c2ff948d10c01eccd49ce8d05376568b45263",
+    "topicIdMap": {
+      "SEC-01": "topic-ciencias-001",
+      "SEC-02": "topic-ciencias-002",
+      "SEC-03": "topic-ciencias-003",
+      "SEC-04": "topic-ciencias-004",
+      "SEC-05": "topic-ciencias-005",
+      "SEC-06": "topic-ciencias-006",
+      "SEC-07": "topic-ciencias-007",
+      "SEC-08": "topic-ciencias-008",
+      "SEC-09": "topic-ciencias-009",
+      "SEC-10": "topic-ciencias-010",
+      "SEC-11": "topic-ciencias-011"
+    }
+  }
+}

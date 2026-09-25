@@ -1,0 +1,2219 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "EP-23930394",
+      "title": "provincias de espana (en orden)",
+      "sourceTitle": "provincias espana (en orden)",
+      "description": "mapa interactivo para localizar provincias de espana siguiendo un orden fijo.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "relieve y geografia"
+      ],
+      "tags": [
+        "provincias de espana",
+        "mapa",
+        "geografia"
+      ],
+      "keywords": [
+        "localizar provincias",
+        "division territorial",
+        "espana",
+        "orden"
+      ],
+      "type": "mapa interactivo",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-23949842",
+      "title": "provincias de espana (desordenadas)",
+      "sourceTitle": "provincias espana (desordenadas)",
+      "description": "mapa interactivo para localizar provincias de espana presentadas en orden aleatorio.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "relieve y geografia"
+      ],
+      "tags": [
+        "provincias de espana",
+        "mapa",
+        "geografia"
+      ],
+      "keywords": [
+        "localizar provincias",
+        "division territorial",
+        "espana",
+        "aleatorio"
+      ],
+      "type": "mapa interactivo",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-23952079",
+      "title": "provincias de espana (escrito)",
+      "sourceTitle": "provincias espana (escrito)",
+      "description": "mapa interactivo para escribir el nombre de la provincia seleccionada en el mapa de espana.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "relieve y geografia"
+      ],
+      "tags": [
+        "provincias de espana",
+        "mapa",
+        "geografia"
+      ],
+      "keywords": [
+        "escribir provincias",
+        "division territorial",
+        "espana",
+        "mapa interactivo"
+      ],
+      "type": "mapa interactivo",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-25849160",
+      "title": "the interaction function (from the beginning to the sense of sight)",
+      "sourceTitle": "the interacton function (from the beginning to the sense of sight)",
+      "description": "cuestionario en ingles sobre la funcion de relacion, los estimulos y respuestas y el sentido de la vista.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "cuerpo humano"
+      ],
+      "tags": [
+        "interaction function",
+        "stimuli",
+        "sight"
+      ],
+      "keywords": [
+        "funcion de relacion",
+        "responses",
+        "sense organs",
+        "vision"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-25955166",
+      "title": "the 4 senses (the sense of sight is missing)",
+      "sourceTitle": "the 4 senses (the sense of sight is missing)",
+      "description": "actividad en ingles para relacionar partes y funciones de los sentidos del oido, olfato, gusto y tacto; la vista se trabaja en otra actividad.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "cuerpo humano"
+      ],
+      "tags": [
+        "senses",
+        "sense organs",
+        "human body"
+      ],
+      "keywords": [
+        "sentidos",
+        "hearing",
+        "smell",
+        "taste",
+        "touch"
+      ],
+      "type": "relacionar columnas",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26019778",
+      "title": "les vetements",
+      "sourceTitle": "les vetements",
+      "description": "associe le nom des vetements en francais a leur image ou a leur traduction espagnole.",
+      "subjects": [
+        "frances"
+      ],
+      "topics": [
+        "les vetements"
+      ],
+      "tags": [
+        "vetements",
+        "association"
+      ],
+      "keywords": [
+        "vetements",
+        "association"
+      ],
+      "type": "relacionar columnas",
+      "language": "fr frances frances french",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26052230",
+      "title": "stimuli and responses in our body",
+      "sourceTitle": "stimuli and responses in our body",
+      "description": "actividad en ingles para ordenar la secuencia que sigue el cuerpo desde que recibe un estimulo hasta que produce una respuesta motora o glandular.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "cuerpo humano"
+      ],
+      "tags": [
+        "stimuli",
+        "responses",
+        "interaction function"
+      ],
+      "keywords": [
+        "estimulos",
+        "respuestas",
+        "receptors",
+        "nervous system",
+        "effectors"
+      ],
+      "type": "ordenar secuencia",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26216986",
+      "title": "muscles and bones (to write and review)",
+      "sourceTitle": "muscles and bones (to write and rewiev)",
+      "description": "mapa interactivo en ingles para escribir el nombre correcto de musculos y huesos en su posicion.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "cuerpo humano"
+      ],
+      "tags": [
+        "muscles",
+        "bones",
+        "musculoskeletal system"
+      ],
+      "keywords": [
+        "musculos",
+        "huesos",
+        "anatomia",
+        "write",
+        "review"
+      ],
+      "type": "mapa interactivo",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26233145",
+      "title": "muscles and bones (to learn)",
+      "sourceTitle": "muscles and bones (to learn)",
+      "description": "mapa interactivo en ingles para explorar musculos y huesos: al seleccionar una zona aparece su nombre.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "cuerpo humano"
+      ],
+      "tags": [
+        "muscles",
+        "bones",
+        "learning map"
+      ],
+      "keywords": [
+        "musculos",
+        "huesos",
+        "anatomia",
+        "explore",
+        "learn"
+      ],
+      "type": "mapa interactivo",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26268544",
+      "title": "muscles and bones (to select and explore further)",
+      "sourceTitle": "muscles and bones (to select and explore further)",
+      "description": "mapa interactivo en ingles para seleccionar la posicion correcta de distintos musculos y huesos.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "cuerpo humano"
+      ],
+      "tags": [
+        "muscles",
+        "bones",
+        "interactive map"
+      ],
+      "keywords": [
+        "musculos",
+        "huesos",
+        "anatomia",
+        "select",
+        "practice"
+      ],
+      "type": "mapa interactivo",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26321670",
+      "title": "3. the nervous system and effector organs",
+      "sourceTitle": "3. the nervous system and effector organs",
+      "description": "cuestionario en ingles sobre el sistema nervioso, los organos efectores y su relacion con musculos y huesos.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "cuerpo humano"
+      ],
+      "tags": [
+        "nervous system",
+        "effector organs",
+        "human body"
+      ],
+      "keywords": [
+        "sistema nervioso",
+        "organos efectores",
+        "muscles",
+        "bones",
+        "responses"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26399026",
+      "title": "muscles and bones (to select and review)",
+      "sourceTitle": "muscles and bones (to select and rewiev)",
+      "description": "mapa interactivo en ingles para repasar la localizacion de musculos y huesos seleccionando su posicion correcta.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "cuerpo humano"
+      ],
+      "tags": [
+        "muscles",
+        "bones",
+        "review"
+      ],
+      "keywords": [
+        "musculos",
+        "huesos",
+        "anatomia",
+        "select",
+        "repaso"
+      ],
+      "type": "mapa interactivo",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26861470",
+      "title": "el aparato reproductor femenino",
+      "sourceTitle": "el aparato reproductor femenino",
+      "description": "mapa interactivo para escribir el nombre de las partes del aparato reproductor femenino.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "reproduccion humana"
+      ],
+      "tags": [
+        "reproduccion",
+        "aparato reproductor femenino",
+        "anatomia"
+      ],
+      "keywords": [
+        "ovarios",
+        "utero",
+        "trompas de falopio",
+        "vagina"
+      ],
+      "type": "mapa interactivo",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26879995",
+      "title": "a l’ecole : matieres, prepositions et heure",
+      "sourceTitle": "revision theme 2 ( a l’ecole)",
+      "description": "ecris en francais des matieres scolaires, des prepositions de lieu et des phrases pour indiquer l’heure.",
+      "subjects": [
+        "frances"
+      ],
+      "topics": [
+        "l’ecole et les matieres",
+        "les prepositions de lieu",
+        "l’heure",
+        "le materiel scolaire"
+      ],
+      "tags": [
+        "matieres scolaires",
+        "prepositions",
+        "heure"
+      ],
+      "keywords": [
+        "matieres scolaires",
+        "prepositions",
+        "heure"
+      ],
+      "type": "cuestionario",
+      "language": "fr frances frances french",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26886816",
+      "title": "el aparato reproductor masculino",
+      "sourceTitle": "el aparato reproductor masculino",
+      "description": "mapa interactivo para escribir el nombre de las partes del aparato reproductor masculino.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "reproduccion humana"
+      ],
+      "tags": [
+        "reproduccion",
+        "aparato reproductor masculino",
+        "anatomia"
+      ],
+      "keywords": [
+        "testiculos",
+        "pene",
+        "prostata",
+        "conductos deferentes"
+      ],
+      "type": "mapa interactivo",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26891641",
+      "title": "el aparato reproductor femenino: definiciones",
+      "sourceTitle": "el aparato reproductor femenino (definiciones)",
+      "description": "actividad para relacionar las partes internas y externas del aparato reproductor femenino con sus definiciones.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "reproduccion humana"
+      ],
+      "tags": [
+        "reproduccion",
+        "aparato reproductor femenino",
+        "definiciones"
+      ],
+      "keywords": [
+        "anatomia",
+        "funciones",
+        "organos reproductores femeninos"
+      ],
+      "type": "relacionar columnas",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26892016",
+      "title": "el aparato reproductor masculino: definiciones",
+      "sourceTitle": "el aparato reproductor masculino (definiciones)",
+      "description": "actividad para relacionar cada parte del aparato reproductor masculino con su definicion.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "reproduccion humana"
+      ],
+      "tags": [
+        "reproduccion",
+        "aparato reproductor masculino",
+        "definiciones"
+      ],
+      "keywords": [
+        "anatomia",
+        "funciones",
+        "organos reproductores masculinos"
+      ],
+      "type": "relacionar columnas",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26892683",
+      "title": "la fertilidad y la fecundacion",
+      "sourceTitle": "la fertilidad y la fecundacion",
+      "description": "cuestionario sobre la fertilidad, la fecundacion y los procesos basicos que intervienen en la reproduccion humana.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "reproduccion humana"
+      ],
+      "tags": [
+        "fertilidad",
+        "fecundacion",
+        "reproduccion humana"
+      ],
+      "keywords": [
+        "ovulo",
+        "espermatozoide",
+        "concepcion",
+        "reproduccion"
+      ],
+      "type": "cuestionario",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26902359",
+      "title": "embarazo y gemelos",
+      "sourceTitle": "embarazo y gemelos",
+      "description": "cuestionario sobre el embarazo y la formacion de gemelos.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "reproduccion humana"
+      ],
+      "tags": [
+        "embarazo",
+        "gemelos",
+        "reproduccion humana"
+      ],
+      "keywords": [
+        "gestacion",
+        "desarrollo embrionario",
+        "mellizos"
+      ],
+      "type": "cuestionario",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-26938828",
+      "title": "recursos literarios",
+      "sourceTitle": "los recursos literarios",
+      "description": "completa definiciones e identifica recursos literarios en ejemplos de frases.",
+      "subjects": [
+        "lengua"
+      ],
+      "topics": [
+        "recursos literarios"
+      ],
+      "tags": [
+        "recursos literarios",
+        "ejemplos"
+      ],
+      "keywords": [
+        "recursos literarios",
+        "ejemplos"
+      ],
+      "type": "completar frases",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-27365750",
+      "title": "eje cronologico del siglo xix",
+      "sourceTitle": "eje cronologico del siglo xix",
+      "description": "actividad para ordenar cronologicamente las principales etapas de la historia de espana en el siglo xix.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "historia"
+      ],
+      "tags": [
+        "siglo xix",
+        "cronologia",
+        "historia de espana"
+      ],
+      "keywords": [
+        "eje cronologico",
+        "etapas historicas",
+        "orden temporal"
+      ],
+      "type": "ordenar palabras",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-27395921",
+      "title": "palabras invariables",
+      "sourceTitle": "las palabras invariables",
+      "description": "completa listas de preposiciones, adverbios, conjunciones e interjecciones y reconoce ejemplos.",
+      "subjects": [
+        "lengua"
+      ],
+      "topics": [
+        "palabras invariables"
+      ],
+      "tags": [
+        "preposiciones",
+        "adverbios",
+        "conjunciones",
+        "interjecciones"
+      ],
+      "keywords": [
+        "preposiciones",
+        "adverbios",
+        "conjunciones",
+        "interjecciones"
+      ],
+      "type": "completar frases",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-27597629",
+      "title": "espana a principios del siglo xx",
+      "sourceTitle": "espana a principios del siglo xx",
+      "description": "cuestionario que recorre la historia de espana desde el reinado de alfonso xiii hasta la guerra civil.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "historia"
+      ],
+      "tags": [
+        "siglo xx",
+        "alfonso xiii",
+        "guerra civil"
+      ],
+      "keywords": [
+        "segunda republica",
+        "historia de espana",
+        "principios del siglo xx"
+      ],
+      "type": "cuestionario",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-27598505",
+      "title": "la dictadura franquista",
+      "sourceTitle": "la dictadura franquista",
+      "description": "cuestionario sobre el regimen de franco y las caracteristicas principales de la dictadura franquista.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "historia"
+      ],
+      "tags": [
+        "franquismo",
+        "dictadura",
+        "francisco franco"
+      ],
+      "keywords": [
+        "historia de espana",
+        "siglo xx",
+        "regimen franquista"
+      ],
+      "type": "cuestionario",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-27599015",
+      "title": "la primera guerra mundial",
+      "sourceTitle": "la primera guerra mundial",
+      "description": "cuestionario sobre los hechos y conceptos principales de la primera guerra mundial.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "historia"
+      ],
+      "tags": [
+        "primera guerra mundial",
+        "siglo xx",
+        "historia"
+      ],
+      "keywords": [
+        "gran guerra",
+        "alianzas",
+        "conflicto mundial"
+      ],
+      "type": "cuestionario",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-27600203",
+      "title": "la segunda guerra mundial y la onu",
+      "sourceTitle": "la segunda guerra mundial y la onu",
+      "description": "cuestionario sobre la segunda guerra mundial, los bandos enfrentados y el origen de la organizacion de las naciones unidas.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "historia"
+      ],
+      "tags": [
+        "segunda guerra mundial",
+        "onu",
+        "siglo xx"
+      ],
+      "keywords": [
+        "aliados",
+        "potencias del eje",
+        "naciones unidas",
+        "historia"
+      ],
+      "type": "cuestionario",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-27609018",
+      "title": "aller, jouer et faire au present",
+      "sourceTitle": "verbos “aller”, “jouer” y “faire”",
+      "description": "conjugue aller, jouer et faire au present selon le pronom propose.",
+      "subjects": [
+        "frances"
+      ],
+      "topics": [
+        "les verbes au present"
+      ],
+      "tags": [
+        "aller",
+        "jouer",
+        "faire"
+      ],
+      "keywords": [
+        "aller",
+        "jouer",
+        "faire"
+      ],
+      "type": "cuestionario",
+      "language": "fr frances frances french",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-27611495",
+      "title": "les loisirs : aimer, aller, faire et jouer",
+      "sourceTitle": "les loisirs (aimer, aller, faire et jouer)",
+      "description": "complete des phrases sur les loisirs a partir d’images en choisissant la forme verbale adaptee.",
+      "subjects": [
+        "frances"
+      ],
+      "topics": [
+        "les loisirs",
+        "les verbes au present"
+      ],
+      "tags": [
+        "loisirs",
+        "aimer",
+        "aller",
+        "faire",
+        "jouer"
+      ],
+      "keywords": [
+        "loisirs",
+        "aimer",
+        "aller",
+        "faire",
+        "jouer"
+      ],
+      "type": "cuestionario",
+      "language": "fr frances frances french",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-27925635",
+      "title": "les pieces de la maison",
+      "sourceTitle": "les pieces de la maison",
+      "description": "ecris en francais le nom des pieces de la maison presentees dans les questions.",
+      "subjects": [
+        "frances"
+      ],
+      "topics": [
+        "les pieces de la maison"
+      ],
+      "tags": [
+        "maison",
+        "pieces"
+      ],
+      "keywords": [
+        "maison",
+        "pieces"
+      ],
+      "type": "cuestionario",
+      "language": "fr frances frances french",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28015495",
+      "title": "life during the transition",
+      "sourceTitle": "life during the transition",
+      "description": "cuestionario en ingles sobre la vida y los cambios politicos y sociales durante la transicion espanola.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "la transicion espanola"
+      ],
+      "tags": [
+        "spanish transition",
+        "society",
+        "history"
+      ],
+      "keywords": [
+        "transicion espanola",
+        "vida cotidiana",
+        "cambios politicos",
+        "cambios sociales"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28020441",
+      "title": "timeline of the spanish transition",
+      "sourceTitle": "timeline of the spanish transition",
+      "description": "actividad en ingles para ordenar acontecimientos de la transicion espanola en una linea temporal.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "la transicion espanola"
+      ],
+      "tags": [
+        "spanish transition",
+        "timeline",
+        "history"
+      ],
+      "keywords": [
+        "transicion espanola",
+        "cronologia",
+        "acontecimientos",
+        "orden temporal"
+      ],
+      "type": "ordenar secuencia",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28023550",
+      "title": "the protagonists of the transition and the constitution titles",
+      "sourceTitle": "the protagonists of the transition and the constitution titles",
+      "description": "actividad para relacionar figuras clave de la transicion espanola y titulos de la constitucion con sus descripciones o significados.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "politica y organizacion de espana",
+        "la transicion espanola"
+      ],
+      "tags": [
+        "spanish transition",
+        "constitution",
+        "political figures"
+      ],
+      "keywords": [
+        "transicion espanola",
+        "protagonistas",
+        "constitucion",
+        "titulos constitucionales"
+      ],
+      "type": "relacionar columnas",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28028069",
+      "title": "human rights",
+      "sourceTitle": "human rights",
+      "description": "actividad en ingles para relacionar cada derecho humano con un ejemplo concreto.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "derechos y deberes"
+      ],
+      "tags": [
+        "human rights",
+        "rights",
+        "examples"
+      ],
+      "keywords": [
+        "derechos humanos",
+        "ejemplos",
+        "libertad",
+        "igualdad"
+      ],
+      "type": "relacionar columnas",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28028301",
+      "title": "basic duties and principles of human rights",
+      "sourceTitle": "basic duties and principles of human rights",
+      "description": "actividad en ingles para clasificar principios y distinguir los que corresponden a deberes basicos vinculados con los derechos humanos.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "derechos y deberes"
+      ],
+      "tags": [
+        "human rights",
+        "duties",
+        "principles"
+      ],
+      "keywords": [
+        "derechos humanos",
+        "deberes",
+        "principios basicos",
+        "classification"
+      ],
+      "type": "relacionar grupos",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28030510",
+      "title": "the children's rights and duties",
+      "sourceTitle": "the children’s rights and duties",
+      "description": "actividad en ingles para clasificar distintos principios como derechos o deberes de la infancia.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "derechos y deberes"
+      ],
+      "tags": [
+        "children's rights",
+        "duties",
+        "childhood"
+      ],
+      "keywords": [
+        "derechos de la infancia",
+        "deberes",
+        "children",
+        "classification"
+      ],
+      "type": "relacionar grupos",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28371153",
+      "title": "the european union institutions",
+      "sourceTitle": "the european union institutions",
+      "description": "actividad en ingles para relacionar las caracteristicas y funciones con cada institucion de la union europea.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "union europea"
+      ],
+      "tags": [
+        "european union",
+        "institutions",
+        "functions"
+      ],
+      "keywords": [
+        "union europea",
+        "instituciones europeas",
+        "parliament",
+        "commission",
+        "council"
+      ],
+      "type": "relacionar grupos",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28371465",
+      "title": "european union key treaties and symbols",
+      "sourceTitle": "european union key treaties and symbols",
+      "description": "cuestionario en ingles sobre los tratados principales, la bandera, el himno y otros simbolos de la union europea.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "union europea"
+      ],
+      "tags": [
+        "european union",
+        "treaties",
+        "symbols"
+      ],
+      "keywords": [
+        "union europea",
+        "tratados",
+        "bandera",
+        "himno",
+        "euro"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28397214",
+      "title": "paises de la union europea",
+      "sourceTitle": "paises de la union europea",
+      "description": "mapa interactivo para localizar los paises que forman parte de la union europea.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "union europea",
+        "relieve y geografia"
+      ],
+      "tags": [
+        "union europea",
+        "paises",
+        "mapa"
+      ],
+      "keywords": [
+        "ue",
+        "estados miembros",
+        "geografia de europa",
+        "localizar paises"
+      ],
+      "type": "mapa interactivo",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28400419",
+      "title": "banderas de la ue",
+      "sourceTitle": "banderas de la ue",
+      "description": "mapa interactivo para identificar las banderas de los estados miembros de la union europea.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "union europea"
+      ],
+      "tags": [
+        "banderas",
+        "union europea",
+        "estados miembros"
+      ],
+      "keywords": [
+        "ue",
+        "paises europeos",
+        "flags",
+        "mapa"
+      ],
+      "type": "mapa interactivo",
+      "language": "es espanol spanish",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28401434",
+      "title": "the culture of peace",
+      "sourceTitle": "the culture of peace",
+      "description": "cuestionario en ingles sobre la cultura de paz y los principios que favorecen la convivencia y la resolucion pacifica de conflictos.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "politica y organizacion de espana",
+        "sociedad y poblacion"
+      ],
+      "tags": [
+        "culture of peace",
+        "coexistence",
+        "conflict resolution"
+      ],
+      "keywords": [
+        "cultura de paz",
+        "convivencia",
+        "no violencia",
+        "peace"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28722082",
+      "title": "les moyens de transport",
+      "sourceTitle": "les moyens de transport",
+      "description": "nomme en francais les moyens de transport presentes dans les questions.",
+      "subjects": [
+        "frances"
+      ],
+      "topics": [
+        "les moyens de transport"
+      ],
+      "tags": [
+        "transports",
+        "vocabulaire"
+      ],
+      "keywords": [
+        "transports",
+        "vocabulaire"
+      ],
+      "type": "cuestionario",
+      "language": "fr frances frances french",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28722363",
+      "title": "les lieux de la ville",
+      "sourceTitle": "la ville (frances hasta en la sopa)",
+      "description": "ecris en francais le nom des lieux de la ville proposes dans le quiz.",
+      "subjects": [
+        "frances"
+      ],
+      "topics": [
+        "les lieux de la ville"
+      ],
+      "tags": [
+        "ville",
+        "lieux"
+      ],
+      "keywords": [
+        "ville",
+        "lieux"
+      ],
+      "type": "cuestionario",
+      "language": "fr frances frances french",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28731092",
+      "title": "comment on va a la bibliotheque ?",
+      "sourceTitle": "comment on va a la bibliotheque ?",
+      "description": "lis un texte sur un trajet vers la bibliotheque et reponds par ecrit aux questions en francais.",
+      "subjects": [
+        "frances"
+      ],
+      "topics": [
+        "les itineraires et la comprehension ecrite",
+        "les lieux de la ville"
+      ],
+      "tags": [
+        "bibliotheque",
+        "trajet",
+        "lecture"
+      ],
+      "keywords": [
+        "bibliotheque",
+        "trajet",
+        "lecture"
+      ],
+      "type": "cuestionario",
+      "language": "fr frances frances french",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28731588",
+      "title": "1. changes in society and population",
+      "sourceTitle": "1. changes in society and population",
+      "description": "cuestionario en ingles sobre los cambios recientes de la sociedad y las caracteristicas de la poblacion.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "sociedad y poblacion"
+      ],
+      "tags": [
+        "society",
+        "population",
+        "social change"
+      ],
+      "keywords": [
+        "sociedad",
+        "poblacion",
+        "demography",
+        "cambios sociales"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-28734734",
+      "title": "the spanish population",
+      "sourceTitle": "the spanish population",
+      "description": "actividad en ingles para completar un texto sobre baja natalidad, envejecimiento, crecimiento natural y migracion en la poblacion espanola.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "sociedad y poblacion"
+      ],
+      "tags": [
+        "spanish population",
+        "demography",
+        "migration"
+      ],
+      "keywords": [
+        "poblacion espanola",
+        "birth rate",
+        "ageing",
+        "natural growth",
+        "immigration"
+      ],
+      "type": "completar frases",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-29042616",
+      "title": "the global goals for sustainable development",
+      "sourceTitle": "the global goals for sustainable development",
+      "description": "juego de preguntas en ingles para comprobar el conocimiento de los objetivos de desarrollo sostenible.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "medio ambiente y sostenibilidad"
+      ],
+      "tags": [
+        "global goals",
+        "sdgs",
+        "sustainable development"
+      ],
+      "keywords": [
+        "ods",
+        "objetivos de desarrollo sostenible",
+        "agenda 2030"
+      ],
+      "type": "juego de preguntas",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-29043257",
+      "title": "the sdgs (estudio)",
+      "sourceTitle": "the sdgs (estudio)",
+      "description": "juego de preguntas en ingles para estudiar y reconocer los 17 objetivos de desarrollo sostenible.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "medio ambiente y sostenibilidad"
+      ],
+      "tags": [
+        "sdgs",
+        "study",
+        "global goals"
+      ],
+      "keywords": [
+        "ods",
+        "17 objetivos",
+        "agenda 2030",
+        "sustainable development"
+      ],
+      "type": "juego de preguntas",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-29072697",
+      "title": "the sdgs (asegurar)",
+      "sourceTitle": "the sdgs (asegurar)",
+      "description": "cuestionario en ingles para identificar los objetivos de desarrollo sostenible mediante sus numeros.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "medio ambiente y sostenibilidad"
+      ],
+      "tags": [
+        "sdgs",
+        "sustainable development",
+        "global goals"
+      ],
+      "keywords": [
+        "ods",
+        "objetivos de desarrollo sostenible",
+        "agenda 2030",
+        "numbers"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-29073305",
+      "title": "living in a sustainable world",
+      "sourceTitle": "living in a sustainable world",
+      "description": "actividad en ingles para completar frases sobre el agotamiento de los recursos naturales y la vida en un mundo sostenible.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "medio ambiente y sostenibilidad"
+      ],
+      "tags": [
+        "sustainability",
+        "natural resources",
+        "environment"
+      ],
+      "keywords": [
+        "sostenibilidad",
+        "recursos naturales",
+        "resource depletion",
+        "sustainable world"
+      ],
+      "type": "completar frases",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-29134063",
+      "title": "promoting equality",
+      "sourceTitle": "promoting equality",
+      "description": "cuestionario en ingles sobre la igualdad y las acciones que ayudan a evitar la discriminacion.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "derechos y deberes"
+      ],
+      "tags": [
+        "equality",
+        "rights",
+        "non-discrimination"
+      ],
+      "keywords": [
+        "igualdad",
+        "discriminacion",
+        "equal opportunities",
+        "derechos"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-29135288",
+      "title": "the fight against poverty",
+      "sourceTitle": "the fight against poverty",
+      "description": "cuestionario en ingles sobre necesidades basicas, bienes y servicios, pobreza y medidas que contribuyen al bienestar de las personas.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "sociedad y poblacion"
+      ],
+      "tags": [
+        "poverty",
+        "basic needs",
+        "well-being"
+      ],
+      "keywords": [
+        "pobreza",
+        "food",
+        "clothing",
+        "education",
+        "health care",
+        "public services"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-29169918",
+      "title": "protecting the planet",
+      "sourceTitle": "protecting the planet",
+      "description": "cuestionario en ingles sobre la proteccion del planeta y las acciones relacionadas con la conservacion del medio ambiente.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "medio ambiente y sostenibilidad"
+      ],
+      "tags": [
+        "environment",
+        "planet",
+        "conservation"
+      ],
+      "keywords": [
+        "medio ambiente",
+        "proteccion del planeta",
+        "sustainability",
+        "natural resources"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "EP-29200890",
+      "title": "improving the well-being of all people",
+      "sourceTitle": "improving the well-being of all people",
+      "description": "actividad en ingles para completar frases sobre bienestar, igualdad, derechos y condiciones de vida de las personas.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "medio ambiente y sostenibilidad",
+        "derechos y deberes"
+      ],
+      "tags": [
+        "well-being",
+        "equality",
+        "human rights"
+      ],
+      "keywords": [
+        "bienestar",
+        "igualdad",
+        "derechos",
+        "quality of life"
+      ],
+      "type": "completar frases",
+      "language": "en ingles ingles english",
+      "platform": "educaplay",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-105266776",
+      "title": "la edad contemporanea: introduccion y siglo xviii",
+      "sourceTitle": "la edad contemporanea (introduccion, siglo xviii)",
+      "description": "cuestionario sobre el inicio de la edad contemporanea, la ilustracion, la revolucion francesa, la constitucion y la separacion de poderes.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "historia"
+      ],
+      "tags": [
+        "edad contemporanea",
+        "ilustracion",
+        "revolucion francesa"
+      ],
+      "keywords": [
+        "historia",
+        "siglo xviii",
+        "liberalismo",
+        "constitucion",
+        "separacion de poderes"
+      ],
+      "type": "cuestionario",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-105307081",
+      "title": "1.3 la oposicion",
+      "sourceTitle": "1.3 la oposicion",
+      "description": "actividad para clasificar rasgos del absolutismo y el liberalismo, incluidos el reparto del poder, la soberania y los derechos.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "historia"
+      ],
+      "tags": [
+        "absolutismo",
+        "liberalismo",
+        "soberania"
+      ],
+      "keywords": [
+        "oposicion",
+        "antiguo regimen",
+        "derechos",
+        "poder politico"
+      ],
+      "type": "clasificar por grupos",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-105308549",
+      "title": "3.1 la revolucion industrial",
+      "sourceTitle": "3.1. la revolucion industrial",
+      "description": "cuestionario sobre la revolucion industrial, sus transformaciones tecnicas y economicas y el paso del trabajo artesanal al industrial.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "historia"
+      ],
+      "tags": [
+        "revolucion industrial",
+        "industrializacion",
+        "siglo xix"
+      ],
+      "keywords": [
+        "maquinas",
+        "fabricas",
+        "trabajo artesanal",
+        "cambios economicos"
+      ],
+      "type": "cuestionario",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-105382734",
+      "title": "la guerra de la independencia y fernando vii",
+      "sourceTitle": "la guerra de la independencia y fernando vii",
+      "description": "cuestionario sobre la guerra de la independencia espanola, sus fechas y protagonistas, y el reinado de fernando vii.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "historia"
+      ],
+      "tags": [
+        "guerra de la independencia",
+        "fernando vii",
+        "historia de espana"
+      ],
+      "keywords": [
+        "1808",
+        "napoleon",
+        "constitucion de cadiz",
+        "siglo xix"
+      ],
+      "type": "cuestionario",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-105522537",
+      "title": "isabel ii y el sexenio democratico",
+      "sourceTitle": "isabel ii y el sexenio democratico",
+      "description": "cuestionario sobre la primera guerra carlista, el reinado de isabel ii y las etapas del sexenio democratico.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "historia"
+      ],
+      "tags": [
+        "isabel ii",
+        "sexenio democratico",
+        "carlismo"
+      ],
+      "keywords": [
+        "primera guerra carlista",
+        "historia de espana",
+        "siglo xix"
+      ],
+      "type": "cuestionario",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-106271072",
+      "title": "la division de poderes",
+      "sourceTitle": "la division de poderes",
+      "description": "actividad para clasificar instituciones y cargos dentro de los poderes ejecutivo, legislativo y judicial.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "politica y organizacion de espana"
+      ],
+      "tags": [
+        "division de poderes",
+        "instituciones",
+        "estado"
+      ],
+      "keywords": [
+        "poder ejecutivo",
+        "poder legislativo",
+        "poder judicial",
+        "congreso",
+        "gobierno"
+      ],
+      "type": "clasificar por grupos",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-109846280",
+      "title": "formation of the european union: key treaties",
+      "sourceTitle": "formation of the european union: key treaties",
+      "description": "actividad en ingles para clasificar hechos y caracteristicas segun los principales tratados de formacion de la union europea.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "union europea"
+      ],
+      "tags": [
+        "european union",
+        "treaties",
+        "european integration"
+      ],
+      "keywords": [
+        "union europea",
+        "treaty of paris",
+        "treaty of rome",
+        "maastricht",
+        "tratados"
+      ],
+      "type": "clasificar por grupos",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-109846756",
+      "title": "the forms of political participation and representation",
+      "sourceTitle": "the forms of political participation and representation",
+      "description": "actividad en ingles para relacionar elecciones, referendums, peticiones y otras formas de participacion politica con su significado.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "politica y organizacion de espana"
+      ],
+      "tags": [
+        "political participation",
+        "elections",
+        "representation"
+      ],
+      "keywords": [
+        "participacion politica",
+        "referendum",
+        "petition",
+        "demonstration"
+      ],
+      "type": "emparejar",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-109848099",
+      "title": "the political organisation of spain and the european union",
+      "sourceTitle": "the political organisation of spain and the european union",
+      "description": "cuestionario en ingles sobre elecciones, representantes e instituciones de la organizacion politica de espana y la union europea.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "politica y organizacion de espana"
+      ],
+      "tags": [
+        "political organisation",
+        "spain",
+        "european union"
+      ],
+      "keywords": [
+        "organizacion politica",
+        "elections",
+        "institutions",
+        "representatives"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-45753481",
+      "title": "tablas y multiplicaciones por 10, 100 y 1000",
+      "sourceTitle": "tablas de multiplicar y multiplicaciones por 1 seguido de 0.",
+      "description": "distingue multiplicaciones correctas e incorrectas de las tablas y de numeros por 10, 100 y 1000.",
+      "subjects": [
+        "matematicas"
+      ],
+      "topics": [
+        "multiplicacion"
+      ],
+      "tags": [
+        "tablas",
+        "potencias de diez"
+      ],
+      "keywords": [
+        "tablas",
+        "potencias de diez"
+      ],
+      "type": "aplastatopos",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-53716089",
+      "title": "tipos de enunciados",
+      "sourceTitle": "tipos de enunciados",
+      "description": "relaciona los enunciados enunciativos, interrogativos, exclamativos e imperativos con su funcion.",
+      "subjects": [
+        "lengua"
+      ],
+      "topics": [
+        "tipos de enunciados"
+      ],
+      "tags": [
+        "enunciados",
+        "funcion comunicativa"
+      ],
+      "keywords": [
+        "enunciados",
+        "funcion comunicativa"
+      ],
+      "type": "emparejar",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-53716987",
+      "title": "geometria y operaciones combinadas · temas 4 y 5",
+      "sourceTitle": "matesmaticas temas 4 y 5 revuela",
+      "description": "relaciona puntos, rectas y angulos con sus definiciones y repasa el orden de las operaciones combinadas.",
+      "subjects": [
+        "matematicas"
+      ],
+      "topics": [
+        "puntos y rectas",
+        "angulos",
+        "operaciones combinadas"
+      ],
+      "tags": [
+        "geometria",
+        "operaciones combinadas",
+        "revuela"
+      ],
+      "keywords": [
+        "geometria",
+        "operaciones combinadas",
+        "revuela"
+      ],
+      "type": "emparejar",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-53717982",
+      "title": "mountains of spain",
+      "sourceTitle": "mountains of spain",
+      "description": "diagrama para colocar los principales sistemas montanosos y unidades de relieve de espana en el mapa.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "relieve y geografia"
+      ],
+      "tags": [
+        "relieve de espana",
+        "montanas",
+        "mapa"
+      ],
+      "keywords": [
+        "cordilleras",
+        "pirineos",
+        "sistema central",
+        "sierra morena",
+        "depresiones"
+      ],
+      "type": "diagrama con etiquetas",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-55342703",
+      "title": "tiempos verbales del indicativo",
+      "sourceTitle": "tiempos verbales en espanol",
+      "description": "relaciona formas verbales con el presente, el preterito imperfecto, el preterito perfecto simple y el futuro del indicativo.",
+      "subjects": [
+        "lengua"
+      ],
+      "topics": [
+        "tiempos verbales"
+      ],
+      "tags": [
+        "indicativo",
+        "conjugacion"
+      ],
+      "keywords": [
+        "indicativo",
+        "conjugacion"
+      ],
+      "type": "emparejar",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-55344112",
+      "title": "comparative adjectives · kid’s box 3",
+      "sourceTitle": "comparatives|unit 7 kids box 3",
+      "description": "relaciona adjetivos ingleses con sus formas comparativas, como big/bigger y happy/happier.",
+      "subjects": [
+        "ingles"
+      ],
+      "topics": [
+        "comparative adjectives"
+      ],
+      "tags": [
+        "comparatives",
+        "adjectives",
+        "kid’s box 3"
+      ],
+      "keywords": [
+        "comparatives",
+        "adjectives",
+        "kid’s box 3"
+      ],
+      "type": "emparejar",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-55409289",
+      "title": "unit 7 vocabulary · kid’s box 3",
+      "sourceTitle": "unit 7 english|kid's box 3 vocabulario",
+      "description": "review the general vocabulary from unit 7 of kid’s box 3 through a matching activity.",
+      "subjects": [
+        "ingles"
+      ],
+      "topics": [
+        "vocabulary"
+      ],
+      "tags": [
+        "vocabulary",
+        "unit 7",
+        "kid’s box 3"
+      ],
+      "keywords": [
+        "vocabulary",
+        "unit 7",
+        "kid’s box 3",
+        "english"
+      ],
+      "type": "emparejar",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-71215840",
+      "title": "plants: 4th grade science",
+      "sourceTitle": "plants 4th grade. science.",
+      "description": "cuestionario en ingles sobre las partes de las plantas y sus funciones, como hojas, raices, tallo y flor.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "medio ambiente y sostenibilidad"
+      ],
+      "tags": [
+        "plants",
+        "plant parts",
+        "science"
+      ],
+      "keywords": [
+        "plantas",
+        "leaves",
+        "roots",
+        "stem",
+        "flower",
+        "chlorophyll"
+      ],
+      "type": "concurso de preguntas",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-72591990",
+      "title": "enfermedades y trastornos alimenticios",
+      "sourceTitle": "enfermedades y trastornos alimenticios",
+      "description": "actividad en ingles para relacionar problemas como caries, diabetes o colesterol alto con sus descripciones y causas.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "alimentacion"
+      ],
+      "tags": [
+        "health",
+        "nutrition",
+        "disorders"
+      ],
+      "keywords": [
+        "enfermedades",
+        "trastornos alimenticios",
+        "cavities",
+        "diabetes",
+        "cholesterol"
+      ],
+      "type": "emparejar",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-73932172",
+      "title": "le materiel scolaire",
+      "sourceTitle": "material escolar frances",
+      "description": "relaciona nombres de material escolar en frances con sus equivalentes en espanol.",
+      "subjects": [
+        "frances"
+      ],
+      "topics": [
+        "le materiel scolaire"
+      ],
+      "tags": [
+        "vocabulario escolar",
+        "traduccion"
+      ],
+      "keywords": [
+        "vocabulario escolar",
+        "traduccion"
+      ],
+      "type": "emparejar",
+      "language": "fr frances frances french",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-83201075",
+      "title": "mares de europa",
+      "sourceTitle": "mares de europa",
+      "description": "diagrama para situar en el mapa los principales mares y oceanos de europa.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "relieve y geografia"
+      ],
+      "tags": [
+        "mares de europa",
+        "oceanos",
+        "mapa"
+      ],
+      "keywords": [
+        "atlantico",
+        "mediterraneo",
+        "baltico",
+        "mar negro",
+        "geografia"
+      ],
+      "type": "diagrama con etiquetas",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-83426552",
+      "title": "relieve de europa",
+      "sourceTitle": "relieve de europa",
+      "description": "diagrama para localizar llanuras, mesetas y sistemas montanosos principales del relieve europeo.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "relieve y geografia"
+      ],
+      "tags": [
+        "relieve de europa",
+        "montanas",
+        "llanuras"
+      ],
+      "keywords": [
+        "alpes",
+        "pirineos",
+        "carpatos",
+        "gran llanura europea",
+        "geografia"
+      ],
+      "type": "diagrama con etiquetas",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-83691485",
+      "title": "the food nutrients",
+      "sourceTitle": "the food nutrients",
+      "description": "actividad en ingles para clasificar alimentos por su nutriente principal: carbohydrates, vitamins and minerals, proteins y fats and oils.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "alimentacion"
+      ],
+      "tags": [
+        "nutrients",
+        "food",
+        "nutrition"
+      ],
+      "keywords": [
+        "nutrientes",
+        "carbohydrates",
+        "proteins",
+        "vitamins",
+        "minerals",
+        "fats"
+      ],
+      "type": "clasificar por grupos",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-83837307",
+      "title": "rios de europa",
+      "sourceTitle": "rios de europa",
+      "description": "diagrama para situar en el mapa los principales rios de europa.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "relieve y geografia"
+      ],
+      "tags": [
+        "rios de europa",
+        "hidrografia",
+        "mapa"
+      ],
+      "keywords": [
+        "danubio",
+        "rin",
+        "volga",
+        "sena",
+        "tamesis",
+        "geografia"
+      ],
+      "type": "diagrama con etiquetas",
+      "language": "es espanol spanish",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-86289638",
+      "title": "the shopping basket",
+      "sourceTitle": "the shopping basket",
+      "description": "actividad en ingles para clasificar alimentos segun sean unprocessed, semi-processed o processed food.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "alimentacion"
+      ],
+      "tags": [
+        "food",
+        "processed food",
+        "nutrition"
+      ],
+      "keywords": [
+        "alimentacion",
+        "alimentos procesados",
+        "unprocessed",
+        "semi-processed"
+      ],
+      "type": "clasificar por grupos",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-91858801",
+      "title": "spain's political organisation",
+      "sourceTitle": "spain's political organisation",
+      "description": "cuestionario en ingles sobre la constitucion espanola, la monarquia parlamentaria, los derechos y deberes y los poderes del estado.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "politica y organizacion de espana"
+      ],
+      "tags": [
+        "spain",
+        "constitution",
+        "political organisation"
+      ],
+      "keywords": [
+        "constitucion espanola",
+        "parliamentary monarchy",
+        "rights",
+        "duties",
+        "three powers"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-92808558",
+      "title": "who governs autonomous communities?",
+      "sourceTitle": "who governs autonomous communities",
+      "description": "cuestionario en ingles sobre el estatuto de autonomia y las instituciones que gobiernan las comunidades autonomas.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "politica y organizacion de espana"
+      ],
+      "tags": [
+        "autonomous communities",
+        "government",
+        "spain"
+      ],
+      "keywords": [
+        "comunidades autonomas",
+        "estatuto de autonomia",
+        "regional government"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-92809031",
+      "title": "which organisations can help us to sort out problems in our locality?",
+      "sourceTitle": "which organisations can help us to sort out problems in our locality?",
+      "description": "actividad en ingles para relacionar problemas cotidianos de una localidad con el organismo o servicio publico que puede atenderlos.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "politica y organizacion de espana"
+      ],
+      "tags": [
+        "local government",
+        "public services",
+        "citizens"
+      ],
+      "keywords": [
+        "organismos publicos",
+        "locality",
+        "citizen service",
+        "local problems"
+      ],
+      "type": "clasificar por grupos",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-92810783",
+      "title": "the european union",
+      "sourceTitle": "the european union",
+      "description": "cuestionario en ingles sobre los paises miembros y algunas caracteristicas basicas de la union europea.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "union europea"
+      ],
+      "tags": [
+        "european union",
+        "member states",
+        "europe"
+      ],
+      "keywords": [
+        "union europea",
+        "27 countries",
+        "passport",
+        "eu"
+      ],
+      "type": "cuestionario",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    },
+    {
+      "id": "WW-92938094",
+      "title": "the european union",
+      "sourceTitle": "the european union",
+      "description": "actividad en ingles para clasificar como verdaderas o falsas afirmaciones sobre estudiar, trabajar, viajar y recibir atencion dentro de la union europea.",
+      "subjects": [
+        "ciencias"
+      ],
+      "topics": [
+        "union europea"
+      ],
+      "tags": [
+        "european union",
+        "citizenship",
+        "true or false"
+      ],
+      "keywords": [
+        "union europea",
+        "travel",
+        "work",
+        "study",
+        "medical care"
+      ],
+      "type": "clasificar por grupos",
+      "language": "en ingles ingles english",
+      "platform": "wordwall",
+      "source": "external externa externo"
+    }
+  ]
+}
