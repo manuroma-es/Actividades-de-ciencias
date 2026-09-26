@@ -1,0 +1,34 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
+import { mkdtempSync, writeFileSync, readFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+
+test('Excel nuevo preserva todas las filas previas y la generación incluye Recientes', () => {
+  const dir = mkdtempSync(path.join(tmpdir(), 'admin-import-'));
+  const payload = path.join(dir, 'draft.json');
+  const book = path.join(dir, 'catalog.xlsx');
+  const generated = path.join(dir, 'catalog.json');
+  const search = path.join(dir, 'search.json');
+  const report = path.join(dir, 'report.json');
+  writeFileSync(payload, JSON.stringify({url:'https://wordwall.net/es/resource/999999999/prueba', platformId:'wordwall', resourceId:'999999999', title:'Prueba de importación', description:'Actividad de prueba.', subjectId:'matematicas', topicIds:['topic-matematicas-multiplicaciones','topic-matematicas-operaciones-combinadas'], typeId:'cuestionario', language:'es', verified:false}));
+  const command = (script, args) => spawnSync('python3', [script, ...args], { encoding:'utf8' });
+  const imported = command('scripts/import-activity.py', ['--payload',payload,'--output',book,'--date','2026-09-26']);
+  assert.equal(imported.status, 0, imported.stderr + imported.stdout);
+  const built = command('scripts/generate-catalog.py', ['--input',book,'--catalog',generated,'--search-index',search,'--report',report]);
+  assert.equal(built.status, 0, built.stderr + built.stdout);
+  const before = JSON.parse(readFileSync('data/generated/catalog.json'));
+  const after = JSON.parse(readFileSync(generated));
+  assert.deepEqual(after.activities.slice(0, before.activities.length), before.activities);
+  assert.deepEqual(after.subjects, before.subjects);
+  assert.deepEqual(after.topics, before.topics);
+  assert.deepEqual(after.mediaResources, before.mediaResources);
+  assert.equal(after.activities.at(-1).dates.publishedAt, '2026-09-26');
+  assert.deepEqual(after.activities.at(-1).topicIds, ['topic-matematicas-multiplicaciones','topic-matematicas-operaciones-combinadas']);
+  const { entries } = JSON.parse(readFileSync(search));
+  assert.ok(entries.some(entry => entry.id === 'WW-999999999'));
+  const duplicate = command('scripts/import-activity.py', ['--payload',payload,'--input',book,'--output',path.join(dir,'duplicate.xlsx')]);
+  assert.notEqual(duplicate.status, 0);
+  assert.match(duplicate.stderr, /ya existe/);
+});

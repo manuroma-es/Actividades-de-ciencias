@@ -235,7 +235,7 @@ def load_general_workbook(source: Path) -> tuple[dict, dict[str, dict]]:
         else:
             source_data = {"kind": source_kind}
         topic_ids = topic_ids_by_activity.get(activity_id, [])
-        activities.append(without_empty({
+        activity = without_empty({
             "schemaVersion": 1,
             "id": activity_id,
             "slug": row["Slug"],
@@ -263,7 +263,10 @@ def load_general_workbook(source: Path) -> tuple[dict, dict[str, dict]]:
                 "subjectLabel": row["Asignatura original"],
                 "linkStatusLabel": row["Estado de enlace original"],
             }),
-        }))
+        })
+        activity.setdefault("tags", [])
+        activity.setdefault("keywords", [])
+        activities.append(activity)
 
     media_resources = []
     for row in raw["RECURSOS_RELACIONADOS"]:
@@ -351,8 +354,8 @@ def build_search_index(catalog: dict) -> dict:
             "description": normalize_search_text(activity["description"]),
             "subjects": [normalize_search_text(subjects[item]["name"]) for item in activity["subjectIds"] if item in subjects],
             "topics": [normalize_search_text(topics[item]["name"]) for item in activity["topicIds"] if item in topics],
-            "tags": [normalize_search_text(item) for item in activity["tags"]],
-            "keywords": [normalize_search_text(item) for item in activity["keywords"]],
+            "tags": [normalize_search_text(item) for item in activity.get("tags", [])],
+            "keywords": [normalize_search_text(item) for item in activity.get("keywords", [])],
             "type": normalize_search_text(activity_types.get(activity["typeId"], {}).get("name", activity["typeId"])),
             "language": normalize_search_text(LANGUAGE_SEARCH_NAMES.get(activity["language"], activity["language"])),
             "platform": normalize_search_text(platform.get("name", "Actividad propia")),

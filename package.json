@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite out",
     "build": "next build",
-    "start": "serve out",
+    "start": "node server/index.mjs",
     "catalog:migrate": "python3 scripts/migrate-science-data.py",
     "catalog:migrate:check": "python3 scripts/migrate-science-data.py --check",
     "catalog:generate": "python3 scripts/generate-catalog.py",

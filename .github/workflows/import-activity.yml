@@ -1,0 +1,78 @@
+name: Publicar actividad
+
+on:
+  workflow_dispatch:
+    inputs:
+      request_id:
+        description: Identificador de la solicitud del panel
+        required: true
+        type: string
+      source_sha:
+        description: SHA-256 del Excel mostrado en el panel
+        required: true
+        type: string
+      payload:
+        description: Activity revisada en JSON
+        required: true
+        type: string
+
+run-name: admin:${{ inputs.request_id }}
+permissions:
+  contents: write
+concurrency:
+  group: import-activity-main
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: npm ci
+      - run: python -m pip install --requirement requirements.txt
+      - name: Comprobar entrada y fuente actual
+        env:
+          ACTIVITY_PAYLOAD: ${{ inputs.payload }}
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          REQUEST_ID: ${{ inputs.request_id }}
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, pathlib, re
+          assert re.fullmatch(r'[a-f0-9]{24}', os.environ['REQUEST_ID']), 'request_id inválido'
+          assert re.fullmatch(r'[a-f0-9]{64}', os.environ['SOURCE_SHA']), 'source_sha inválido'
+          payload = os.environ['ACTIVITY_PAYLOAD']
+          assert len(payload) <= 10000, 'La solicitud supera el tamaño permitido'
+          data = json.loads(payload)
+          assert isinstance(data, dict), 'La Activity debe ser un objeto'
+          book = pathlib.Path('data/catalogo-actividades.xlsx')
+          assert hashlib.sha256(book.read_bytes()).hexdigest() == os.environ['SOURCE_SHA'], 'El catálogo cambió. Actualiza el panel antes de publicar.'
+          pathlib.Path('/tmp/admin-activity.json').write_text(payload, encoding='utf8')
+          PY
+      - name: Incorporar al Excel y validar catálogo
+        run: |
+          python scripts/import-activity.py --payload /tmp/admin-activity.json
+          npm run catalog:migrate:check
+          npm run catalog:generate
+          npm run catalog:validate
+      - run: npm test
+      - run: npm run lint
+      - name: Confirmar cambio validado
+        env:
+          REQUEST_ID: ${{ inputs.request_id }}
+        run: |
+          git add -- data/catalogo-actividades.xlsx data/generated/catalog.json data/generated/search-index.json data/generated/generation-report.json
+          git diff --cached --quiet && exit 1
+          git -c user.name='activity-admin[bot]' -c user.email='activity-admin[bot]@users.noreply.github.com' commit -m "catalog: publish activity (admin:$REQUEST_ID)"
+          git push origin HEAD:main
