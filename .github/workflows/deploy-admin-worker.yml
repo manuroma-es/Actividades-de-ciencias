@@ -1,0 +1,70 @@
+name: Desplegar panel en Cloudflare Workers
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-admin-worker
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: npm ci
+      - run: python -m pip install --requirement requirements.txt
+      - run: npm run catalog:migrate:check
+      - run: npm run catalog:generate
+      - run: npm run catalog:validate
+      - run: npm test
+      - run: npm run lint
+      - name: Comprobar configuración sin mostrar secretos
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          GH_ACTIONS_TOKEN: ${{ secrets.ACTIVITY_PUBLISH_TOKEN }}
+        run: |
+          test -n "$CF_API_TOKEN" || { echo "::error::Falta el secreto CLOUDFLARE_API_TOKEN."; exit 1; }
+          test -n "$CF_ACCOUNT_ID" || { echo "::error::Falta la variable CLOUDFLARE_ACCOUNT_ID."; exit 1; }
+          test -n "$ADMIN_PASSWORD" || { echo "::error::Falta el secreto ADMIN_PASSWORD."; exit 1; }
+          test "${#ADMIN_PASSWORD}" -ge 16 || { echo "::error::ADMIN_PASSWORD debe tener al menos 16 caracteres."; exit 1; }
+          test -n "$GH_ACTIONS_TOKEN" || { echo "::error::Falta el secreto ACTIVITY_PUBLISH_TOKEN."; exit 1; }
+          test "${#GH_ACTIONS_TOKEN}" -ge 20 || { echo "::error::ACTIVITY_PUBLISH_TOKEN no parece válido."; exit 1; }
+      - name: Desplegar Worker y cargar secretos cifrados
+        id: deploy
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy --config wrangler.jsonc
+          secrets: |
+            ADMIN_PASSWORD
+            ACTIVITY_PUBLISH_TOKEN
+        env:
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          ACTIVITY_PUBLISH_TOKEN: ${{ secrets.ACTIVITY_PUBLISH_TOKEN }}
+      - name: Mostrar URL del panel
+        env:
+          WORKER_URL: ${{ steps.deploy.outputs.deployment-url }}
+        run: |
+          if [ -n "$WORKER_URL" ]; then
+            echo "Panel: ${WORKER_URL%/}/admin/" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Worker desplegado. Busca su URL workers.dev en el registro de Wrangler." >> "$GITHUB_STEP_SUMMARY"
+          fi

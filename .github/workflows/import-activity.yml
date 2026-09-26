@@ -19,6 +19,7 @@ on:
 run-name: admin:${{ inputs.request_id }}
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: import-activity-main
   cancel-in-progress: false
@@ -76,3 +77,7 @@ jobs:
           git diff --cached --quiet && exit 1
           git -c user.name='activity-admin[bot]' -c user.email='activity-admin[bot]@users.noreply.github.com' commit -m "catalog: publish activity (admin:$REQUEST_ID)"
           git push origin HEAD:main
+      - name: Actualizar la copia Worker
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy-admin-worker.yml --ref main
