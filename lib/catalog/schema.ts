@@ -111,6 +111,7 @@ export interface Activity {
   title: string;
   sourceTitle?: string;
   description: string;
+  visual?: VisualConfig;
   primarySubjectId: SubjectId;
   subjectIds: SubjectId[];
   primaryTopicId: TopicId | null;

@@ -70,3 +70,44 @@ test("Worker rechaza bodies excesivos", async () => {
   }), env);
   assert.equal(response.status, 413);
 });
+
+test('sesión recordada, rotación y logout; miniatura validada antes de GitHub', async () => {
+  const base='https://test.workers.dev';
+  const login=await worker.fetch(new Request(base+'/api/admin/login',{method:'POST',headers:{origin:base},body:JSON.stringify({password:env.ADMIN_PASSWORD,remember:true})}),env);
+  assert.equal(login.status,200);
+  assert.match(login.headers.get('set-cookie'),/Max-Age=2592000/);
+  const cookie=login.headers.get('set-cookie').split(';')[0],{csrf}=await login.json();
+  const rotated={...env,ADMIN_PASSWORD:'otra-frase-segura-de-prueba-456'};
+  assert.equal((await worker.fetch(new Request(base+'/api/admin/session',{headers:{cookie}}),rotated)).status,401);
+  const invalid=await worker.fetch(new Request(base+'/api/admin/upload',{method:'POST',headers:{cookie,origin:base,'x-admin-csrf':csrf},body:JSON.stringify({entity:'topics',mime:'image/svg+xml',base64:'PHN2Zz48L3N2Zz4='})}),env);
+  assert.equal(invalid.status,400);
+  const badOrigin=await worker.fetch(new Request(base+'/api/admin/publish',{method:'POST',headers:{cookie,origin:'https://attacker.test','x-admin-csrf':csrf},body:'{}'}),env);
+  assert.equal(badOrigin.status,403);
+  const logout=await worker.fetch(new Request(base+'/api/admin/logout',{method:'POST',headers:{cookie,origin:base,'x-admin-csrf':csrf},body:'{}'}),env);
+  assert.match(logout.headers.get('set-cookie'),/Max-Age=0/);
+});
+
+test('analizador descarta descripción genérica del tipo',async()=>{
+ const base='https://test.workers.dev';
+ const login=await worker.fetch(new Request(base+'/api/admin/login',{method:'POST',headers:{origin:base},body:JSON.stringify({password:env.ADMIN_PASSWORD})}),env);
+ const cookie=login.headers.get('set-cookie').split(';')[0],{csrf}=await login.json();
+ const previous=globalThis.fetch;
+ globalThis.fetch=async()=>new Response('<html><meta property="og:title" content="Energía"><meta property="og:description" content="Cuestionario - Una serie de preguntas de opción múltiple. Pulsa la respuesta correcta para continuar."></html>',{headers:{'content-type':'text/html'}});
+ try{
+  const response=await worker.fetch(new Request(base+'/api/admin/analyze',{method:'POST',headers:{cookie,origin:base,'x-admin-csrf':csrf},body:JSON.stringify({url:'https://wordwall.net/es/resource/999999999/energia'})}),env);
+  assert.equal(response.status,200);const result=await response.json();assert.equal(result.title,'Energía');assert.equal(result.description,'');assert.match(result.provenance.description,/Sin descripción/);
+ }finally{globalThis.fetch=previous;}
+});
+
+test('miniatura WebP real se valida y queda como blob temporal sin exponer token',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const base='https://test.workers.dev';const login=await worker.fetch(new Request(base+'/api/admin/login',{method:'POST',headers:{origin:base},body:JSON.stringify({password:env.ADMIN_PASSWORD})}),env);
+ const cookie=login.headers.get('set-cookie').split(';')[0],{csrf}=await login.json();
+ const bytes=readFileSync('public/images/topics/topic-ingles-vocabulary.webp');
+ const prior=globalThis.fetch;let called=false;
+ globalThis.fetch=async (url,init)=>{called=true;assert.match(String(url),/\/git\/blobs$/);assert.match(init.headers.authorization,/^Bearer /);return Response.json({sha:'a'.repeat(40)});};
+ try{
+  const r=await worker.fetch(new Request(base+'/api/admin/upload',{method:'POST',headers:{cookie,origin:base,'x-admin-csrf':csrf},body:JSON.stringify({entity:'activities',mime:'image/webp',base64:bytes.toString('base64')})}),env);
+  assert.equal(r.status,201,await r.clone().text());const v=await r.json();assert.match(v.path,/^\/images\/admin\/activities\/[a-f0-9]{32}\.webp$/);assert.equal(v.blobSha,'a'.repeat(40));assert.equal(called,true);
+ }finally{globalThis.fetch=prior;}
+});

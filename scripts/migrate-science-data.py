@@ -580,11 +580,11 @@ def historical_prefix_differences(extended: Path, baseline: Path) -> list[str]:
         actual_rows = list(extended_book[name].values)
         baseline_rows = list(baseline_book[name].values)
         for index, row in enumerate(baseline_rows):
-            # TEMAS may gain editable visual columns after the historical ones.
+            # TEMAS and ACTIVIDADES may gain visual columns after the historical ones.
             # Compare every original cell while allowing only this appended schema.
             expected_width = len(row)
             actual_width = len(actual_rows[index]) if index < len(actual_rows) else 0
-            width_valid = actual_width >= expected_width if name == "TEMAS" else actual_width == expected_width
+            width_valid = actual_width >= expected_width if name in {"TEMAS", "ACTIVIDADES"} else actual_width == expected_width
             if not width_valid or any(not equal_cell(a, b) for a, b in zip(actual_rows[index][:expected_width], row)):
                 differences.append(f"{name}, fila {index + 1}: datos históricos modificados")
         if len(actual_rows) < len(baseline_rows):

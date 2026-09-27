@@ -1,127 +1,47 @@
 'use client';
-
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import './admin.css';
-
-type Option = { id: string; name: string; subjectId?: string };
-type CatalogOptions = { subjects: Option[]; topics: Option[]; types: Option[]; platforms: Option[] };
-type Draft = { url: string; platformId: string; resourceId: string; title: string; description: string; subjectId: string; topicIds: string[]; typeId: string; language: string; verified: boolean; manual?: boolean; sourceTitle?: string };
-
-async function json(response: Response) {
-  const value = await response.json();
-  if (!response.ok) throw new Error(value.error || 'No se pudo completar la petición.');
-  return value;
-}
-
-export function AdminClient() {
-  const [loading, setLoading] = useState(true);
-  const [csrf, setCsrf] = useState('');
-  const [catalog, setCatalog] = useState<CatalogOptions | null>(null);
-  const [password, setPassword] = useState('');
-  const [url, setUrl] = useState('');
-  const [draft, setDraft] = useState<Draft | null>(null);
-  const [error, setError] = useState('');
-  const [warning, setWarning] = useState('');
-  const [busy, setBusy] = useState(false);
-  const [request, setRequest] = useState('');
-  const [status, setStatus] = useState('');
-  const [sourceId, setSourceId] = useState('');
-  const [runUrl, setRunUrl] = useState('');
-  const [activityHref, setActivityHref] = useState('');
-  const [expectedHref, setExpectedHref] = useState('');
-  const [deployed, setDeployed] = useState(false);
-
-  const restore = useCallback(async () => {
-    try {
-      const value = await json(await fetch('/api/admin/session', { credentials: 'same-origin', cache: 'no-store' }));
-      setCsrf(value.csrf); setCatalog(value.catalog);
-    } catch { setCsrf(''); setCatalog(null); }
-    finally { setLoading(false); }
-  }, []);
-  useEffect(() => { const timer = setTimeout(() => void restore(), 0); return () => clearTimeout(timer); }, [restore]);
-
-  async function post(path: string, data: unknown, token = csrf) {
-    return json(await fetch(`/api/admin/${path}`, { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json', 'x-admin-csrf': token }, body: JSON.stringify(data) }));
-  }
-  async function login(event: React.FormEvent) {
-    event.preventDefault(); setBusy(true); setError('');
-    try { const value = await post('login', { password }, ''); setCsrf(value.csrf); setPassword(''); await restore(); }
-    catch (caught) { setError((caught as Error).message); }
-    finally { setBusy(false); }
-  }
-  async function logout() {
-    try { await post('logout', {}); setCsrf(''); setCatalog(null); setDraft(null); setRequest(''); }
-    catch (caught) { setError((caught as Error).message); }
-  }
-  async function analyze(event: React.FormEvent) {
-    event.preventDefault(); setBusy(true); setError(''); setWarning(''); setRequest('');
-    try {
-      const value = await post('analyze', { url });
-      setWarning(value.warning || '');
-      setDraft({ url: value.url, platformId: value.platformId, resourceId: value.resourceId, title: value.title || '', sourceTitle: value.title || undefined, description: value.description || '', subjectId: '', topicIds: [], typeId: '', language: 'es', verified: value.verified });
-    } catch (caught) { setError((caught as Error).message); }
-    finally { setBusy(false); }
-  }
-  function manual() {
-    setError(''); setWarning('Comprueba el enlace y el ID externo antes de publicar. Quedará pendiente de verificación.');
-    setDraft({ url, platformId:'', resourceId:'', title:'', description:'', subjectId:'', topicIds:[], typeId:'', language:'es', verified:false, manual:true });
-  }
-  function change(part: Partial<Draft>) { setDraft(current => current ? { ...current, ...part } : null); }
-  async function publish(event: React.FormEvent) {
-    event.preventDefault(); if (!draft) return;
-    setBusy(true); setError('');
-    try {
-      const value = await post('publish', draft);
-      setRequest(value.requestId); setStatus('queued'); setSourceId(`${draft.platformId === 'wordwall' ? 'WW' : 'EP'}-${draft.resourceId}`);
-      const base = draft.title.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 75).replace(/-$/, '');
-      setExpectedHref(`/actividad/${base || 'actividad'}-${draft.resourceId}/`);
-    } catch (caught) { setError((caught as Error).message); }
-    finally { setBusy(false); }
-  }
-  useEffect(() => {
-    if (!request || ['committed', 'failed'].includes(status)) return;
-    const check = async () => {
-      try {
-        const value = await json(await fetch(`/api/admin/status/${request}`, { credentials: 'same-origin', cache: 'no-store' }));
-        setStatus(value.status); setRunUrl(value.runUrl || ''); if (value.status === 'committed') setActivityHref(expectedHref);
-        if (value.message) setError(value.message);
-      } catch (caught) { setError((caught as Error).message); }
-    };
-    void check(); const timer = setInterval(() => void check(), 6000);
-    return () => clearInterval(timer);
-  }, [request, status, expectedHref]);
-  useEffect(() => {
-    if (!activityHref || deployed) return;
-    const check = async () => {
-      try { const response = await fetch(activityHref, { method: 'HEAD', cache: 'no-store' }); if (response.ok) setDeployed(true); }
-      catch { /* El despliegue aún no está disponible. */ }
-    };
-    void check(); const timer = setInterval(() => void check(), 10000);
-    return () => clearInterval(timer);
-  }, [activityHref, deployed]);
-  const topics = useMemo(() => (catalog?.topics || []).filter(topic => topic.subjectId === draft?.subjectId), [catalog, draft?.subjectId]);
-
-  return <main id="main-content" className="admin-wrap">
-    <div className="admin-head"><span className="admin-eyebrow">Área privada</span><h1>Administrar actividades</h1><p>Añade una actividad al catálogo desde su enlace.</p>{csrf && <button className="admin-plain" onClick={() => void logout()}>Cerrar sesión</button>}</div>
-    {loading ? <p>Comprobando sesión…</p> : !csrf ? <form className="admin-panel" onSubmit={login}>
-      <h2>Entrar</h2><label>Contraseña <input type="password" autoComplete="current-password" required value={password} onChange={e => setPassword(e.target.value)} /></label>
-      <button disabled={busy}>{busy ? 'Comprobando…' : 'Entrar'}</button>
-    </form> : <div className="admin-grid">
-      <section className="admin-panel"><h2>1. Enlace</h2><form onSubmit={analyze}><label>URL pública de Wordwall o Educaplay<input type="url" inputMode="url" placeholder="https://wordwall.net/es/resource/…" required value={url} onChange={e => setUrl(e.target.value)} /></label><button disabled={busy}>{busy ? 'Analizando…' : 'Analizar enlace'}</button></form><button className="admin-manual" type="button" onClick={manual} disabled={!url}>Introducir datos manualmente</button>{warning && <p className="admin-warning" role="status">{warning}</p>}</section>
-      {draft && catalog && <form className="admin-panel" onSubmit={publish}><h2>2. Revisar datos</h2>
-        {draft.manual ? <div className="admin-fields"><label>Plataforma<select required value={draft.platformId} onChange={e => change({platformId:e.target.value})}><option value="">Elige una</option>{catalog.platforms.map(p => <option key={p.id} value={p.id}>{p.name}</option>)}</select></label><label>ID externo<input required inputMode="numeric" pattern="[0-9]+" maxLength={20} value={draft.resourceId} onChange={e => change({resourceId:e.target.value})} /></label></div> : <p className="admin-detected">{catalog.platforms.find(p => p.id === draft.platformId)?.name || draft.platformId} · {draft.resourceId}</p>}
-        <label>Título<input maxLength={180} required value={draft.title} onChange={e => change({ title: e.target.value })} /></label>
-        <label>Descripción<textarea maxLength={1200} required rows={3} value={draft.description} onChange={e => change({ description: e.target.value })} /></label>
-        <div className="admin-fields"><label>Asignatura<select required value={draft.subjectId} onChange={e => change({ subjectId: e.target.value, topicIds: [] })}><option value="">Elige una</option>{catalog.subjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}</select></label>
-        <label>Tipo<select required value={draft.typeId} onChange={e => change({ typeId: e.target.value })}><option value="">Elige uno</option>{catalog.types.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}</select></label>
-        <label>Idioma<input required pattern="[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*" maxLength={35} value={draft.language} onChange={e => change({ language: e.target.value })} /></label></div>
-        {draft.subjectId && <fieldset><legend>Temas · selecciona uno o varios</legend><div className="admin-topics">{topics.map(t => <label key={t.id}><input type="checkbox" checked={draft.topicIds.includes(t.id)} onChange={e => change({ topicIds: e.target.checked ? [...draft.topicIds, t.id] : draft.topicIds.filter(id => id !== t.id) })} />{t.name}</label>)}</div></fieldset>}
-        <details open={draft.manual || undefined}><summary>Enlace</summary><label>URL pública<input type="url" value={draft.url} onChange={e => change({ url: e.target.value, verified: false, manual: true })} /></label><p>Si cambias el enlace, comprueba el ID y la plataforma. Quedará pendiente de verificación.</p></details>
-        <div className="admin-preview"><span>Vista previa</span><strong>{draft.title || 'Título de la actividad'}</strong><p>{draft.description || 'Descripción'}</p><small>{catalog.subjects.find(s => s.id === draft.subjectId)?.name || 'Asignatura'} · {draft.topicIds.map(id => topics.find(t => t.id === id)?.name).join(', ') || 'Temas pendientes'}</small></div>
-        <button disabled={busy || !draft.topicIds.length || !draft.title.trim() || !draft.description.trim() || !draft.typeId}>{busy ? 'Enviando…' : 'Publicar actividad'}</button>
-      </form>}
-      {request && <section className="admin-panel" aria-live="polite"><h2>3. Publicación</h2><p>{deployed ? 'La actividad ya está disponible en la web.' : status === 'committed' ? 'Cambio validado y guardado en Git. Esperando el despliegue del sitio.' : status === 'failed' ? 'La publicación falló. No se añadieron datos al catálogo.' : status === 'validating' ? 'Validando el catálogo y compilando…' : 'Solicitud recibida. Esperando GitHub Actions…'}</p><p>Actividad: {sourceId}</p>{deployed && activityHref && <p><a href={activityHref}>Abrir actividad publicada</a></p>}{runUrl && <a href={runUrl} target="_blank" rel="noopener noreferrer">Ver ejecución en GitHub</a>}</section>}
-    </div>}
-    {error && <p className="admin-error" role="alert">{error}</p>}
-  </main>;
+type Option={id:string;name:string;subjectId?:string};
+type ImageRef={path:string;blobSha:string;alt:string;author:string;source:string;license:string};
+type Activity={id:string;slug:string;title:string;description:string;subjectId:string;topicIds:string[];typeId:string;language:string;source:{kind:string;url?:string;platformId?:string;resourceId?:string};visual?:{image?:string}};
+type Topic=Option&{slug:string;description:string;visual?:{image?:string}};
+type Catalog={subjects:Option[];topics:Option[];topicDetails:Topic[];activities:Activity[];types:Option[];platforms:Option[]};
+type Item={id?:string;url?:string;platformId?:string;resourceId?:string;title?:string;description:string;subjectId:string;topicIds?:string[];typeId?:string;language?:string;verified?:boolean;manual?:boolean;sourceTitle?:string;name?:string;image?:ImageRef;replacementTopicId?:string};
+type Operation='create'|'update'|'delete';
+async function json(response:Response){const v=await response.json();if(!response.ok)throw new Error(v.error||'No se pudo completar la petición.');return v;}
+export function AdminClient(){
+ const [loading,setLoading]=useState(true),[csrf,setCsrf]=useState(''),[password,setPassword]=useState(''),[remember,setRemember]=useState(false);
+ const [catalog,setCatalog]=useState<Catalog|null>(null),[tab,setTab]=useState<'activities'|'topics'>('activities'),[search,setSearch]=useState('');
+ const [item,setItem]=useState<Item|null>(null),[entity,setEntity]=useState<'activity'|'topic'>('activity'),[action,setAction]=useState<Operation>('create');
+ const [url,setUrl]=useState(''),[error,setError]=useState(''),[warning,setWarning]=useState(''),[provenance,setProvenance]=useState<Record<string,string>>({}),[busy,setBusy]=useState(false);
+ const [request,setRequest]=useState(''),[status,setStatus]=useState(''),[runUrl,setRunUrl]=useState(''),[preview,setPreview]=useState('');
+ const restore=useCallback(async()=>{try{const v=await json(await fetch('/api/admin/session',{credentials:'same-origin',cache:'no-store'}));setCsrf(v.csrf);setCatalog(v.catalog);}catch{setCsrf('');setCatalog(null);}finally{setLoading(false);}},[]);
+ useEffect(()=>{const timer=setTimeout(()=>void restore(),0);return()=>clearTimeout(timer);},[restore]);
+ async function post(path:string,data:unknown,token=csrf){return json(await fetch('/api/admin/'+path,{method:'POST',credentials:'same-origin',headers:{'content-type':'application/json','x-admin-csrf':token},body:JSON.stringify(data)}));}
+ async function login(e:React.FormEvent){e.preventDefault();setBusy(true);setError('');try{const v=await post('login',{password,remember},'');setCsrf(v.csrf);setPassword('');await restore();}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
+ async function logout(){try{await post('logout',{});setCsrf('');setCatalog(null);setItem(null);setRequest('');}catch(e){setError((e as Error).message);}}
+ function change(part:Partial<Item>){setItem(v=>v?{...v,...part}:null);}
+ function startActivity(a?:Activity){setTab('activities');setEntity('activity');setAction(a?'update':'create');setItem(a?{id:a.id,title:a.title,description:a.description,subjectId:a.subjectId,topicIds:a.topicIds,typeId:a.typeId,language:a.language,url:a.source.url,platformId:a.source.platformId,resourceId:a.source.resourceId}:{title:'',description:'',subjectId:'',topicIds:[],typeId:'',language:'es',url:'',platformId:'',resourceId:'',verified:false,manual:true});setWarning('');setError('');}
+ function startTopic(t?:Topic){setTab('topics');setEntity('topic');setAction(t?'update':'create');setItem(t?{id:t.id,name:t.name,description:t.description||'',subjectId:t.subjectId||''}:{name:'',description:'',subjectId:''});setError('');}
+ async function analyze(e:React.FormEvent){e.preventDefault();setBusy(true);setError('');try{const v=await post('analyze',{url});setEntity('activity');setAction('create');setItem({url:v.url,platformId:v.platformId,resourceId:v.resourceId,title:v.title||'',sourceTitle:v.title||'',description:v.description||'',subjectId:'',topicIds:[],typeId:v.typeId||'',language:v.language||'es',verified:v.verified,manual:!v.verified});setWarning(v.warning||'');setProvenance(v.provenance||{});}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
+ async function selectFile(file:File){if(!item)return;setBusy(true);setError('');try{if(!['image/png','image/jpeg','image/webp'].includes(file.type)||file.size>1_000_000)throw new Error('Elige PNG, JPEG o WebP de hasta 1 MB.');const buffer=new Uint8Array(await file.arrayBuffer());let binary='';for(let i=0;i<buffer.length;i+=8192)binary+=String.fromCharCode(...buffer.subarray(i,i+8192));const v=await post('upload',{entity:entity==='topic'?'topics':'activities',mime:file.type,base64:btoa(binary).replaceAll('+','-').replaceAll('/','_').replace(/=+$/,'')});const old=item.image;change({image:{path:v.path,blobSha:v.blobSha,alt:old?.alt||'',author:old?.author||'',source:old?.source||'',license:old?.license||''}});setPreview(URL.createObjectURL(file));}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
+ async function publish(e:React.FormEvent){e.preventDefault();if(!item)return;setBusy(true);setError('');setRequest('');try{const v=await post('publish',{action,entity,item});setRequest(v.requestId);setStatus('queued');setRunUrl('');setWarning('Solicitud aceptada. GitHub validará y confirmará el cambio.');}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
+ useEffect(()=>{if(!request||['committed','failed'].includes(status))return;const check=async()=>{try{const v=await json(await fetch('/api/admin/status/'+request,{credentials:'same-origin',cache:'no-store'}));setStatus(v.status);setRunUrl(v.runUrl||'');if(v.message)setError(v.message);}catch(e){setError((e as Error).message);}};void check();const timer=setInterval(()=>void check(),6000);return()=>clearInterval(timer);},[request,status]);
+ const topics=useMemo(()=>(catalog?.topics||[]).filter(t=>t.subjectId===item?.subjectId),[catalog,item?.subjectId]);
+ const results=useMemo(()=>{const q=search.toLocaleLowerCase();return tab==='activities'?(catalog?.activities||[]).filter(a=>(a.title+' '+a.id).toLocaleLowerCase().includes(q)):(catalog?.topicDetails||[]).filter(t=>(t.name+' '+t.id).toLocaleLowerCase().includes(q));},[catalog,search,tab]);
+ const affected=item?.id&&entity==='topic'?catalog?.activities.filter(a=>a.topicIds.includes(item.id!)).length||0:0;
+ return <main id="main-content" className="admin-wrap"><div className="admin-head"><span className="admin-eyebrow">Área privada</span><h1>Gestionar catálogo</h1><p>Los cambios se validan y guardan en GitHub. La web pública puede tardar varias horas en recibirlos mediante el fork y Hostinger.</p>{csrf&&<button className="admin-plain" onClick={()=>void logout()}>Cerrar sesión</button>}</div>
+ {loading?<p>Comprobando sesión…</p>:!csrf?<form className="admin-panel" onSubmit={login}><h2>Entrar</h2><label>Contraseña<input type="password" autoComplete="current-password" required value={password} onChange={e=>setPassword(e.target.value)}/></label><label className="admin-check"><input type="checkbox" checked={remember} onChange={e=>setRemember(e.target.checked)}/>Mantener la sesión en este dispositivo durante 30 días</label><p>Actívalo solo en un dispositivo de confianza. Puedes cerrar sesión desde el panel.</p><button disabled={busy}>{busy?'Comprobando…':'Entrar'}</button></form>:<div className="admin-grid"><nav className="admin-nav" aria-label="Gestión"><button className={tab==='activities'?'selected':''} onClick={()=>{setTab('activities');setItem(null);}}>Actividades</button><button className={tab==='topics'?'selected':''} onClick={()=>{setTab('topics');setItem(null);}}>Temas y secciones</button></nav>
+ <section className="admin-panel"><h2>{tab==='activities'?'Actividades':'Temas y secciones'}</h2><p>{tab==='topics'?'Cada tema crea una sección dentro de su asignatura.':'Busca, edita o añade actividades con uno o varios temas.'}</p><label>Buscar<input type="search" value={search} onChange={e=>setSearch(e.target.value)} placeholder="Nombre o ID"/></label><div className="admin-list">{results.slice(0,80).map(v=><button type="button" key={v.id} onClick={()=>tab==='activities'?startActivity(v as Activity):startTopic(v as Topic)}><strong>{'title' in v?v.title:v.name}</strong><small>{v.id}</small></button>)}</div>{results.length>80&&<p>Mostrando 80 resultados. Usa la búsqueda para afinar.</p>}<button type="button" onClick={()=>tab==='activities'?startActivity():startTopic()}>{tab==='activities'?'Añadir actividad':'Añadir tema o sección'}</button></section>
+ {entity==='activity'&&action==='create'&&<section className="admin-panel"><h2>Analizar enlace</h2><form onSubmit={analyze}><label>URL pública de Wordwall o Educaplay<input type="url" required value={url} onChange={e=>setUrl(e.target.value)}/></label><button disabled={busy}>Analizar</button></form><p>También puedes introducir el enlace y el ID externo manualmente en el formulario.</p></section>}
+ {item&&catalog&&<form className="admin-panel" onSubmit={publish}><h2>{action==='create'?'Nuevo': 'Editar'} {entity==='topic'?'tema':'actividad'}</h2>{item.id&&<p className="admin-detected">ID: {item.id} · El ID y el slug se conservan al editar.</p>}
+ {entity==='activity'?<>{action==='create'&&<><div className="admin-fields"><label>URL<input type="url" required value={item.url||''} onChange={e=>change({url:e.target.value,verified:false,manual:true})}/></label><label>Plataforma<select required value={item.platformId||''} onChange={e=>change({platformId:e.target.value})}><option value="">Elige una</option>{catalog.platforms.map(x=><option key={x.id} value={x.id}>{x.name}</option>)}</select></label><label>ID externo<input required inputMode="numeric" pattern="[0-9]+" value={item.resourceId||''} onChange={e=>change({resourceId:e.target.value})}/></label></div><small>El análisis: {provenance.title||'entrada manual'}; descripción: {provenance.description||'entrada manual'}.</small></>}
+ <label>Título<input required maxLength={180} value={item.title||''} onChange={e=>change({title:e.target.value})}/></label><label>Descripción de esta actividad<textarea maxLength={1200} rows={3} value={item.description} onChange={e=>change({description:e.target.value})}/></label>
+ <div className="admin-fields"><label>Asignatura<select required value={item.subjectId} onChange={e=>change({subjectId:e.target.value,topicIds:[]})}><option value="">Elige una</option>{catalog.subjects.map(x=><option key={x.id} value={x.id}>{x.name}</option>)}</select></label><label>Tipo<select required value={item.typeId||''} onChange={e=>change({typeId:e.target.value})}><option value="">Elige uno</option>{catalog.types.map(x=><option key={x.id} value={x.id}>{x.name}</option>)}</select></label><label>Idioma<input required value={item.language||''} onChange={e=>change({language:e.target.value})}/></label></div><fieldset><legend>Temas</legend><div className="admin-topics">{topics.map(t=><label key={t.id}><input type="checkbox" checked={item.topicIds?.includes(t.id)||false} onChange={e=>change({topicIds:e.target.checked?[...(item.topicIds||[]),t.id]:(item.topicIds||[]).filter(x=>x!==t.id)})}/>{t.name}</label>)}</div></fieldset></>:<><label>Asignatura<select required disabled={action==='update'} value={item.subjectId} onChange={e=>change({subjectId:e.target.value})}><option value="">Elige una</option>{catalog.subjects.map(x=><option key={x.id} value={x.id}>{x.name}</option>)}</select></label><label>Nombre<input required maxLength={180} value={item.name||''} onChange={e=>change({name:e.target.value})}/></label><label>Descripción<textarea rows={3} maxLength={1200} value={item.description} onChange={e=>change({description:e.target.value})}/></label></>}
+ <details><summary>Miniatura y créditos</summary><label>Elegir imagen desde Archivos o Fotos (PNG, JPEG o WebP; máximo 1 MB)<input type="file" accept="image/png,image/jpeg,image/webp" onChange={e=>{const file=e.target.files?.[0];if(file)void selectFile(file);}}/></label>{preview?<img className="admin-image-preview" src={preview} alt="Vista previa de miniatura"/>:entity==='topic'&&catalog.topicDetails.find(t=>t.id===item.id)?.visual?.image?<img className="admin-image-preview" src={catalog.topicDetails.find(t=>t.id===item.id)?.visual?.image} alt="Miniatura actual"/>:entity==='activity'&&catalog.activities.find(a=>a.id===item.id)?.visual?.image?<img className="admin-image-preview" src={catalog.activities.find(a=>a.id===item.id)?.visual?.image} alt="Miniatura actual"/>:null}{item.image&&<>{(['alt','author','source','license'] as const).map(k=><label key={k}>{({alt:'Texto alternativo',author:'Autoría',source:'Fuente',license:'Licencia'} as const)[k]}<input required value={item.image?.[k]||''} onChange={e=>change({image:{...item.image!,[k]:e.target.value}})}/></label>)}</>}</details>
+ <div className="admin-preview"><span>Vista previa</span><strong>{entity==='activity'?item.title||'Actividad sin título':item.name||'Tema sin nombre'}</strong><p>{item.description||'Sin descripción específica'}</p></div>{action!=='delete'&&<button disabled={busy||entity==='activity'&&!item.topicIds?.length}>{busy?'Enviando…':action==='create'?'Guardar nuevo registro':'Guardar cambios'}</button>}
+ {action==='update'&&<button className="admin-danger" type="button" onClick={()=>{if(!item.id)return;const label=entity==='activity'?item.title:item.name;if(!window.confirm(`¿Borrar ${label} (${item.id})? ${affected?`Se reasignarán ${affected} actividades.`:''}`))return;setAction('delete');setError('');}}>Borrar {entity==='topic'?'tema':'actividad'}…</button>}
+ {action==='delete'&&<div className="admin-delete"><p>Vas a borrar {item.id}. Esta operación quedará en Git y se puede revertir.</p>{entity==='topic'&&affected>0&&<><p>{affected} actividades usan este tema. Elige un tema de la misma asignatura para reasignarlas. Los recursos multimedia asociados bloquean el borrado.</p><label>Tema de destino<select required value={item.replacementTopicId||''} onChange={e=>change({replacementTopicId:e.target.value})}><option value="">Elige un tema</option>{topics.filter(t=>t.id!==item.id).map(t=><option key={t.id} value={t.id}>{t.name}</option>)}</select></label></>}<button type="button" className="admin-danger" disabled={busy||entity==='topic'&&affected>0&&!item.replacementTopicId} onClick={async()=>{setBusy(true);try{const v=await post('publish',{action:'delete',entity,item});setRequest(v.requestId);setStatus('queued');setError('');}catch(e){setError((e as Error).message);}finally{setBusy(false);}}}>Confirmar borrado</button><button type="button" onClick={()=>setAction('update')}>Cancelar</button></div>}</form>}
+ {request&&<section className="admin-panel" aria-live="polite"><h2>Publicación</h2><p>{status==='committed'?'Cambio validado y guardado en el repositorio original. La copia del Worker se actualizará después; el fork y Hostinger se sincronizan por separado.':status==='failed'?'El workflow falló. Revisa la ejecución; el panel no puede asegurar que el catálogo haya cambiado.':status==='validating'?'GitHub está validando y compilando…':'Esperando GitHub Actions…'}</p>{runUrl&&<a href={runUrl} target="_blank" rel="noopener noreferrer">Ver ejecución</a>}</section>}
+ </div>}{warning&&<p role="status" className="admin-warning">{warning}</p>}{error&&<p role="alert" className="admin-error">{error}</p>}</main>;
 }
