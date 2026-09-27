@@ -19,7 +19,7 @@ export function TopicPageContent({ subject, topic }: { subject: Subject; topic: 
       <div className={`page-heading section-page-heading${visual.image ? " has-topic-image" : " visual-fallback"}${visual.heroImageFit === "contain" ? " hero-contain" : ""}`} style={visualStyle(subject, topic)}>
         {visual.image ? <img src={visual.image} alt={visual.imageAlt ?? ""} decoding="async" style={{ objectPosition: visual.heroImageFit === "contain" ? "right center" : visual.imageObjectPosition }} /> : null}
         <span className="section-hero-shade" aria-hidden="true" />
-        <div className="section-heading-content"><p className="eyebrow">{subject.name} · Tema {String(topic.order).padStart(2, "0")}</p><h1>{topic.name}</h1><p>{topic.description ?? `${count} actividades de repaso relacionadas con este tema.`}</p></div>
+        <div className="section-heading-content"><p className="eyebrow">{subject.name} · Tema {String(topic.order).padStart(2, "0")}</p><h1>{topic.name}</h1><p>{topic.description || `${count} ${count === 1 ? "actividad de repaso relacionada" : "actividades de repaso relacionadas"} con este tema.`}</p></div>
         {visual.image && topic.legacy?.sourceId ? <small className="image-signature">Alejandro Castaño Medina</small> : null}
       </div>
       <ActivityCatalog lockedSubjectId={subject.id} lockedTopicId={topic.id} />

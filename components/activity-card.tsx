@@ -39,11 +39,11 @@ export function ActivityCard({
           <NewActivityBadge publishedAt={activity.dates.publishedAt} />
         </div>
         <h3><Link href={`/actividad/${activity.slug}`} lang={activity.language}>{activity.title}</Link></h3>
-        <p className="card-description">{activity.description}</p>
+        {activity.description ? <p className="card-description">{activity.description}</p> : null}
         <dl className="card-meta">
           <div><dt>Tipo</dt><dd>{typeLabel(activity)}</dd></div>
           <div><dt>Asignatura</dt><dd>{primarySubject?.name ?? "Sin asignatura visible"}{relatedSubjects.length > 1 ? <span className="more-themes"> +{relatedSubjects.length - 1}</span> : null}</dd></div>
-          <div><dt>Tema</dt><dd>{primaryTopic?.name ?? "Tema general"}{relatedTopics.length > 1 ? <span className="more-themes"> +{relatedTopics.length - 1} tema</span> : null}</dd></div>
+          <div><dt>Tema</dt><dd>{primaryTopic?.name ?? "Tema general"}{relatedTopics.length > 1 ? <span className="more-themes"> +{relatedTopics.length - 1} {relatedTopics.length === 2 ? "tema" : "temas"}</span> : null}</dd></div>
           {showPublishedDate ? <div className="published-meta"><dt>Incorporada</dt><dd>{formatCatalogDate(activity.dates.publishedAt)}</dd></div> : null}
         </dl>
         {activity.source.kind === "external" ? (
