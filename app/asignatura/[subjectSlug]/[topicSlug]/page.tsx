@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ subjectSl
   const topic = subject ? getTopicForSubject(subject, topicSlug) : undefined;
   return subject && topic ? {
     title: `${topic.name} | ${subject.name}`,
-    description: topic.description,
+    description: topic.description || `Actividades de repaso de ${topic.name} en ${subject.name}.`,
     alternates: { canonical: `/asignatura/${subject.slug}/${topic.slug}` },
   } : {};
 }

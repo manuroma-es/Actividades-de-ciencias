@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const subject = topic ? subjectById.get(topic.subjectId) : undefined;
   return subject && topic ? {
     title: `${topic.name} | ${subject.name}`,
-    description: topic.description,
+    description: topic.description || `Actividades de repaso de ${topic.name} en ${subject.name}.`,
     alternates: { canonical: getTopicHref(topic) },
     robots: { index: false, follow: true },
   } : {};

@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     ?? routableActivities.find((item) => item.legacySlugs?.includes(slug));
   return activity ? {
     title: `${activity.title} | Actividades de repaso`,
-    description: activity.description,
+    description: activity.description || undefined,
     alternates: { canonical: `/actividad/${activity.slug}` },
   } : {};
 }
@@ -70,7 +70,7 @@ export default async function ActivityPage({ params }: { params: Promise<{ slug:
           <ActivityThumbnail activity={activity} />
           <div className="detail-badges"><span className={`platform-badge source-${activity.source.kind}${activity.source.kind === "external" ? ` platform-${activity.source.platformId}` : ""}`}>{sourceLabel}</span><span className="language-badge" lang={activity.language}>{language}</span><span className="type-badge">{typeLabel(activity)}</span></div>
           <h1 lang={activity.language}>{activity.title}</h1>
-          <p className="detail-description">{activity.description}</p>
+          {activity.description ? <p className="detail-description">{activity.description}</p> : null}
           {shouldShowSourceTitle(activity) ? <p className="original-title"><strong>Título original:</strong> <span lang={activity.language}>{activity.sourceTitle}</span></p> : null}
           <section className="detail-section"><h2>Asignaturas relacionadas</h2><div className="theme-links">{relatedSubjects.map((subject) => <Link key={subject.id} href={`/asignatura/${subject.slug}`}>{subject.name}</Link>)}</div></section>
           <section className="detail-section"><h2>Temas relacionados</h2><div className="theme-links">{relatedTopics.map((topic) => <Link key={topic.id} href={getTopicHref(topic)}>{topic.name}</Link>)}</div></section>

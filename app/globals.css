@@ -185,9 +185,9 @@ svg { stroke-width: 1.8; }
 .filters-stack { display: grid; gap: 1.2rem; }
 .filter-group { min-width: 0; border: 0; padding: 0; margin: 1rem 0 0; }
 .filter-group legend { margin-bottom: .5rem; font-size: .9rem; font-weight: 800; }
-.filter-options { display: grid; gap: .12rem; }
-.filter-options label { min-height: 44px; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .55rem; border-radius: .55rem; padding: .35rem .3rem; cursor: pointer; font-size: .87rem; }
-.filter-options label:hover { background: #f3f6f3; }
+.filter-options { display: grid; gap: .35rem; }
+.filter-options label { min-height: 48px; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .65rem; border-radius: .55rem; padding: .45rem .5rem; cursor: pointer; font-size: .87rem; }
+.filter-options label:hover, .filter-options label:focus-within { background: #f3f6f3; }
 .filter-options button { width: 1.1rem; height: 1.1rem; }
 .filter-count { color: #68747b; font-size: .78rem; }
 .clear-filter-button { min-height: 44px; }
