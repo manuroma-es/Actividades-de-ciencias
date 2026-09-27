@@ -1,4 +1,4 @@
-name: Publicar actividad
+name: Gestionar catálogo
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ on:
         required: true
         type: string
       payload:
-        description: Activity revisada en JSON
+        description: Operación editorial revisada en JSON
         required: true
         type: string
 
@@ -21,7 +21,7 @@ permissions:
   contents: write
   actions: write
 concurrency:
-  group: import-activity-main
+  group: catalog-admin-main
   cancel-in-progress: false
 
 jobs:
@@ -59,11 +59,15 @@ jobs:
           assert isinstance(data, dict), 'La Activity debe ser un objeto'
           book = pathlib.Path('data/catalogo-actividades.xlsx')
           assert hashlib.sha256(book.read_bytes()).hexdigest() == os.environ['SOURCE_SHA'], 'El catálogo cambió. Actualiza el panel antes de publicar.'
-          pathlib.Path('/tmp/admin-activity.json').write_text(payload, encoding='utf8')
+          pathlib.Path('/tmp/admin-operation.json').write_text(payload, encoding='utf8')
           PY
+      - name: Descargar y validar la miniatura opcional
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/materialize-admin-image.py
       - name: Incorporar al Excel y validar catálogo
         run: |
-          python scripts/import-activity.py --payload /tmp/admin-activity.json
+          python scripts/manage-catalog.py --payload /tmp/admin-operation.json
           npm run catalog:migrate:check
           npm run catalog:generate
           npm run catalog:validate
@@ -74,8 +78,9 @@ jobs:
           REQUEST_ID: ${{ inputs.request_id }}
         run: |
           git add -- data/catalogo-actividades.xlsx data/generated/catalog.json data/generated/search-index.json data/generated/generation-report.json
+          if [ -d public/images/admin ]; then git add -- public/images/admin/; fi
           git diff --cached --quiet && exit 1
-          git -c user.name='activity-admin[bot]' -c user.email='activity-admin[bot]@users.noreply.github.com' commit -m "catalog: publish activity (admin:$REQUEST_ID)"
+          git -c user.name='activity-admin[bot]' -c user.email='activity-admin[bot]@users.noreply.github.com' commit -m "catalog: admin change (admin:$REQUEST_ID)"
           git push origin HEAD:main
       - name: Actualizar la copia Worker
         env:

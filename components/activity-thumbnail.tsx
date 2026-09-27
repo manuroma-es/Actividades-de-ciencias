@@ -19,7 +19,7 @@ export function ActivityThumbnail({
   const subject = subjectOverride
     ?? (topic ? subjectById.get(topic.subjectId) : undefined)
     ?? getPrimarySubject(activity);
-  const visual = resolveVisual(subject, topic);
+  const visual = activity.visual?.image ? { ...resolveVisual(subject, topic), ...activity.visual } : resolveVisual(subject, topic);
   const activityType = activityTypeById.get(activity.typeId);
 
   return (
