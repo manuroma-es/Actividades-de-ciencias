@@ -165,10 +165,32 @@ function imageKind(bytes) {
   if(!width||!height||width<100||height<100||width>4096||height>4096||width*height>8_000_000)return null;
   return {width,height,mime,ext};
 }
-async function github(path,env,init={}) {
+function githubRejection(status,message,path) {
+  const text=typeof message==="string"?message.toLowerCase():"";
+  if(status===401)return "El token de publicación no es válido o ha caducado.";
+  if(status===403&&/rate limit/.test(text))return "GitHub ha limitado temporalmente las solicitudes. Espera unos minutos y vuelve a intentarlo.";
+  if(status===403)return path==="/git/blobs"?"El token no puede crear miniaturas en este repositorio. Comprueba que tenga Contents: write.":"El token no tiene acceso suficiente al workflow. Comprueba que tenga Actions: write.";
+  if(status===404)return path==="/git/blobs"?"GitHub no encuentra el repositorio o el token no tiene acceso para cargar la miniatura.":"GitHub no encuentra el workflow o el token no tiene acceso al repositorio. Comprueba el acceso y que el workflow esté en main.";
+  if(status===422)return path==="/git/blobs"?"GitHub no pudo crear la miniatura. Vuelve a seleccionarla y prueba otra vez.":"GitHub no pudo validar la solicitud del workflow. Comprueba que esté habilitado y que sus entradas coincidan.";
+  return "Comprueba el estado de GitHub y vuelve a intentarlo.";
+}
+async function github(path,env,init={},purpose="la operación") {
   const token=env.ACTIVITY_PUBLISH_TOKEN;if(!token||token.length<20)throw new AdminError("Falta configurar el token de publicación en Cloudflare.",503);
-  const res=await fetch(`https://api.github.com/repos/${owner}/${repo}${path}`,{...init,headers:{accept:"application/vnd.github+json",authorization:`Bearer ${token}`,"x-github-api-version":"2022-11-28",...(init.headers||{})},signal:AbortSignal.timeout(12000)});
-  if(!res.ok)throw new AdminError("GitHub no ha aceptado la operación. Comprueba permisos y el historial del workflow.",502);
+  let res;
+  try {
+    res=await fetch(`https://api.github.com/repos/${owner}/${repo}${path}`,{...init,headers:{accept:"application/vnd.github+json",authorization:`Bearer ${token}`,"x-github-api-version":"2022-11-28",...(init.headers||{})},signal:AbortSignal.timeout(12000)});
+  } catch(error) {
+    const timedOut=error?.name==="TimeoutError"||error?.name==="AbortError";
+    console.error(JSON.stringify({event:"admin_github_request_failed",path,purpose,reason:timedOut?"timeout":"network_error"}));
+    throw new AdminError(`No se pudo ${purpose} en GitHub${timedOut?" porque la solicitud superó el tiempo de espera":" por un problema de conexión"}. Puedes volver a intentarlo.`,502);
+  }
+  if(!res.ok) {
+    let detail="";try{const data=await res.json();if(typeof data?.message==="string")detail=data.message.slice(0,240);}catch{}
+    const requestId=res.headers.get("x-github-request-id")||undefined;
+    console.error(JSON.stringify({event:"admin_github_rejected",path,purpose,status:res.status,requestId,message:detail||undefined}));
+    const reference=requestId?` Referencia: ${requestId}.`:"";
+    throw new AdminError(`GitHub rechazó ${purpose}. ${githubRejection(res.status,detail,path)} (HTTP ${res.status}).${reference}`,502);
+  }
   return res.status===204?null:res.json();
 }
 async function api(request,env) {
@@ -199,7 +221,7 @@ async function api(request,env) {
     if(bytes.length>1_000_000||bytes.length<32)throw new AdminError("La miniatura debe pesar menos de 1 MB.");
     const kind=imageKind(bytes);if(!kind||data.mime!==kind.mime)throw new AdminError("El contenido no coincide con PNG, JPEG o WebP.");
     const path=`/images/admin/${entity}/${randomHex(16)}.${kind.ext}`;
-    const result=await github("/git/blobs",env,{method:"POST",body:JSON.stringify({content:data.base64.replaceAll("-","+").replaceAll("_","/"),encoding:"base64"})});
+    const result=await github("/git/blobs",env,{method:"POST",body:JSON.stringify({content:data.base64.replaceAll("-","+").replaceAll("_","/"),encoding:"base64"})},"subir la miniatura");
     return reply({path,blobSha:result.sha,width:kind.width,height:kind.height},201);
   }
   if(request.method==="POST"&&path==="/api/admin/publish") {
@@ -211,10 +233,10 @@ async function api(request,env) {
     else validateTopicOperation(action,item);
     const image=item.image;if(image)validateImageRef(image,entity==="activity"?"activities":"topics");
     const payload=JSON.stringify({action,entity,item});if(payload.length>10000)throw new AdminError("Solicitud demasiado grande.",413);
-    const runs=await github(`/actions/workflows/${workflow}/runs?event=workflow_dispatch&per_page=10`,env);
+    const runs=await github(`/actions/workflows/${workflow}/runs?event=workflow_dispatch&per_page=10`,env,{},"consultar el historial de publicaciones");
     if(runs.workflow_runs?.some(r=>["queued","in_progress","waiting","pending"].includes(r.status)))throw new AdminError("Ya hay una publicación en curso. Espera a que termine.",409);
     const id=randomHex(12);
-    await github(`/actions/workflows/${workflow}/dispatches`,env,{method:"POST",body:JSON.stringify({ref:"main",inputs:{request_id:id,source_sha:catalog.source.sha256,payload}})});
+    await github(`/actions/workflows/${workflow}/dispatches`,env,{method:"POST",body:JSON.stringify({ref:"main",inputs:{request_id:id,source_sha:catalog.source.sha256,payload}})},"iniciar el workflow de publicación");
     return reply({requestId:id,status:"queued"},202);
   }
   const match=/^\/api\/admin\/status\/([a-f0-9]{24})$/.exec(path);
