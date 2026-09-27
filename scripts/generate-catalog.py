@@ -243,6 +243,7 @@ def load_general_workbook(source: Path) -> tuple[dict, dict[str, dict]]:
             "title": row["Título"],
             "sourceTitle": row["Título de origen"],
             "description": row["Descripción"],
+            "visual": without_empty({"image": row.get("Imagen"), "imageAlt": row.get("Texto alternativo"), "creditId": row.get("ID de crédito")}),
             "primarySubjectId": row["ID de asignatura principal"],
             "subjectIds": split_values(row["IDs de asignatura"]),
             "primaryTopicId": optional(row["ID de tema principal"]),
@@ -264,6 +265,7 @@ def load_general_workbook(source: Path) -> tuple[dict, dict[str, dict]]:
                 "linkStatusLabel": row["Estado de enlace original"],
             }),
         })
+        activity.setdefault("description", "")
         activity.setdefault("tags", [])
         activity.setdefault("keywords", [])
         activities.append(activity)

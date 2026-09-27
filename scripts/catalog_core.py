@@ -110,6 +110,14 @@ def validate_catalog(catalog: dict, locations=None) -> tuple[list[dict], list[di
         activity_id = activity.get("id", "activity")
         subject_ids = activity.get("subjectIds", [])
         primary_subject_id = activity.get("primarySubjectId")
+        visual = activity.get("visual") or {}
+        if visual.get("image"):
+            image = visual["image"]
+            if (not isinstance(image, str) or not re.fullmatch(r"/images/admin/activities/[a-f0-9]{32}\.(?:png|jpg|webp)", image)
+                    or not (asset_root / image.lstrip("/")).is_file()):
+                errors.append(problem("invalid-activity-image", activity_id, "Miniatura de actividad inválida", "Comprobar archivo", locations))
+            if visual.get("creditId") not in credits or not visual.get("imageAlt"):
+                errors.append(problem("missing-image-credit", activity_id, "Miniatura sin crédito o texto alternativo", "Completar créditos", locations))
         topic_ids = activity.get("topicIds", [])
         primary_topic_id = activity.get("primaryTopicId")
 

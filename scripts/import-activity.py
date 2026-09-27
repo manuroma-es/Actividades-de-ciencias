@@ -43,13 +43,16 @@ def slugify(title, resource_id):
 
 
 def validate_input(payload, catalog):
-    if not isinstance(payload, dict) or set(payload) - {"url", "platformId", "resourceId", "title", "description", "subjectId", "topicIds", "typeId", "language", "verified", "sourceTitle", "manual"}:
+    if not isinstance(payload, dict) or set(payload) - {"url", "platformId", "resourceId", "title", "description", "subjectId", "topicIds", "typeId", "language", "verified", "sourceTitle", "manual", "image"}:
         raise ImportErrorMessage("La solicitud contiene campos inesperados")
     url = required_string(payload, "url", 2048)
     platform = required_string(payload, "platformId", 40)
     resource = required_string(payload, "resourceId", 24)
     title = required_string(payload, "title", 180)
-    description = required_string(payload, "description", 1200)
+    description = payload.get("description", "")
+    if not isinstance(description, str) or len(description) > 1200 or any(ord(ch) < 32 for ch in description):
+        raise ImportErrorMessage("Descripción inválida")
+    description = description.strip()
     subject = required_string(payload, "subjectId", 80)
     kind = required_string(payload, "typeId", 80)
     language = required_string(payload, "language", 35)
