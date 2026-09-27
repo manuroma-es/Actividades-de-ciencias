@@ -111,3 +111,30 @@ test('miniatura WebP real se valida y queda como blob temporal sin exponer token
   assert.equal(r.status,201,await r.clone().text());const v=await r.json();assert.match(v.path,/^\/images\/admin\/activities\/[a-f0-9]{32}\.webp$/);assert.equal(v.blobSha,'a'.repeat(40));assert.equal(called,true);
  }finally{globalThis.fetch=prior;}
 });
+
+test('publicación explica un rechazo de permisos de GitHub sin revelar el token',async()=>{
+ const base='https://test.workers.dev';
+ const login=await worker.fetch(new Request(base+'/api/admin/login',{method:'POST',headers:{origin:base},body:JSON.stringify({password:env.ADMIN_PASSWORD})}),env);
+ const cookie=login.headers.get('set-cookie').split(';')[0],{csrf}=await login.json();
+ const optionsResponse=await worker.fetch(new Request(base+'/api/admin/session',{headers:{cookie}}),env);
+ const {catalog}=await optionsResponse.json();
+ const previousFetch=globalThis.fetch,previousLog=console.error;let logged='';
+ globalThis.fetch=async(url,init)=>{
+  assert.match(String(url),/actions\/workflows\/import-activity\.yml\/runs/);
+  assert.equal(init.headers.authorization,`Bearer ${env.ACTIVITY_PUBLISH_TOKEN}`);
+  return Response.json({message:'Resource not accessible by integration'},{status:403,headers:{'x-github-request-id':'ABC123'} });
+ };
+ console.error=(line)=>{logged=String(line);};
+ try{
+  const response=await worker.fetch(new Request(base+'/api/admin/publish',{method:'POST',headers:{cookie,origin:base,'x-admin-csrf':csrf},body:JSON.stringify({action:'create',entity:'topic',item:{subjectId:catalog.subjects[0].id,name:'Tema de prueba',description:''}})}),env);
+  assert.equal(response.status,502);
+  const result=await response.json();
+  assert.match(result.error,/Actions: write/);
+  assert.match(result.error,/HTTP 403/);
+  assert.match(result.error,/ABC123/);
+  assert.doesNotMatch(result.error,/github-token-for-tests-only/);
+  assert.match(logged,/admin_github_rejected/);
+  assert.match(logged,/"status":403/);
+  assert.doesNotMatch(logged,/github-token-for-tests-only/);
+ }finally{globalThis.fetch=previousFetch;console.error=previousLog;}
+});
