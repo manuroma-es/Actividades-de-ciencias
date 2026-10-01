@@ -2,7 +2,9 @@
   "name": "actividades-de-ciencias",
   "version": "1.0.0",
   "private": true,
-  "engines": { "node": ">=20.9.0" },
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "vite out",
     "build": "next build",
@@ -13,6 +15,7 @@
     "catalog:validate": "python3 scripts/validate-catalog.py",
     "catalog:check": "npm run catalog:migrate:check && npm run catalog:generate && npm run catalog:validate",
     "test": "npm run build && node --test tests/*.test.mjs",
+    "test:browser": "playwright test",
     "lint": "eslint . --ignore-pattern .next --ignore-pattern out"
   },
   "dependencies": {
@@ -27,6 +30,7 @@
     "tailwind-merge": "3.6.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.58.2",
     "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",

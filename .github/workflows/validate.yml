@@ -30,6 +30,19 @@ jobs:
         run: git diff --exit-code -- data/generated/catalog.json data/generated/search-index.json data/generated/generation-report.json
       - run: npm test
       - run: npm run lint
+      - run: npx tsc --noEmit
+      - name: Instalar navegador de pruebas
+        run: npx playwright install --with-deps chromium
+      - name: Probar actividad nativa en escritorio, iPad y móvil
+        run: npm run test:browser
+      - name: Guardar capturas y resultados del navegador
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: native-activity-browser-qa
+          path: |
+            playwright-report/
+            test-results/
       - name: Subir web compilada
         uses: actions/upload-artifact@v4
         with:
