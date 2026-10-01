@@ -45,6 +45,7 @@ async function session(page,testInfo,correct){
   await expect(page.locator('.native-explanation')).toContainText(question.explanation);
   await expect(page.getByRole('heading',{name:'Respuesta correcta',exact:true})).toBeVisible();
   await click(page,page.getByRole('button',{name:index===10?'Ver resultados':'Continuar',exact:true}));
+  await expect(page.locator(index===10?'.native-result-heading h2':'.native-question h2')).toBeInViewport();
  }
  await expect(page.getByRole('heading',{name:'Resultados y revisión',exact:true})).toBeVisible();
  await expect(page.locator('.native-score')).toContainText(`${correct?11:0} / 11`);

@@ -21,6 +21,7 @@ export function NativeActivity({ content, initialAttempt }: { content: NativeCon
   const heading = useRef<HTMLHeadingElement>(null);
   const feedback = useRef<HTMLDivElement>(null);
   const lastCheck = useRef(0);
+  const initialFocus = useRef(true);
   const question = content.questions.find(q => q.id === attempt.questionIds[attempt.index])!;
   const answer = attempt.answers[question.id];
   const checked = attempt.checked.includes(question.id);
@@ -29,7 +30,8 @@ export function NativeActivity({ content, initialAttempt }: { content: NativeCon
 
   useEffect(() => {
     // Move focus after navigation/repetition, keeping keyboard and reader context.
-    heading.current?.focus({ preventScroll: true });
+    heading.current?.focus({ preventScroll: initialFocus.current });
+    initialFocus.current = false;
   }, [attempt.index, attempt.completed, attempt.questionIds]);
   useEffect(() => {
     if (attempt.checked.length > lastCheck.current) feedback.current?.focus();
