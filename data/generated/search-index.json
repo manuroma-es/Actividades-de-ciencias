@@ -2214,6 +2214,36 @@
       "language": "en ingles ingles english",
       "platform": "wordwall",
       "source": "external externa externo"
+    },
+    {
+      "id": "native-vital-functions",
+      "title": "vital functions",
+      "sourceTitle": "",
+      "description": "repasa las funciones vitales, la organizacion de los seres vivos y las biomoleculas con 11 ejercicios de seleccion, ordenacion y clasificacion.",
+      "subjects": [
+        "biologia y geologia"
+      ],
+      "topics": [
+        "the earth"
+      ],
+      "tags": [
+        "funciones vitales",
+        "biomoleculas"
+      ],
+      "keywords": [
+        "vital functions",
+        "living things",
+        "organisms",
+        "organic",
+        "inorganic",
+        "nutrition",
+        "respiration",
+        "growth"
+      ],
+      "type": "actividad interactiva",
+      "language": "en ingles ingles english",
+      "platform": "actividad propia",
+      "source": "native nativa propia"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": {
     "file": "data/catalogo-actividades.xlsx",
-    "sha256": "057bad9706a72e0798e66084e64131d22af0033cbad73521f68ea93d3412ec8b"
+    "sha256": "218e80b81452eec4a9efc074d38c8002e152324204a81a0f196b0fe3a37831de"
   },
   "subjects": [
     {
@@ -74,9 +74,40 @@
         "icon": "languages"
       },
       "status": "active"
+    },
+    {
+      "id": "biologia-geologia",
+      "name": "Biología y Geología",
+      "shortName": "Biología y Geología",
+      "slug": "biologia-geologia",
+      "order": 6,
+      "description": "Actividades de repaso de biología y geología.",
+      "visual": {
+        "accent": "#6552A0",
+        "accentSoft": "#EFEBF8",
+        "icon": "leaf"
+      },
+      "status": "active"
     }
   ],
   "topics": [
+    {
+      "id": "topic-biologia-geologia-the-earth",
+      "subjectId": "biologia-geologia",
+      "name": "THE EARTH",
+      "slug": "the-earth",
+      "order": 1,
+      "description": "La Tierra, los seres vivos y su organización.",
+      "visual": {
+        "icon": "globe-2",
+        "image": "/images/topics/topic-biologia-geologia-the-earth.webp",
+        "imageAlt": "La curvatura de la Tierra y sus luces nocturnas bajo un cielo estrellado.",
+        "imageObjectPosition": "50% 50%",
+        "heroImageFit": "cover",
+        "creditId": "credit-the-earth-tawatchai07"
+      },
+      "status": "active"
+    },
     {
       "id": "topic-ciencias-001",
       "subjectId": "ciencias",
@@ -668,6 +699,12 @@
       "name": "Aplastatopos",
       "icon": "target",
       "order": 13
+    },
+    {
+      "id": "actividad-interactiva",
+      "name": "Actividad interactiva",
+      "icon": "mouse-pointer-click",
+      "order": 14
     }
   ],
   "platforms": [
@@ -5045,6 +5082,52 @@
       "legacy": {
         "subjectLabel": "Inglés"
       }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "native-vital-functions",
+      "slug": "vital-functions",
+      "title": "VITAL FUNCTIONS",
+      "description": "Repasa las funciones vitales, la organización de los seres vivos y las biomoléculas con 11 ejercicios de selección, ordenación y clasificación.",
+      "primarySubjectId": "biologia-geologia",
+      "subjectIds": [
+        "biologia-geologia"
+      ],
+      "primaryTopicId": "topic-biologia-geologia-the-earth",
+      "topicIds": [
+        "topic-biologia-geologia-the-earth"
+      ],
+      "language": "en",
+      "typeId": "actividad-interactiva",
+      "originCourseLabel": "1.º ESO",
+      "tags": [
+        "funciones vitales",
+        "biomoléculas"
+      ],
+      "keywords": [
+        "vital functions",
+        "living things",
+        "organisms",
+        "organic",
+        "inorganic",
+        "nutrition",
+        "respiration",
+        "growth"
+      ],
+      "dates": {
+        "createdAt": "2026-10-01",
+        "publishedAt": "2026-10-01",
+        "updatedAt": "2026-10-01"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "native",
+        "native": {
+          "engineVersion": 1,
+          "activityType": "mixed-practice",
+          "contentPath": "data/native/vital-functions.json"
+        }
+      }
     }
   ],
   "mediaResources": [
@@ -5329,6 +5412,15 @@
       "sourceName": "ChatGPT Work (OpenAI)",
       "license": "Imagen creada para este proyecto; sin licencia externa declarada.",
       "note": "Generada/preparada el 2026-09-24. PNG original: topic-matematicas-operaciones-combinadas.png; SHA-256 1bc5bb2138465a33820974e4024a4329a1ee2a95de9eb1c969a6f04c82bd6da5. WebP 1600×900: ebf9e1625820896fd11cd5d191addb3399385fdd48bb595fecbd938366b06247."
+    },
+    {
+      "id": "credit-the-earth-tawatchai07",
+      "title": "THE EARTH — Tierra y galaxia",
+      "author": "tawatchai07",
+      "sourceName": "Imagen de tawatchai07 en Magnific",
+      "sourceUrl": "https://www.magnific.com/es/foto-gratis/tierra-galaxia-elementos-imagen-proporcionados-nasa_13180419.htm",
+      "license": "No especificada en el material facilitado; consultar la fuente.",
+      "note": "Imagen y atribución facilitadas por Alejandro Castaño Medina. EXIF: Earth and galaxy. Elements of this image furnished by NASA. Conversión local a WebP sin cambiar la composición."
     }
   ],
   "qualityIssues": [

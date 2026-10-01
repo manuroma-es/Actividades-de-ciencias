@@ -13,7 +13,7 @@ export default function AboutPage() {
         <section><div className="about-section-icon" aria-hidden="true"><Layers3 /></div><h2>Organización por temas</h2><p>Las actividades se agrupan en {activeTopics.length} temas. Algunas pertenecen a varios temas, pero cada actividad tiene una sola ficha. El catálogo permite buscarlas y filtrarlas sin duplicarlas.</p></section>
       </div>
       <section className="course-explanation"><h2>Qué significa “Curso en que la creé”</h2><p>Ese dato indica el curso en el que estudié el tema o creé la actividad. Es un contexto histórico personal. No indica la edad, el nivel o el curso para los que se recomienda el recurso. Cuando no recuerdo el curso con certeza, la ficha lo dice expresamente.</p></section>
-      <section className="external-explanation"><ExternalLink aria-hidden="true" /><div><h2>Recursos actuales en plataformas externas</h2><p>Las actividades disponibles ahora se abren en {platforms.map((platform) => platform.name).join(" o ")}, en una pestaña nueva. Esta web organiza los recursos y conserva una ficha propia para cada uno.</p></div></section>
+      <section className="external-explanation"><ExternalLink aria-hidden="true" /><div><h2>Actividades propias y recursos externos</h2><p>Las actividades propias se realizan y corrigen dentro de esta web. Los recursos de {platforms.map((platform) => platform.name).join(" o ")} conservan su ficha y se abren en una pestaña nueva.</p></div></section>
       <section className="image-credits" id="creditos-imagenes" aria-labelledby="credits-heading">
         <div className="credits-heading"><p className="eyebrow">Imágenes de temas y actividades</p><h2 id="credits-heading">Créditos y procedencia</h2><p>Las imágenes originales de Ciencias conservan sus créditos y atribuciones. Aquí figura la procedencia de las imágenes de los demás temas y de las actividades que tengan una miniatura propia.</p></div>
         <div className="credits-list">
@@ -22,6 +22,7 @@ export default function AboutPage() {
             <p><strong>Autoría:</strong> {credit.author}</p>
             <p><strong>Procedencia:</strong> {credit.sourceUrl ? <a href={credit.sourceUrl} target="_blank" rel="noopener noreferrer">{credit.sourceName}<ExternalLink aria-hidden="true" /></a> : credit.sourceName}</p>
             <p><strong>Licencia:</strong> {credit.license}</p>
+            {credit.note ? <p>{credit.note}</p> : null}
           </article>)}
         </div>
         <p className="magnific-attribution"><a href="https://www.magnific.com" target="_blank" rel="noopener noreferrer">designed by rawpixel.com - Magnific.com</a></p>

@@ -8,6 +8,19 @@ const env = {
   ASSETS: { fetch: async () => new Response("<main>web</main>", { headers: { "content-type": "text/html" } }) },
 };
 
+test('Worker lista actividades nativas y bloquea su edición y borrado en el panel',async()=>{
+ const base='https://native-readonly.workers.dev';
+ const login=await worker.fetch(new Request(base+'/api/admin/login',{method:'POST',headers:{origin:base,'cf-connecting-ip':'192.0.2.50'},body:JSON.stringify({password:env.ADMIN_PASSWORD})}),env);
+ const cookie=login.headers.get('set-cookie').split(';')[0],{csrf}=await login.json();
+ const session=await worker.fetch(new Request(base+'/api/admin/session',{headers:{cookie}}),env);
+ const {catalog}=await session.json();const native=catalog.activities.find(a=>a.id==='native-vital-functions');
+ assert.equal(native.source.kind,'native');
+ for(const action of ['update','delete']){
+  const response=await worker.fetch(new Request(base+'/api/admin/publish',{method:'POST',headers:{cookie,origin:base,'x-admin-csrf':csrf},body:JSON.stringify({action,entity:'activity',item:{id:native.id}})}),env);
+  assert.equal(response.status,409);assert.match((await response.json()).error,/solo lectura/);
+ }
+});
+
 test("Worker sirve la web estática y normaliza /admin", async () => {
   const asset = await worker.fetch(new Request("https://test.workers.dev/"), env);
   assert.equal(asset.status, 200);

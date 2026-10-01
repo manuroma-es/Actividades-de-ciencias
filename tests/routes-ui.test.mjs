@@ -66,8 +66,8 @@ test("cada actividad multitema aparece en todas sus vistas sin duplicar su entid
 
 test("las fichas conservan los 65 slugs y representan todas las fuentes externas", async () => {
   assert.equal(catalog.activities.filter((activity) => activity.primarySubjectId === "ciencias").length, 65);
-  assert.ok(catalog.activities.every((activity) => activity.source.kind === "external"));
-  for (const activity of catalog.activities) {
+  assert.equal(catalog.activities.filter((activity) => activity.source.kind === "external").length, 82);
+  for (const activity of catalog.activities.filter((item) => item.source.kind === "external")) {
     const activityHtml = await html(`actividad/${activity.slug}`);
     assert.ok(activityHtml.includes(activity.source.url));
     assert.match(activityHtml, new RegExp(`<link rel="canonical" href="/actividad/${activity.slug}"`));

@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "source": {
     "file": "data/catalogo-actividades.xlsx",
-    "sha256": "057bad9706a72e0798e66084e64131d22af0033cbad73521f68ea93d3412ec8b"
+    "sha256": "218e80b81452eec4a9efc074d38c8002e152324204a81a0f196b0fe3a37831de"
   },
   "counts": {
-    "subjects": 5,
-    "topics": 32,
-    "activities": 82,
-    "relations": 93,
+    "subjects": 6,
+    "topics": 33,
+    "activities": 83,
+    "relations": 94,
     "multiTopicActivities": 8,
     "mediaResources": 1
   },
@@ -17,12 +17,13 @@
     "wordwall": 29
   },
   "byLanguage": {
-    "en": 41,
+    "en": 42,
     "es": 32,
     "fr": 9
   },
   "bySourceKind": {
-    "external": 82
+    "external": 82,
+    "native": 1
   },
   "multiTopicActivityIds": [
     "EP-28023550",
@@ -168,9 +169,9 @@
   "artifacts": {
     "searchIndex": {
       "file": "data/generated/search-index.json",
-      "sha256": "d261f57e2f8176e458de5de634d4a6cf529bd611a3ff33f34becac938601c9a0",
-      "bytes": 61382,
-      "entries": 82
+      "sha256": "890b3d411d6757fa44897e040dcbc8227177ff78a0fa0c14446a8657081983d8",
+      "bytes": 62208,
+      "entries": 83
     }
   }
 }
