@@ -17,13 +17,15 @@ const media=catalog.mediaResources[0];
 const readHtml=(relative)=>readFile(path.join(root,"out",relative,"index.html"),"utf8");
 
 test("5 asignaturas, 82 actividades, 32 temas y 93 relaciones; el vídeo no cuenta como actividad",()=>{
- assert.deepEqual(catalog.subjects.map((subject)=>subject.id),["ciencias","frances","lengua","matematicas","ingles"]);
- assert.equal(catalog.activities.length,82);
- assert.equal(catalog.topics.length,32);
- assert.equal(catalog.activities.reduce((sum,item)=>sum+item.topicIds.length,0),93);
+ const phaseSubjects=["ciencias","frances","lengua","matematicas","ingles"];
+ const phaseActivities=catalog.activities.filter(item=>phaseSubjects.includes(item.primarySubjectId));
+ assert.deepEqual(catalog.subjects.filter(subject=>phaseSubjects.includes(subject.id)).map((subject)=>subject.id),phaseSubjects);
+ assert.equal(phaseActivities.length,82);
+ assert.equal(catalog.topics.filter(item=>phaseSubjects.includes(item.subjectId)).length,32);
+ assert.equal(phaseActivities.reduce((sum,item)=>sum+item.topicIds.length,0),93);
  assert.equal(catalog.mediaResources.length,1);
- assert.equal(new Set(catalog.activities.map((item)=>item.id)).size,82);
- assert.equal(new Set(catalog.activities.map((item)=>item.slug)).size,82);
+ assert.equal(new Set(phaseActivities.map((item)=>item.id)).size,82);
+ assert.equal(new Set(phaseActivities.map((item)=>item.slug)).size,82);
  assert.equal(byId.has(media.id),false);
 });
 
@@ -63,7 +65,7 @@ test("validador bloquea referencias rotas y rutas multimedia inexistentes",()=>{
 });
 
 test("fechas nuevas alimentan Recientes y Nueva con la regla general",()=>{
- const additions=catalog.activities.filter((item)=>item.primarySubjectId!=="ciencias");
+ const additions=catalog.activities.filter((item)=>item.primarySubjectId!=="ciencias"&&item.source.kind==="external");
  assert.equal(additions.length,17);
  assert.ok(additions.every((item)=>item.dates.publishedAt==="2026-09-24"&&item.dates.updatedAt==="2026-09-24"&&item.dates.createdAt===null));
  assert.ok(additions.every((item)=>isNewPublication(item.dates.publishedAt,new Date("2026-09-24T12:00:00Z"))));

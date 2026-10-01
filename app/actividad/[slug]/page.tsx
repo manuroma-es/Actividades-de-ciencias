@@ -5,6 +5,9 @@ import { notFound } from "next/navigation";
 import { ActivityThumbnail } from "@/components/activity-thumbnail";
 import { RelatedVideo } from "@/components/related-video";
 import { BackToResults } from "@/components/back-to-results";
+import { NativeActivity } from "@/components/native/native-activity";
+import { createAttempt } from "@/lib/native/core.mjs";
+import { loadNativeContent } from "@/lib/native/load";
 import { activityBySlug } from "@/lib/catalog/indexes";
 import {
   formatCatalogDate,
@@ -56,6 +59,26 @@ export default async function ActivityPage({ params }: { params: Promise<{ slug:
   const language = languageLabel(activity.language);
   const sourceLabel = platformLabel(activity);
 
+  if (activity.source.kind === "native") {
+    const content = await loadNativeContent(activity);
+    return <main id="main-content" className="native-page site-container">
+      <nav className="breadcrumbs" aria-label="Migas de pan">
+        <Link href="/">Inicio</Link><span aria-hidden="true">/</span>
+        {primarySubject ? <><Link href={`/asignatura/${primarySubject.slug}`}>{primarySubject.name}</Link><span aria-hidden="true">/</span></> : null}
+        {primaryTopic ? <><Link href={getTopicHref(primaryTopic)}>{primaryTopic.name}</Link><span aria-hidden="true">/</span></> : null}
+        <span aria-current="page">{activity.title}</span>
+      </nav>
+      <BackToResults />
+      <header className="native-heading">
+        <div className="detail-badges"><span className="platform-badge source-native">Actividad propia</span><span className="language-badge" lang={activity.language}>{language}</span><span className="type-badge">{typeLabel(activity)}</span></div>
+        <h1 lang={activity.language}>{activity.title}</h1><p className="detail-description">{activity.description}</p>
+        <div className="theme-links">{primaryTopic ? <Link href={getTopicHref(primaryTopic)}>Volver a {primaryTopic.name}</Link> : null}
+          {primarySubject ? <Link href={`/asignatura/${primarySubject.slug}`}>{primarySubject.name}</Link> : null}</div>
+      </header>
+      <NativeActivity content={content} initialAttempt={createAttempt(content)} />
+    </main>;
+  }
+
   return (
     <main id="main-content" className="detail-page site-container">
       <nav className="breadcrumbs" aria-label="Migas de pan">
@@ -77,15 +100,11 @@ export default async function ActivityPage({ params }: { params: Promise<{ slug:
           {relatedMedia.map((resource) => <RelatedVideo key={resource.id} resource={resource} />)}
         </div>
         <aside className="detail-aside">
-          {activity.source.kind === "external" ? (
             <>
               <a className="detail-external-button" href={activity.source.url} target="_blank" rel="noopener noreferrer">Abrir actividad en {sourceLabel} <ExternalLink aria-hidden="true" /></a>
               <p className="new-tab-note">La actividad se abrirá en una pestaña nueva en un sitio externo.</p>
               <p className="link-status"><strong>Estado:</strong> {linkStatusLabel(activity.source.linkStatus)}{activity.source.lastVerifiedAt ? ` · comprobado el ${formatCatalogDate(activity.source.lastVerifiedAt)}` : ""}</p>
             </>
-          ) : (
-            <div className="native-activity-notice"><strong>Actividad propia</strong><p>Este catálogo ya reconoce actividades nativas. Su ejecución se incorporará en una fase posterior.</p></div>
-          )}
           <section className="course-context" aria-labelledby="context-heading"><Info aria-hidden="true" /><div><h2 id="context-heading">Contexto de la actividad</h2><p><strong>Curso en que la creé:</strong> {formatOriginCourse(activity.originCourseLabel)}.</p><p>Es un dato histórico personal; no indica el curso, la edad o el nivel para los que se recomienda la actividad.</p></div></section>
         </aside>
       </article>

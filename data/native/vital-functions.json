@@ -1,0 +1,469 @@
+{
+  "engineVersion": 1,
+  "activityType": "mixed-practice",
+  "id": "native-vital-functions",
+  "language": "en",
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Select the characteristics that all living things or organisms share:",
+      "explanation": "Living things respond to changes, move, obtain nutrients, remove waste, release energy through respiration and grow. Sexual reproduction, organs and a nervous system are not shared by all organisms. Some organisms obtain food from others.",
+      "kind": "multiple-choice",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Reaction to change"
+        },
+        {
+          "id": "o2",
+          "label": "Movement"
+        },
+        {
+          "id": "o3",
+          "label": "Nutrition and excretion"
+        },
+        {
+          "id": "o4",
+          "label": "Respiration"
+        },
+        {
+          "id": "o5",
+          "label": "Growth"
+        },
+        {
+          "id": "o6",
+          "label": "Sexual reproduction"
+        },
+        {
+          "id": "o7",
+          "label": "Having organs"
+        },
+        {
+          "id": "o8",
+          "label": "Having a nervous system"
+        },
+        {
+          "id": "o9",
+          "label": "Making their own food"
+        }
+      ],
+      "correctIds": [
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "o5"
+      ]
+    },
+    {
+      "id": "q2",
+      "prompt": "Living things have receptors that perceive any stimulus or detectable change in the environment…",
+      "explanation": "A stimulus is a detectable change. Receptors detect it, and the organism responds. A response may involve movement, but the characteristic described here is reaction to change.",
+      "kind": "single-choice",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Reaction to change"
+        },
+        {
+          "id": "o2",
+          "label": "Movement"
+        },
+        {
+          "id": "o3",
+          "label": "Respiration"
+        },
+        {
+          "id": "o4",
+          "label": "Growth"
+        },
+        {
+          "id": "o5",
+          "label": "Nutrition and excretion"
+        }
+      ],
+      "correctIds": [
+        "o1"
+      ]
+    },
+    {
+      "id": "q3",
+      "prompt": "All organisms take substances into their bodies for energy and growth…",
+      "explanation": "Nutrition supplies substances for energy and growth. Excretion removes waste produced by the organism. This description belongs to nutrition and excretion.",
+      "kind": "single-choice",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Nutrition and excretion"
+        },
+        {
+          "id": "o2",
+          "label": "Growth"
+        },
+        {
+          "id": "o3",
+          "label": "Respiration"
+        },
+        {
+          "id": "o4",
+          "label": "Movement"
+        }
+      ],
+      "correctIds": [
+        "o1"
+      ]
+    },
+    {
+      "id": "q4",
+      "prompt": "Organisms assimilate nutrients from the environment and use them to build new body structures…",
+      "explanation": "Growth involves using nutrients to make new body structures. In multicellular organisms, cells can grow and divide to increase the size of tissues and organs.",
+      "kind": "single-choice",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Growth"
+        },
+        {
+          "id": "o2",
+          "label": "Reaction to change"
+        },
+        {
+          "id": "o3",
+          "label": "Movement"
+        },
+        {
+          "id": "o4",
+          "label": "Respiration"
+        },
+        {
+          "id": "o5",
+          "label": "Nutrition and excretion"
+        }
+      ],
+      "correctIds": [
+        "o1"
+      ]
+    },
+    {
+      "id": "q5",
+      "prompt": "Animals move and plants move too, for example, to search for light by growing.",
+      "explanation": "Movement can involve the whole body or part of an organism. Plants can move through growth towards light; they do not need to walk to show movement.",
+      "kind": "single-choice",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Movement"
+        },
+        {
+          "id": "o2",
+          "label": "Nutrition and excretion"
+        },
+        {
+          "id": "o3",
+          "label": "Growth"
+        },
+        {
+          "id": "o4",
+          "label": "Reaction to change"
+        },
+        {
+          "id": "o5",
+          "label": "Respiration"
+        }
+      ],
+      "correctIds": [
+        "o1"
+      ]
+    },
+    {
+      "id": "q6",
+      "prompt": "Living things take in oxygen from the environment…",
+      "explanation": "The expected answer is respiration. Oxygen is used in aerobic cellular respiration to help release energy from nutrients. This statement describes aerobic organisms; some organisms use anaerobic processes and do not need oxygen.",
+      "note": "This statement describes aerobic respiration; some organisms do not use oxygen.",
+      "kind": "single-choice",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Respiration"
+        },
+        {
+          "id": "o2",
+          "label": "Reaction to change"
+        },
+        {
+          "id": "o3",
+          "label": "Nutrition and excretion"
+        },
+        {
+          "id": "o4",
+          "label": "Movement"
+        }
+      ],
+      "correctIds": [
+        "o1"
+      ]
+    },
+    {
+      "id": "q7",
+      "prompt": "Sort from largest to smallest.",
+      "explanation": "The body contains systems, which contain organs made of tissues. Tissues contain cells, cells contain organelles, and their structures contain molecules made of atoms. This is the order of biological organisation used in the exercise.",
+      "kind": "ordering",
+      "items": [
+        {
+          "id": "i1",
+          "label": "My body"
+        },
+        {
+          "id": "i2",
+          "label": "Systems"
+        },
+        {
+          "id": "i3",
+          "label": "Organ"
+        },
+        {
+          "id": "i4",
+          "label": "Tissues"
+        },
+        {
+          "id": "i5",
+          "label": "Cells"
+        },
+        {
+          "id": "i6",
+          "label": "Organelles"
+        },
+        {
+          "id": "i7",
+          "label": "Molecules"
+        },
+        {
+          "id": "i8",
+          "label": "Atoms"
+        }
+      ],
+      "correctOrder": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7",
+        "i8"
+      ]
+    },
+    {
+      "id": "q8",
+      "prompt": "Where are organic biomolecules?",
+      "explanation": "The supplied exercise expects “Only in living things” when referring to organic biomolecules as components of living organisms. This is a simplified classroom distinction: organic molecules can also exist outside living organisms, including in dead material. Being organic does not mean being alive.",
+      "note": "The supplied exercise uses a simplified classroom distinction. Organic molecules can also exist outside living organisms.",
+      "kind": "single-choice",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Only in non-living things"
+        },
+        {
+          "id": "o2",
+          "label": "Only in living things"
+        },
+        {
+          "id": "o3",
+          "label": "Both"
+        }
+      ],
+      "correctIds": [
+        "o2"
+      ]
+    },
+    {
+      "id": "q9",
+      "prompt": "Where are inorganic biomolecules?",
+      "explanation": "Inorganic substances such as water and mineral salts occur in living organisms and in the non-living environment. Both is therefore the correct answer.",
+      "kind": "single-choice",
+      "options": [
+        {
+          "id": "o1",
+          "label": "Only in non-living things"
+        },
+        {
+          "id": "o2",
+          "label": "Only in living things"
+        },
+        {
+          "id": "o3",
+          "label": "Both"
+        }
+      ],
+      "correctIds": [
+        "o3"
+      ]
+    },
+    {
+      "id": "q10",
+      "prompt": "Classify these molecules as organic or inorganic.",
+      "explanation": "Nucleic acids, proteins, lipids and carbohydrates are organic biomolecules. Water and mineral salts belong to the inorganic group used in this exercise.",
+      "kind": "classification",
+      "items": [
+        {
+          "id": "i1",
+          "label": "Nucleic acids"
+        },
+        {
+          "id": "i2",
+          "label": "Proteins"
+        },
+        {
+          "id": "i3",
+          "label": "Lipids"
+        },
+        {
+          "id": "i4",
+          "label": "Carbohydrates"
+        },
+        {
+          "id": "i5",
+          "label": "Mineral salts"
+        },
+        {
+          "id": "i6",
+          "label": "Water"
+        }
+      ],
+      "categories": [
+        {
+          "id": "c1",
+          "label": "Organic"
+        },
+        {
+          "id": "c2",
+          "label": "Inorganic"
+        }
+      ],
+      "correctCategories": {
+        "i1": "c1",
+        "i2": "c1",
+        "i3": "c1",
+        "i4": "c1",
+        "i5": "c2",
+        "i6": "c2"
+      }
+    },
+    {
+      "id": "q11",
+      "prompt": "Classify these foods based on which molecules they are rich in.",
+      "explanation": "This exercise groups foods by the molecules highlighted in the supplied material: carbohydrates mainly provide energy; lipids store energy and help form membranes; proteins help build and repair structures. Foods contain mixtures: milk and cheese, for example, contain more than one of these groups. The key follows the supplied classification, rather than claiming each food contains only one type of molecule.",
+      "note": "Use the groups in this exercise. Foods can contain several types of molecule. “meal” is kept as supplied, in the Proteins group; its meaning here is unclear.",
+      "kind": "classification",
+      "items": [
+        {
+          "id": "i1",
+          "label": "bread"
+        },
+        {
+          "id": "i2",
+          "label": "pasta"
+        },
+        {
+          "id": "i3",
+          "label": "fruit"
+        },
+        {
+          "id": "i4",
+          "label": "chocolate"
+        },
+        {
+          "id": "i5",
+          "label": "candy"
+        },
+        {
+          "id": "i6",
+          "label": "vegetables"
+        },
+        {
+          "id": "i7",
+          "label": "oil"
+        },
+        {
+          "id": "i8",
+          "label": "burger"
+        },
+        {
+          "id": "i9",
+          "label": "avocado"
+        },
+        {
+          "id": "i10",
+          "label": "butter"
+        },
+        {
+          "id": "i11",
+          "label": "cheese"
+        },
+        {
+          "id": "i12",
+          "label": "fried food"
+        },
+        {
+          "id": "i13",
+          "label": "meat"
+        },
+        {
+          "id": "i14",
+          "label": "fish"
+        },
+        {
+          "id": "i15",
+          "label": "eggs"
+        },
+        {
+          "id": "i16",
+          "label": "chicken"
+        },
+        {
+          "id": "i17",
+          "label": "meal"
+        },
+        {
+          "id": "i18",
+          "label": "milk"
+        }
+      ],
+      "categories": [
+        {
+          "id": "c1",
+          "label": "Carbohydrates"
+        },
+        {
+          "id": "c2",
+          "label": "Lipids"
+        },
+        {
+          "id": "c3",
+          "label": "Proteins"
+        }
+      ],
+      "correctCategories": {
+        "i1": "c1",
+        "i2": "c1",
+        "i3": "c1",
+        "i4": "c1",
+        "i5": "c1",
+        "i6": "c1",
+        "i7": "c2",
+        "i8": "c2",
+        "i9": "c2",
+        "i10": "c2",
+        "i11": "c2",
+        "i12": "c2",
+        "i13": "c3",
+        "i14": "c3",
+        "i15": "c3",
+        "i16": "c3",
+        "i17": "c3",
+        "i18": "c3"
+      }
+    }
+  ]
+}

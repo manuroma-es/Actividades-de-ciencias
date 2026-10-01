@@ -15,8 +15,8 @@ const creditIds = new Set(catalog.credits.map((credit) => credit.id));
 test("los 21 assets aprobados coinciden con su Topic, crédito y hash", async () => {
   assert.equal(sources.length, 21);
   assert.equal(new Set(sources.map((source) => source.id)).size, 21);
-  assert.equal(catalog.topics.filter((topic) => topic.visual?.image).length, 32);
-  assert.equal(catalog.credits.length, 32);
+  assert.equal(catalog.topics.filter((topic) => topic.visual?.image).length, 33);
+  assert.equal(catalog.credits.length, 33);
   for (const source of sources) {
     const topic = topicById.get(source.id);
     assert.ok(topic && topic.subjectId !== "ciencias", source.id);

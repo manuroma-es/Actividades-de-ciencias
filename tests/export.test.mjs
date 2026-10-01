@@ -19,7 +19,7 @@ test("preserva la regresión pública de Ciencias", () => {
 
 test("mantiene cursos y enlaces públicos externos", () => {
   const platforms = new Set(data.platforms.map((platform) => platform.id));
-  for (const activity of data.activities) {
+  for (const activity of data.activities.filter((item) => item.source.kind === "external")) {
     assert.ok(activity.originCourseLabel, `Curso ausente: ${activity.id}`);
     assert.equal(activity.source.kind, "external");
     assert.ok(platforms.has(activity.source.platformId), `Plataforma inesperada: ${activity.id}`);
@@ -44,7 +44,7 @@ test("exporta todas las rutas directas", async () => {
     ...data.activities.map((activity) => `actividad/${activity.slug}/index.html`),
   ];
   await Promise.all(expected.map((relative) => access(path.join(root, "out", relative))));
-  assert.equal(expected.length, 156);
+  assert.equal(expected.length, 160);
 });
 
 test("exporta las once imágenes temáticas", async () => {
