@@ -68,6 +68,7 @@ def apply(w, data, catalog, today):
             return record['id']
         ident = clean(item.get('id'))
         n, old = one(sheet, 'ID', ident)
+        if old['Clase de origen'] != 'external': raise ImportErrorMessage('Esta actividad nativa es de solo lectura desde el panel; edita el Excel y su contenido en el repositorio')
         if action == 'delete':
             if ident in {a['id'] for a in catalog['activities'] if a.get('legacy',{}).get('subjectLabel') == 'Ciencias / Conocimiento del Medio'}: raise ImportErrorMessage('La actividad pertenece a la migración histórica de Ciencias')
             if any(ident in str(row.get('IDs de actividad relacionada') or '').split('|') for _,row in cells(w['RECURSOS_RELACIONADOS'])):
@@ -76,7 +77,6 @@ def apply(w, data, catalog, today):
                 raise ImportErrorMessage('Hay incidencias de calidad asociadas. Revísalas antes de borrar.')
             remove(links,[i for i,row in cells(links) if row['ID de actividad']==ident]);sheet.delete_rows(n)
             return ident
-        if old['Clase de origen'] != 'external': raise ImportErrorMessage('Esta actividad nativa no se puede editar desde este formulario')
         title = clean(item.get('title')); desc = clean(item.get('description',''),1200,True)
         subject = clean(item.get('subjectId')); topics = item.get('topicIds')
         if subject not in {x['id'] for x in catalog['subjects'] if x['status']=='active'} or not isinstance(topics,list) or not topics or len(topics)!=len(set(topics)) or len(topics)>20 or any(t not in {x['id'] for x in catalog['topics'] if x['subjectId']==subject and x['status']=='active'} for t in topics): raise ImportErrorMessage('Asignatura o temas inválidos')

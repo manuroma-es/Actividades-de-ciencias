@@ -52,7 +52,7 @@ export function ActivityCard({
             <span className="sr-only"> en {sourceLabel}; se abre en una pestaña nueva</span>
           </a>
         ) : (
-          <Link className="external-button native-button" href={`/actividad/${activity.slug}`}>Ver actividad</Link>
+          <Link className="external-button native-button" href={`/actividad/${activity.slug}`}>Realizar actividad</Link>
         )}
       </div>
     </article>

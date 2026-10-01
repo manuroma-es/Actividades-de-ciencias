@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+import json
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
@@ -188,8 +189,19 @@ def validate_catalog(catalog: dict, locations=None) -> tuple[list[dict], list[di
                 warnings.append(problem("limited-link", activity_id, "El recurso tiene información pública limitada", "Mantenerlo publicado y pendiente de revisión", locations, "Estado del enlace"))
         elif source.get("kind") == "native":
             native = source.get("native") or {}
-            if not native.get("contentPath") or not native.get("activityType") or not isinstance(native.get("engineVersion"), int):
-                errors.append(problem("invalid-native-source", activity_id, "La fuente nativa está incompleta", "Añadir contentPath, activityType y engineVersion", locations, "Clase de origen"))
+            content_path = native.get("contentPath", "")
+            if (native.get("engineVersion") != 1 or native.get("activityType") != "mixed-practice"
+                    or not isinstance(content_path, str) or not re.fullmatch(r"data/native/[a-z0-9-]+\.json", content_path)):
+                errors.append(problem("invalid-native-source", activity_id, "Motor o ruta nativa no soportados", "Usar mixed-practice v1 y data/native/<slug>.json", locations, "Clase de origen"))
+            else:
+                try:
+                    content = json.loads((asset_root.parent / content_path).read_text(encoding="utf-8"))
+                    if (content.get("id") != activity_id or content.get("language") != activity.get("language")
+                            or content.get("engineVersion") != native["engineVersion"]
+                            or content.get("activityType") != native["activityType"] or not content.get("questions")):
+                        raise ValueError("El contenido no coincide con el catálogo")
+                except (OSError, ValueError, AttributeError) as error:
+                    errors.append(problem("invalid-native-content", activity_id, str(error), "Añadir contenido local válido", locations, "Ruta de contenido nativo"))
         else:
             errors.append(problem("unknown-source-kind", activity_id, f"Origen desconocido: {source.get('kind')!r}", "Usar external o native", locations, "Clase de origen"))
 

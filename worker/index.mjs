@@ -137,9 +137,9 @@ function validateImageRef(image,entity) {
 }
 function validateActivityOperation(action,item) {
   const current=catalog.activities.find(a=>a.id===item.id);if(!current)throw new AdminError("Actividad desconocida.",404);
+  if(current.source.kind!=="external")throw new AdminError("Esta actividad nativa es de solo lectura en el panel. Edita el Excel y su contenido en el repositorio.",409);
   if(action==="delete"&&current.legacy?.subjectLabel==="Ciencias / Conocimiento del Medio")throw new AdminError("Esta actividad forma parte de la migración histórica. No se puede borrar sin revisar la paridad de Ciencias.",409);
   if(action==="delete")return;
-  if(current.source.kind!=="external")throw new AdminError("Esta actividad requiere edición avanzada en el Excel.");
   if(typeof item.title!=="string"||!item.title.trim()||item.title.length>180||typeof item.description!=="string"||item.description.length>1200)throw new AdminError("Revisa título y descripción.");
   if(!catalog.subjects.some(x=>x.id===item.subjectId&&x.status==="active")||!Array.isArray(item.topicIds)||!item.topicIds.length||new Set(item.topicIds).size!==item.topicIds.length||item.topicIds.some(id=>!catalog.topics.some(t=>t.id===id&&t.subjectId===item.subjectId&&t.status==="active")))throw new AdminError("Revisa asignatura y temas.");
   if(!catalog.activityTypes.some(t=>t.id===item.typeId)||!/^[A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$/.test(item.language||""))throw new AdminError("Tipo o idioma inválido.");
