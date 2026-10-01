@@ -9,9 +9,9 @@ async function click(page,locator){
 }
 async function screenshot(page,testInfo,name){
  const scroll=await page.evaluate(()=>window.scrollY);
- await page.evaluate(()=>window.scrollTo(0,0));
+ await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
  await page.screenshot({path:testInfo.outputPath(name),fullPage:true});
- await page.evaluate(y=>window.scrollTo(0,y),scroll);
+ await page.evaluate(y=>window.scrollTo({top:y,behavior:'instant'}),scroll);
 }
 async function answer(page,question,correct=true){
  if(question.kind==='single-choice'||question.kind==='multiple-choice'){
