@@ -50,6 +50,8 @@ jobs:
         id: deploy
         uses: cloudflare/wrangler-action@v4
         with:
+          # Versión del último despliegue correcto; evita resolver un tarball nuevo no disponible.
+          wranglerVersion: "4.143.0"
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy --config wrangler.jsonc
