@@ -225,7 +225,7 @@ svg { stroke-width: 1.8; }
 .activity-card h3 a:hover { color: #175b72; text-decoration: underline; }
 .card-description { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; margin: 0 0 .9rem; color: #56656e; font-size: .91rem; line-height: 1.48; }
 .card-meta { display: grid; gap: .25rem; margin: auto 0 .85rem; font-size: .82rem; }
-.card-meta div { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: .45rem; }
+.card-meta div { display: grid; grid-template-columns: 5.2rem minmax(0, 1fr); gap: .45rem; }
 .card-meta dt { color: #68767d; }
 .card-meta dd { margin: 0; font-weight: 700; }
 .card-meta .published-meta { grid-template-columns: 5.2rem minmax(0, 1fr); }

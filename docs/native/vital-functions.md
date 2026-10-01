@@ -63,3 +63,15 @@ npm run test:browser
 Las pruebas de contenido cotejan todos los enunciados y opciones con el Markdown, además de claves y categorías. Las pruebas puras cubren los cuatro correctores, respuestas incompletas, puntuación, bloqueo, reset y modo de repaso. Las regresiones siguen verificando las 65 actividades y 11 temas originales de Ciencias, además de los 82 recursos externos de la fase anterior.
 
 Las pruebas de navegador recorren sesiones correctas e incorrectas, revisión final, repetición, repaso de errores, selección con teclado, ordenación con teclado, clasificación, funcionamiento offline, Topic, búsqueda, Recientes, URL directa, recarga y vuelta atrás. Se ejecutan en escritorio, viewport iPad con touch y móvil con touch; son emulación en Chromium, no una prueba física de Safari/iPadOS. GitHub Actions conserva capturas e informe en `native-activity-browser-qa`.
+
+## Resultado de QA
+
+Las ejecuciones [32](https://github.com/t2wmt6sgff-glitch/Actividades-de-ciencias/actions/runs/36870705491) y [33](https://github.com/t2wmt6sgff-glitch/Actividades-de-ciencias/actions/runs/36870985781) pasaron catálogo, sincronización, build, 70 pruebas, TypeScript, lint y 9 pruebas de navegador. Se revisaron visualmente las capturas de entrada, ordenación, clasificación, Topic y resultados. Lint conserva una advertencia previa de `import/no-anonymous-default-export` en el Worker.
+
+La prueba manual mediante el navegador de este entorno quedó bloqueada por `ERR_BLOCKED_BY_CLIENT` al abrir la dirección interna de la vista previa. Las sesiones completas se realizaron mediante las pruebas de navegador en CI. Antes de fusionar, conviene comprobar los selects y la ordenación en Safari del iPad físico.
+
+Estas capturas de iPad corresponden al flujo ya validado; el informe de cada ejecución incluye además móvil, escritorio y la revisión de todas las preguntas.
+
+![Entrada de VITAL FUNCTIONS en iPad](screenshots/initial-ipad.png)
+
+![Ordenación de VITAL FUNCTIONS en iPad](screenshots/ordering-ipad.png)

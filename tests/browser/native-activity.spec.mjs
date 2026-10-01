@@ -7,6 +7,12 @@ const route='/actividad/vital-functions/';
 async function click(page,locator){
  if(test.info().project.use.hasTouch) await locator.tap(); else await locator.click();
 }
+async function screenshot(page,testInfo,name){
+ const scroll=await page.evaluate(()=>window.scrollY);
+ await page.evaluate(()=>window.scrollTo(0,0));
+ await page.screenshot({path:testInfo.outputPath(name),fullPage:true});
+ await page.evaluate(y=>window.scrollTo(0,y),scroll);
+}
 async function answer(page,question,correct=true){
  if(question.kind==='single-choice'||question.kind==='multiple-choice'){
   const ids=correct?question.correctIds:[question.options.find(o=>!question.correctIds.includes(o.id)).id];
@@ -39,7 +45,7 @@ async function session(page,testInfo,correct){
    expect(initial).not.toEqual(question.correctOrder.map(id=>question.items.find(i=>i.id===id).label));
   }
   await answer(page,question,correct);
-  if(correct&&['q1','q7','q10','q11'].includes(question.id))await page.screenshot({path:testInfo.outputPath(`${question.id}.png`),fullPage:true});
+  if(correct&&['q1','q7','q10','q11'].includes(question.id))await screenshot(page,testInfo,`${question.id}.png`);
   await click(page,page.getByRole('button',{name:'Comprobar',exact:true}));
   await expect(page.locator('.native-verdict')).toHaveText(correct?'Correcta':'Incorrecta');
   await expect(page.locator('.native-explanation')).toContainText(question.explanation);
@@ -51,7 +57,7 @@ async function session(page,testInfo,correct){
  await expect(page.locator('.native-score')).toContainText(`${correct?11:0} / 11`);
  await expect(page.locator('.native-result')).toHaveCount(11);
  await expect(page.locator('.native-results .native-explanation')).toHaveCount(11);
- await page.screenshot({path:testInfo.outputPath(correct?'results-correct.png':'results-incorrect.png'),fullPage:true});
+ await screenshot(page,testInfo,correct?'results-correct.png':'results-incorrect.png');
 }
 
 test('sesión completa correcta, corrección offline y repetición sin respuestas residuales',async({page,context},testInfo)=>{
@@ -61,7 +67,7 @@ test('sesión completa correcta, corrección offline y repetición sin respuesta
  // Exercise keyboard selection, then return to an empty answer before the run.
  const checkbox=page.getByRole('checkbox').first();await checkbox.focus();await checkbox.press('Space');
  await expect(checkbox).toBeChecked();await checkbox.press('Space');await expect(checkbox).not.toBeChecked();
- await page.screenshot({path:testInfo.outputPath('initial.png'),fullPage:true});
+ await screenshot(page,testInfo,'initial.png');
  await context.setOffline(true);
  await session(page,testInfo,true);
  expect(requests.every(url=>url.startsWith('http://127.0.0.1:4173/'))).toBeTruthy();
@@ -87,7 +93,7 @@ test('sesión completamente incorrecta, soluciones y repaso de errores',async({p
 
 test('navegación desde tema, búsqueda, recientes, URL directa, recarga y atrás',async({page},testInfo)=>{
  await page.goto('/asignatura/biologia-geologia/the-earth/');
- await page.screenshot({path:testInfo.outputPath('topic.png'),fullPage:true});
+ await screenshot(page,testInfo,'topic.png');
  await page.getByRole('link',{name:'Realizar actividad',exact:true}).click();
  await expect(page).toHaveURL(/\/actividad\/vital-functions\/$/);
  await page.goBack();await expect(page).toHaveURL(/\/the-earth\/$/);
