@@ -50,6 +50,25 @@
 .native-result-heading h2 { margin: .5rem 0; font-size: 1.8rem; }
 .native-score strong { font-size: 1.8rem; color: #4e3c82; }
 .native-session-note { margin: 1rem 0; font-size: .875rem; color: #56656d; }
+.native-written { display: grid; gap: .6rem; max-width: 32rem; }
+.native-written label { font-weight: 700; }
+.native-written input { min-height: 48px; min-width: 0; width: 100%; padding: .7rem .9rem; border: 1px solid #aab9b3; border-radius: .5rem; font: inherit; background: #fff; color: #172534; }
+.native-written p { margin: 0; color: #45565e; font-size: .9rem; }
+.native-true-false { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.native-matching-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+.native-matching-columns h3 { margin: 0 0 .65rem; font-size: 1rem; }
+.native-match-items { display: grid; gap: .6rem; }
+.native-match-item { display: flex; flex-direction: column; align-items: flex-start; gap: .5rem; min-height: 64px; width: 100%; border: 1px solid #aab9b3; border-radius: .6rem; padding: .8rem; color: #172534; background: #fff; font: inherit; text-align: left; overflow-wrap: anywhere; cursor: pointer; }
+.native-match-item.selected { border-color: var(--theme); background: var(--theme-soft); outline: 2px solid var(--theme); outline-offset: 1px; }
+.native-match-item small, .native-match-item strong + span { font-size: .85rem; color: #45565e; }
+.native-activity .native-match-item:disabled { opacity: 1; background: #f4f6f4; }
+.native-match-status { line-height: 1.5; font-size: .9rem; color: #45565e; }
+.native-item-review { list-style: none; padding: 0; display: grid; gap: .6rem; }
+.native-item-review li { padding: .75rem; border: 1px solid #c7d0ce; border-radius: .5rem; background: #fff; }
+.native-item-verdict { display: inline-block; margin-left: .7rem; font-size: .85rem; font-weight: 700; }
+.native-item-review p { margin: .4rem 0 0; }
+.native-original-answer { white-space: pre-wrap; }
+.native-activity input:focus-visible { outline: 3px solid #6552a0; outline-offset: 3px; }
 .native-activity :is(button, select):focus-visible { outline: 3px solid #6552a0; outline-offset: 3px; }
 .native-activity h2:focus, .native-activity [role="region"]:focus { outline: 2px solid #6552a0; outline-offset: 5px; }
 @media (max-width: 540px) {

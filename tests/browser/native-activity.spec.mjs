@@ -49,7 +49,8 @@ async function session(page,testInfo,correct){
   await click(page,page.getByRole('button',{name:'Comprobar',exact:true}));
   await expect(page.locator('.native-verdict')).toHaveText(correct?'Correcta':'Incorrecta');
   await expect(page.locator('.native-explanation')).toContainText(question.explanation);
-  await expect(page.getByRole('heading',{name:'Respuesta correcta',exact:true})).toBeVisible();
+  if(question.kind==='classification')await expect(page.locator('.native-item-review li')).toHaveCount(question.items.length);
+  else await expect(page.getByRole('heading',{name:'Respuesta correcta',exact:true})).toBeVisible();
   await click(page,page.getByRole('button',{name:index===10?'Ver resultados':'Continuar',exact:true}));
   await expect(page.locator(index===10?'.native-result-heading h2':'.native-question h2')).toBeInViewport();
  }
@@ -94,7 +95,7 @@ test('sesión completamente incorrecta, soluciones y repaso de errores',async({p
 test('navegación desde tema, búsqueda, recientes, URL directa, recarga y atrás',async({page},testInfo)=>{
  await page.goto('/asignatura/biologia-geologia/the-earth/');
  await screenshot(page,testInfo,'topic.png');
- await page.getByRole('link',{name:'Realizar actividad',exact:true}).click();
+ await page.locator('.activity-card').filter({has:page.getByRole('heading',{name:'VITAL FUNCTIONS',exact:true})}).getByRole('link',{name:'Realizar actividad',exact:true}).click();
  await expect(page).toHaveURL(/\/actividad\/vital-functions\/$/);
  await page.goBack();await expect(page).toHaveURL(/\/the-earth\/$/);
  await page.goto('/explorar/?q=Vital%20Functions');

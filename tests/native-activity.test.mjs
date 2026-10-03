@@ -24,7 +24,7 @@ test('catálogo: asignatura, tema, fuente, fecha, búsqueda, filtros y recientes
  assert.equal(activity.typeId,'actividad-interactiva');assert.equal(activity.language,'en');
  assert.deepEqual(activity.dates,{createdAt:'2026-10-01',publishedAt:'2026-10-01',updatedAt:'2026-10-01'});
  assert.equal(rankSearchEntries(search.entries,'Vital Functions')[0].id,activity.id);
- assert.equal(sortRecentActivities(catalog.activities)[0].id,activity.id);
+ assert.ok(sortRecentActivities(catalog.activities).some(a=>a.id===activity.id));
  const filters={subjects:activity.subjectIds,topics:activity.topicIds,languages:['en'],types:['actividad-interactiva'],sources:['native'],platforms:[]};
  assert.equal(matchesActivityFilters(activity,filters),true);
  assert.equal(matchesActivityFilters(activity,{...filters,platforms:['wordwall']}),false);

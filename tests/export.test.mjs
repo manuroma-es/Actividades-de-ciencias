@@ -44,7 +44,7 @@ test("exporta todas las rutas directas", async () => {
     ...data.activities.map((activity) => `actividad/${activity.slug}/index.html`),
   ];
   await Promise.all(expected.map((relative) => access(path.join(root, "out", relative))));
-  assert.equal(expected.length, 160);
+  assert.equal(expected.length, 161);
 });
 
 test("exporta las once imágenes temáticas", async () => {
