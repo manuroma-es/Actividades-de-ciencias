@@ -14,6 +14,7 @@ Explanations are local, fixed English text. Historical and cell-theory context w
 - https://openstax.org/books/microbiology/pages/2-2-peering-into-the-invisible-world
 - https://openstax.org/books/biology-2e/pages/4-1-studying-cells
 - https://openstax.org/books/microbiology/pages/3-2-foundations-of-modern-cell-theory
+- https://openstax.org/books/biology-2e/pages/40-2-components-of-the-blood (white blood cell lifetimes vary)
 
 ## Engine extensions
 

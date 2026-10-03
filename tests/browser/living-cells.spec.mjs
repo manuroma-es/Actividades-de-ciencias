@@ -119,7 +119,10 @@ test('Cells: Topic, search, filters, recent listing, reload and back',async({pag
  await page.goBack();await expect(page).toHaveURL(/the-earth\/$/);
  await page.goto('/explorar/?q=LIVING%20THINGS%20ARE%20FORMED%20OF%20CELLS');
  await expect(page.locator('.activity-card')).toHaveCount(1);
- await page.getByRole('link',{name:'Realizar actividad',exact:true}).click();await page.reload();
+ await page.getByRole('link',{name:'Realizar actividad',exact:true}).click();
+ await expect(page).toHaveURL(new RegExp(`${route}$`));
+ await expect(page.locator('.native-progress-heading')).toContainText('Pregunta 1 de 8');
+ await page.reload();
  await expect(page.locator('.native-progress-heading')).toContainText('Pregunta 1 de 8');await expect(page.locator('input:checked')).toHaveCount(0);
  await page.goto('/recientes/');await expect(page.getByRole('heading',{name:'LIVING THINGS ARE FORMED OF CELLS',exact:true})).toBeVisible();
 });
