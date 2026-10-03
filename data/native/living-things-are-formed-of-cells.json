@@ -3,6 +3,9 @@
   "activityType": "mixed-practice",
   "id": "native-living-things-are-formed-of-cells",
   "language": "en",
+  "feedback": {
+    "explanations": "final-only"
+  },
   "questions": [
     {
       "id": "q1", "kind": "multiple-choice",

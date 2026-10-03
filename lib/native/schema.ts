@@ -28,11 +28,13 @@ export interface MatchingQuestion extends QuestionBase {
   correctMatches: Record<string, string>;
 }
 export type Question = ChoiceQuestion | OrderingQuestion | ClassificationQuestion | YearQuestion | TextQuestion | MatchingQuestion;
+export interface NativeFeedback { explanations: "immediate" | "final-only" }
 export interface NativeContent {
   engineVersion: 1;
   activityType: "mixed-practice";
   id: string;
   language: string;
+  feedback?: NativeFeedback;
   questions: Question[];
 }
 export type Answer = string[] | Record<string, string> | string;

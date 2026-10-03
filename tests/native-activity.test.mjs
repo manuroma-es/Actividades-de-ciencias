@@ -15,6 +15,7 @@ const markdown=await readFile('data/native/sources/vital-functions.md','utf8');
 const q=id=>content.questions.find(q=>q.id===id);
 
 test('catálogo: asignatura, tema, fuente, fecha, búsqueda, filtros y recientes',()=>{
+ assert.equal(content.feedback,undefined);
  assert.equal(catalog.subjects.find(s=>s.id===activity.primarySubjectId).name,'Biología y Geología');
  assert.equal(catalog.topics.find(t=>t.id===activity.primaryTopicId).name,'THE EARTH');
  assert.deepEqual(activity.topicIds,['topic-biologia-geologia-the-earth']);

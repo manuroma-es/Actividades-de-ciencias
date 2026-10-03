@@ -32,6 +32,7 @@ export function NativeActivity({ content, initialAttempt }: { content: NativeCon
   const checked = attempt.checked.includes(question.id);
   const results = getResults(content, attempt);
   const retryOnly = attempt.mode === "errors";
+  const showExplanationDuringAttempt = content.feedback?.explanations !== "final-only";
 
   useEffect(() => {
     // Static HTML is shared. Each browser entry needs its own one-time shuffle.
@@ -71,7 +72,7 @@ export function NativeActivity({ content, initialAttempt }: { content: NativeCon
         {question.note ? <p className="native-content-note" lang="en">{question.note}</p> : null}
         <QuestionControls key={`${attempt.questionIds.join("-")}-${question.id}-${attempt.mode}`} question={question} answer={answer} order={attempt.itemOrders[question.id]} locked={checked} onAnswer={value => dispatch({ type: "answer", answer: value })} />
         {question.kind === "classification" && !checked ? <p className="native-assigned" aria-live="polite">{Object.values(answer).filter(Boolean).length} / {question.items.length} elementos clasificados</p> : null}
-        {checked ? <div ref={feedback} tabIndex={-1} role="region" aria-label="Corrección de la pregunta"><AnswerReview question={question} answer={answer} correct={gradeQuestion(question, answer)} /></div> : null}
+        {checked ? <div ref={feedback} tabIndex={-1} role="region" aria-label="Corrección de la pregunta"><AnswerReview question={question} answer={answer} correct={gradeQuestion(question, answer)} showExplanation={showExplanationDuringAttempt} /></div> : null}
         <div className="native-actions">
           {checked ? <button className="native-primary" onClick={() => dispatch({ type: "next" })}>{attempt.index === attempt.questionIds.length - 1 ? "Ver resultados" : "Continuar"}</button>
             : <button className="native-primary" disabled={!isComplete(question, answer)} onClick={() => dispatch({ type: "check" })}>Comprobar</button>}
