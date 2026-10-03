@@ -38,7 +38,7 @@ function ChoiceFeedback({ question, answer }: { question: Question; answer: Answ
   </div>;
 }
 
-export function AnswerReview({ question, answer, correct }: { question: Question; answer: Answer; correct: boolean }) {
+export function AnswerReview({ question, answer, correct, showExplanation = true }: { question: Question; answer: Answer; correct: boolean; showExplanation?: boolean }) {
   return <div className={`native-review ${correct ? "is-correct" : "is-incorrect"}`}>
     <p className="native-verdict"><strong>{correct ? "Correcta" : "Incorrecta"}</strong></p>
     <ChoiceFeedback question={question} answer={answer} />
@@ -46,6 +46,6 @@ export function AnswerReview({ question, answer, correct }: { question: Question
       <section><h4>Tu respuesta</h4><AnswerDisplay question={question} answer={answer} /></section>
       <section><h4>Respuesta correcta</h4><AnswerDisplay question={question} answer={correctAnswer(question)} /></section>
     </div>}
-    <section className="native-explanation"><h4>Explicación</h4><p lang="en">{question.explanation}</p></section>
+    {showExplanation ? <section className="native-explanation"><h4>Explicación</h4><p lang="en">{question.explanation}</p></section> : null}
   </div>;
 }

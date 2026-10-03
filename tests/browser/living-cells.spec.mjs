@@ -34,10 +34,12 @@ async function answer(page,q,wrong=false){
 async function checkNext(page,q,last,wrong=false){
  await click(page.getByRole('button',{name:'Comprobar',exact:true}));
  await expect(page.locator('.native-verdict')).toHaveText(wrong?'Incorrecta':'Correcta');
- await expect(page.locator('.native-explanation')).toContainText(q.explanation);
+ await expect(page.locator('.native-explanation')).toHaveCount(0);
  if(['matching','classification'].includes(q.kind)){
   await expect(page.locator('.native-item-review li')).toHaveCount((q.left??q.items).length);
   await expect(page.locator('.native-item-review li').first()).toContainText('Respuesta correcta:');
+ }else{
+  await expect(page.getByRole('heading',{name:'Respuesta correcta',exact:true})).toBeVisible();
  }
  if(wrong&&q.kind==='multiple-choice'){
   await expect(page.locator('.native-choice-feedback')).toContainText('Correctas omitidas:');
@@ -73,6 +75,7 @@ test('Cells: all eight correct offline, stable options, year validation, keyboar
  }
  await expect(page.locator('.native-score')).toContainText('8 / 8');
  await expect(page.locator('.native-result')).toHaveCount(8);await expect(page.locator('.native-results .native-explanation')).toHaveCount(8);
+ for(const [index,q] of c.questions.entries())await expect(page.locator('.native-result').nth(index).locator('.native-explanation')).toContainText(q.explanation);
  await capture(page,info,'results-correct.png');
  expect(requests.every(url=>url.startsWith('http://127.0.0.1:4173/'))).toBeTruthy();
  await page.evaluate(()=>{Math.random=()=>.999;});
@@ -110,6 +113,8 @@ test('Cells: partial errors, changed pairs, complete review and ordered retry su
   await answer(page,q);await checkNext(page,q,index===4);
  }
  await expect(page.locator('.native-score')).toContainText('5 / 5');
+ await expect(page.locator('.native-results .native-explanation')).toHaveCount(5);
+ for(const [index,id] of wrongIds.entries())await expect(page.locator('.native-result').nth(index).locator('.native-explanation')).toContainText(c.questions.find(q=>q.id===id).explanation);
 });
 
 test('Cells: Topic, search, filters, recent listing, reload and back',async({page})=>{
