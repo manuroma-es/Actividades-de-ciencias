@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": {
     "file": "data/catalogo-actividades.xlsx",
-    "sha256": "218e80b81452eec4a9efc074d38c8002e152324204a81a0f196b0fe3a37831de"
+    "sha256": "f3fdca3698479951236d025ce897cb4cf3b1c5bad620655f90a4f69cd0ae8d64"
   },
   "subjects": [
     {
@@ -5126,6 +5126,50 @@
           "engineVersion": 1,
           "activityType": "mixed-practice",
           "contentPath": "data/native/vital-functions.json"
+        }
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "native-living-things-are-formed-of-cells",
+      "slug": "living-things-are-formed-of-cells",
+      "title": "LIVING THINGS ARE FORMED OF CELLS",
+      "description": "Repasa las necesidades de los seres vivos, el descubrimiento de las células y los organismos unicelulares y multicelulares con ocho ejercicios interactivos.",
+      "primarySubjectId": "biologia-geologia",
+      "subjectIds": [
+        "biologia-geologia"
+      ],
+      "primaryTopicId": "topic-biologia-geologia-the-earth",
+      "topicIds": [
+        "topic-biologia-geologia-the-earth"
+      ],
+      "language": "en",
+      "typeId": "actividad-interactiva",
+      "originCourseLabel": "1.º ESO",
+      "tags": [
+        "células",
+        "seres vivos"
+      ],
+      "keywords": [
+        "living things",
+        "cells",
+        "unicellular",
+        "multicellular",
+        "Leeuwenhoek",
+        "Hooke"
+      ],
+      "dates": {
+        "createdAt": "2026-10-03",
+        "publishedAt": "2026-10-03",
+        "updatedAt": "2026-10-03"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "native",
+        "native": {
+          "engineVersion": 1,
+          "activityType": "mixed-practice",
+          "contentPath": "data/native/living-things-are-formed-of-cells.json"
         }
       }
     }

@@ -1,0 +1,81 @@
+{
+  "engineVersion": 1,
+  "activityType": "mixed-practice",
+  "id": "native-living-things-are-formed-of-cells",
+  "language": "en",
+  "questions": [
+    {
+      "id": "q1", "kind": "multiple-choice",
+      "prompt": "What do living things need to survive?",
+      "options": [
+        {"id":"o1","label":"A source of energy"},
+        {"id":"o2","label":"Water"},
+        {"id":"o3","label":"Oxygen to breathe (except anaerobic organisms)"},
+        {"id":"o4","label":"Protection from harmful radiation"},
+        {"id":"o5","label":"A physical environment to support them"},
+        {"id":"o6","label":"Sunlight"},
+        {"id":"o7","label":"Carbon dioxide to breathe"},
+        {"id":"o8","label":"A constant warm temperature"},
+        {"id":"o9","label":"Soil"},
+        {"id":"o10","label":"Other living things nearby"},
+        {"id":"o11","label":"Vitamins and minerals from food"},
+        {"id":"o12","label":"A large amount of space"}
+      ],
+      "correctIds": ["o1","o2","o3","o4","o5"],
+      "explanation": "The correct options describe the basic needs in this activity: energy, water, suitable surroundings and protection from harmful radiation. Oxygen is needed by aerobic organisms; anaerobic organisms are the exception. The other options are not requirements shared by all living things."
+    },
+    {
+      "id":"q2", "kind":"year",
+      "prompt":"When did we first see living cells?",
+      "correctYear":1673, "minYear":1, "maxYear":9999,
+      "explanation":"The answer in this study material is 1673, the year Leeuwenhoek began sending accounts of his microscope observations to the Royal Society. His observations of different living cells continued through the 1670s."
+    },
+    {
+      "id":"q3", "kind":"text-input",
+      "prompt":"Who discovered them (living cells)?",
+      "instruction":"Write only the person’s name.",
+      "inputLabel":"Person’s name",
+      "expectedText":"Anton van Leeuwenhoek",
+      "explanation":"Anton van Leeuwenhoek used microscopes to observe living microscopic organisms. Write his name alone; capital letters, accents and extra spaces do not change which person you mean."
+    },
+    {
+      "id":"q4", "kind":"single-choice", "presentation":"true-false",
+      "prompt":"A complete organism consists of cells.",
+      "options":[{"id":"o1","label":"True"},{"id":"o2","label":"False"}],
+      "correctIds":["o1"],
+      "explanation":"An organism is made of one or more cells. A unicellular organism has one cell; a multicellular organism has many cells."
+    },
+    {
+      "id":"q5", "kind":"single-choice", "presentation":"true-false",
+      "prompt":"Robert Hooke observed living cells.",
+      "options":[{"id":"o1","label":"False"},{"id":"o2","label":"True"}],
+      "correctIds":["o1"],
+      "explanation":"Hooke's famous observations were of cork, whose cells were dead. He saw the remaining cell walls. Leeuwenhoek later observed living microscopic organisms."
+    },
+    {
+      "id":"q6", "kind":"classification",
+      "prompt":"Classify these organisms into unicellular and multicellular organisms.",
+      "items":[{"id":"i1","label":"bacteria"},{"id":"i2","label":"protozoa"},{"id":"i3","label":"animal"},{"id":"i4","label":"plant"}],
+      "categories":[{"id":"c1","label":"Unicellular"},{"id":"c2","label":"Multicellular"}],
+      "correctCategories":{"i1":"c1","i2":"c1","i3":"c2","i4":"c2"},
+      "explanation":"Bacteria and protozoa are unicellular: each organism consists of one cell. Animals and plants are multicellular: each organism consists of many cells."
+    },
+    {
+      "id":"q7", "kind":"matching",
+      "prompt":"Depending on how many cells they have, we classify organisms as:",
+      "left":[{"id":"l1","label":"unicellular"},{"id":"l2","label":"multicellular"}],
+      "right":[{"id":"r1","label":"if they are made up of a single cell"},{"id":"r2","label":"if they have more than one cell"}],
+      "correctMatches":{"l1":"r1","l2":"r2"},
+      "explanation":"Uni- means one, so unicellular organisms have a single cell. Multi- means many, so multicellular organisms have more than one cell."
+    },
+    {
+      "id":"q8", "kind":"matching",
+      "prompt":"Match.",
+      "left":[{"id":"l1","label":"50 billion"},{"id":"l2","label":"37 trillion"},{"id":"l3","label":"200"},{"id":"l4","label":"96 million"},{"id":"l5","label":"18"}],
+      "right":[{"id":"r1","label":"number of fat cells in a human body"},{"id":"r2","label":"total number of cells in an adult"},{"id":"r3","label":"types of cells in a human"},{"id":"r4","label":"number of cells that die every day"},{"id":"r5","label":"days that a white blood cell lives"}],
+      "correctMatches":{"l1":"r1","l2":"r2","l3":"r3","l4":"r4","l5":"r5"},
+      "note":"Match the figures from your study material. These figures should not be treated as fixed measurements for every person or every white blood cell.",
+      "explanation":"In this exercise, 50 billion refers to fat cells and 37 trillion to all cells in an adult. The figure 200 describes cell types, 96 million describes cells dying per day, and 18 describes a lifetime in days. Keep the quantity, category and unit together when studying these pairs."
+    }
+  ]
+}

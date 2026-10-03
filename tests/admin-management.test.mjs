@@ -22,5 +22,5 @@ test('altas, edición, relaciones, reasignación y borrados mantienen el Excel v
  const denied=run({entity:'topic',action:'delete',item:{id:topic}},current,path.join(dir,'denied.xlsx'));assert.notEqual(denied.status,0);
  op('topic','delete',{id:topic,replacementTopicId:'topic-matematicas-operaciones-combinadas'});
  c=generate(current,dir);assert.equal(c.activities.find(x=>x.id===activity).slug,slug);assert.deepEqual(c.activities.find(x=>x.id===activity).topicIds,['topic-matematicas-operaciones-combinadas']);
- op('activity','delete',{id:activity});c=generate(current,dir);assert.equal(c.activities.length,83);assert.equal(c.topics.length,33);
+ op('activity','delete',{id:activity});c=generate(current,dir);assert.equal(c.activities.length,84);assert.equal(c.topics.length,33);
 });

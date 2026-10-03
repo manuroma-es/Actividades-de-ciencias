@@ -8,11 +8,16 @@ import { AnswerReview } from "./answer-review";
 import "./native-activity.css";
 
 function instruction(question: Question) {
+  if (question.kind === "text-input") return question.instruction;
+  if (question.kind === "single-choice" && question.presentation === "true-false") return "Choose True or False.";
   return {
     "single-choice": "Select one answer.",
     "multiple-choice": "Select all correct answers. More than one answer is correct.",
     ordering: "Use the up and down buttons to sort from largest to smallest.",
     classification: "Choose a category for every item.",
+    year: "Enter or adjust the year. Use a whole number.",
+    matching: "Select a concept on the left, then its match on the right. You can change pairs before checking.",
+    "text-input": "",
   }[question.kind];
 }
 
@@ -27,6 +32,11 @@ export function NativeActivity({ content, initialAttempt }: { content: NativeCon
   const checked = attempt.checked.includes(question.id);
   const results = getResults(content, attempt);
   const retryOnly = attempt.mode === "errors";
+
+  useEffect(() => {
+    // Static HTML is shared. Each browser entry needs its own one-time shuffle.
+    dispatch({ type: "reset", attempt: createAttempt(content) });
+  }, [content]);
 
   useEffect(() => {
     // Move focus after navigation/repetition, keeping keyboard and reader context.
@@ -59,7 +69,7 @@ export function NativeActivity({ content, initialAttempt }: { content: NativeCon
         <h2 lang="en" tabIndex={-1} ref={heading}>{question.prompt}</h2>
         <p id="question-instruction" className="native-instruction" lang="en">{instruction(question)}</p>
         {question.note ? <p className="native-content-note" lang="en">{question.note}</p> : null}
-        <QuestionControls question={question} answer={answer} order={attempt.itemOrders[question.id]} locked={checked} onAnswer={value => dispatch({ type: "answer", answer: value })} />
+        <QuestionControls key={`${attempt.questionIds.join("-")}-${question.id}-${attempt.mode}`} question={question} answer={answer} order={attempt.itemOrders[question.id]} locked={checked} onAnswer={value => dispatch({ type: "answer", answer: value })} />
         {question.kind === "classification" && !checked ? <p className="native-assigned" aria-live="polite">{Object.values(answer).filter(Boolean).length} / {question.items.length} elementos clasificados</p> : null}
         {checked ? <div ref={feedback} tabIndex={-1} role="region" aria-label="Corrección de la pregunta"><AnswerReview question={question} answer={answer} correct={gradeQuestion(question, answer)} /></div> : null}
         <div className="native-actions">
