@@ -12,7 +12,7 @@ const labels=items=>items.map(i=>i.label);
 
 test('Cells: eight questions in exact source order, exact options and answer keys',()=>{
  const headings=[...md.matchAll(/^##\s+(\d+)\.\s*(.+)$/gm)];
- assert.equal(headings.length,8);assert.equal(c.questions.length,8);
+ assert.equal(headings.length,8);assert.equal(c.questions.length,8);assert.equal(c.feedback?.explanations,'final-only');
  assert.deepEqual(c.questions.map(v=>v.id),['q1','q2','q3','q4','q5','q6','q7','q8']);
  assert.deepEqual(c.questions.map(v=>v.prompt),headings.map(m=>m[2].trim()));
  assert.deepEqual(c.questions.map(v=>v.kind),['multiple-choice','year','text-input','single-choice','single-choice','classification','matching','matching']);
@@ -31,6 +31,21 @@ test('Cells: eight questions in exact source order, exact options and answer key
  assert.deepEqual(pairs(7),[['unicellular','if they are made up of a single cell'],['multicellular','if they have more than one cell']]);
  assert.deepEqual(pairs(8),[['50 billion','number of fat cells in a human body'],['37 trillion','total number of cells in an adult'],['200','types of cells in a human'],['96 million','number of cells that die every day'],['18','days that a white blood cell lives']]);
  for(const question of c.questions)assert.ok(question.explanation.length>30);
+});
+
+test('Cells: Q4 keeps True correct and False incorrect regardless of visual shuffle',()=>{
+ const question=q(4);
+ const trueId=question.options.find(o=>o.label==='True').id;
+ const falseId=question.options.find(o=>o.label==='False').id;
+ assert.deepEqual(question.correctIds,[trueId]);
+ assert.equal(gradeQuestion(question,[trueId]),true);
+ assert.equal(gradeQuestion(question,[falseId]),false);
+ for(const random of [()=>0,()=>.999,()=>.35]){
+  const order=createAttempt(c,undefined,random).itemOrders.q4;
+  assert.deepEqual([...order].sort(),[trueId,falseId].sort());
+  assert.equal(gradeQuestion(question,[trueId]),true);
+  assert.equal(gradeQuestion(question,[falseId]),false);
+ }
 });
 
 test('Cells: text comparison handles Unicode, accents, case and spaces without accepting extra words',()=>{
@@ -88,7 +103,7 @@ test('Cells: deterministic shuffles preserve IDs, mappings and question order th
 });
 
 test('Cells: native validator rejects malformed new question types',()=>{
- for(const mutate of [x=>x.questions[1].correctYear=1673.5,x=>x.questions[1].maxYear=1600,x=>x.questions[2].expectedText='',x=>x.questions[2].instruction='',x=>x.questions[3].options[0].label='Yes',x=>x.questions[6].correctMatches.l2='r1',x=>x.questions[7].right[0].id='missing']){
+ for(const mutate of [x=>x.feedback={explanations:'later'},x=>x.questions[1].correctYear=1673.5,x=>x.questions[1].maxYear=1600,x=>x.questions[2].expectedText='',x=>x.questions[2].instruction='',x=>x.questions[3].options[0].label='Yes',x=>x.questions[6].correctMatches.l2='r1',x=>x.questions[7].right[0].id='missing']){
   const invalid=structuredClone(c);mutate(invalid);assert.throws(()=>validateContent(invalid));
  }
 });
