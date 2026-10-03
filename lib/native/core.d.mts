@@ -1,4 +1,6 @@
-import type { NativeContent, Question, Answer, Attempt, AttemptAction } from "./schema";
+import type { NativeContent, Question, MatchingQuestion, Answer, Attempt, AttemptAction } from "./schema";
+export function normalizeText(value: string): string;
+export function assignMatch(question: MatchingQuestion, answer: Record<string, string>, leftId: string, rightId: string): Record<string, string>;
 export function validateContent(content: unknown): NativeContent;
 export function shuffle<T>(values: T[], random?: () => number): T[];
 export function createAttempt(content: NativeContent, questionIds?: string[], random?: () => number): Attempt;
