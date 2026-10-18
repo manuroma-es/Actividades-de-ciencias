@@ -1435,15 +1435,25 @@
       "id": "EP-30815160",
       "title": "what are cells like? animal and plant cell",
       "sourceTitle": "what are cells like? animal and plant cell",
-      "description": "",
+      "description": "english-language quiz with questions about cells and the characteristics of animal and plant cells.",
       "subjects": [
         "biologia y geologia"
       ],
       "topics": [
         "the earth"
       ],
-      "tags": [],
-      "keywords": [],
+      "tags": [
+        "animal cell",
+        "plant cell",
+        "cell structure"
+      ],
+      "keywords": [
+        "celula animal",
+        "celula vegetal",
+        "eukaryotic cell",
+        "cells",
+        "cell parts"
+      ],
       "type": "actividad interactiva",
       "language": "en ingles ingles english",
       "platform": "educaplay",
@@ -1453,15 +1463,25 @@
       "id": "EP-30945103",
       "title": "animal cell",
       "sourceTitle": "animal cell",
-      "description": "",
+      "description": "english-language interactive map for identifying the parts of an animal cell and reviewing eukaryotic cell structure.",
       "subjects": [
         "biologia y geologia"
       ],
       "topics": [
         "the earth"
       ],
-      "tags": [],
-      "keywords": [],
+      "tags": [
+        "animal cell",
+        "eukaryotic cell",
+        "cell parts"
+      ],
+      "keywords": [
+        "celula animal",
+        "celula eucariota",
+        "cell structure",
+        "organelles",
+        "interactive map"
+      ],
       "type": "actividad interactiva",
       "language": "en ingles ingles english",
       "platform": "educaplay",
@@ -1471,15 +1491,25 @@
       "id": "EP-31000797",
       "title": "plant cell",
       "sourceTitle": "plant cell",
-      "description": "",
+      "description": "english-language interactive map to identify the parts of a plant cell and review eukaryotic cell structure.",
       "subjects": [
         "biologia y geologia"
       ],
       "topics": [
         "the earth"
       ],
-      "tags": [],
-      "keywords": [],
+      "tags": [
+        "plant cell",
+        "eukaryotic cell",
+        "cell parts"
+      ],
+      "keywords": [
+        "celula vegetal",
+        "celula eucariota",
+        "cell structure",
+        "organelles",
+        "interactive map"
+      ],
       "type": "actividad interactiva",
       "language": "en ingles ingles english",
       "platform": "educaplay",
@@ -1489,15 +1519,27 @@
       "id": "LUMI-1PCQ0H",
       "title": "how do living things get nutrients?",
       "sourceTitle": "how do living things get nutrients?",
-      "description": "",
+      "description": "english-language quiz on the nutrition function in living things, including autotrophic and heterotrophic nutrition, nutrients, cellular respiration and the route oxygen follows through the body.",
       "subjects": [
         "biologia y geologia"
       ],
       "topics": [
         "the earth"
       ],
-      "tags": [],
-      "keywords": [],
+      "tags": [
+        "cellular nutrition",
+        "autotrophic nutrition",
+        "heterotrophic nutrition"
+      ],
+      "keywords": [
+        "nutricion celular",
+        "nutrients",
+        "cell respiration",
+        "mitochondria",
+        "oxygen pathway",
+        "nutricion autotrofa",
+        "nutricion heterotrofa"
+      ],
       "type": "actividad interactiva",
       "language": "en ingles ingles english",
       "platform": "lumi",
@@ -1507,15 +1549,27 @@
       "id": "LUMI-3ARRY5",
       "title": "how do living things interact with their environment? parte 1",
       "sourceTitle": "how do living things interact with their environment? parte 1",
-      "description": "",
+      "description": "english-language quiz on the interaction function: how cells respond to stimuli and move by amoeboid, contractile or vibratile mechanisms involving pseudopodia, cilia and flagella.",
       "subjects": [
         "biologia y geologia"
       ],
       "topics": [
         "the earth"
       ],
-      "tags": [],
-      "keywords": [],
+      "tags": [
+        "interaction function",
+        "cell movement",
+        "response to stimuli"
+      ],
+      "keywords": [
+        "funcion de relacion",
+        "movimiento celular",
+        "amoeboid movement",
+        "pseudopodia",
+        "cilia",
+        "flagella",
+        "contractile movement"
+      ],
       "type": "actividad interactiva",
       "language": "en ingles ingles english",
       "platform": "lumi",
@@ -1525,15 +1579,26 @@
       "id": "LUMI-IUQRTE",
       "title": "how do living things reproduce? parte 1",
       "sourceTitle": "how do living things reproduce? parte 1",
-      "description": "",
+      "description": "english-language quiz on mitosis and cell reproduction, comparing asexual and sexual reproduction and reviewing chromosome numbers in female cells and embryos.",
       "subjects": [
         "biologia y geologia"
       ],
       "topics": [
         "the earth"
       ],
-      "tags": [],
-      "keywords": [],
+      "tags": [
+        "mitosis",
+        "asexual reproduction",
+        "sexual reproduction"
+      ],
+      "keywords": [
+        "mitosis",
+        "reproduccion asexual",
+        "reproduccion sexual",
+        "chromosomes",
+        "chromosomes in cells",
+        "embryo"
+      ],
       "type": "actividad interactiva",
       "language": "en ingles ingles english",
       "platform": "lumi",
@@ -1788,15 +1853,27 @@
       "id": "WW-121629558",
       "title": "how do living things reproduce? parte 2",
       "sourceTitle": "how do living things reproduce? parte 2",
-      "description": "",
+      "description": "english-language group-sort activity to classify features and examples of sexual and asexual reproduction, including sex cells, zygotes, plants, animals and unicellular organisms.",
       "subjects": [
         "biologia y geologia"
       ],
       "topics": [
         "the earth"
       ],
-      "tags": [],
-      "keywords": [],
+      "tags": [
+        "sexual reproduction",
+        "asexual reproduction",
+        "reproduction examples"
+      ],
+      "keywords": [
+        "reproduccion sexual",
+        "reproduccion asexual",
+        "gametes",
+        "sex cells",
+        "zygote",
+        "unicellular organisms",
+        "classification"
+      ],
       "type": "actividad interactiva",
       "language": "en ingles ingles english",
       "platform": "wordwall",
@@ -1806,15 +1883,27 @@
       "id": "WW-121676126",
       "title": "how do living things interact with their environment? parte 2",
       "sourceTitle": "how do living things interact with their environment? parte 2",
-      "description": "",
+      "description": "english-language group-sort activity to classify cellular movement mechanisms and their features: amoeboid, contractile, ciliary and flagellar movement.",
       "subjects": [
         "biologia y geologia"
       ],
       "topics": [
         "the earth"
       ],
-      "tags": [],
-      "keywords": [],
+      "tags": [
+        "interaction function",
+        "cell movement",
+        "types of movement"
+      ],
+      "keywords": [
+        "funcion de relacion",
+        "movimiento celular",
+        "pseudopodia",
+        "cilia",
+        "flagella",
+        "contractile movement",
+        "classification"
+      ],
       "type": "actividad interactiva",
       "language": "en ingles ingles english",
       "platform": "wordwall",
