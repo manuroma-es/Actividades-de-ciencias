@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": {
     "file": "data/catalogo-actividades.xlsx",
-    "sha256": "c217d3e5502d2a5bf2df1f2fd5d68253c024b960191f64ded8bf8ab007acb704"
+    "sha256": "69d3f93f708f54b22384fcb3156cb21dc8320943f93091accd2435fc79be7945"
   },
   "subjects": [
     {
@@ -5188,6 +5188,7 @@
       "slug": "what-are-cells-like-animal-and-plant-cell",
       "title": "What Are Cells Like? Animal and Plant Cell",
       "sourceTitle": "What Are Cells Like? Animal and Plant Cell",
+      "description": "English-language quiz with questions about cells and the characteristics of animal and plant cells.",
       "primarySubjectId": "biologia-geologia",
       "subjectIds": [
         "biologia-geologia"
@@ -5199,6 +5200,18 @@
       "language": "en",
       "typeId": "actividad-interactiva",
       "originCourseLabel": "1.º ESO",
+      "tags": [
+        "animal cell",
+        "plant cell",
+        "cell structure"
+      ],
+      "keywords": [
+        "célula animal",
+        "célula vegetal",
+        "eukaryotic cell",
+        "cells",
+        "cell parts"
+      ],
       "dates": {
         "createdAt": null,
         "publishedAt": "2026-10-18",
@@ -5217,10 +5230,7 @@
         "titleVerified": false,
         "titleSource": "Markdown proporcionado",
         "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
-      },
-      "description": "",
-      "tags": [],
-      "keywords": []
+      }
     },
     {
       "schemaVersion": 1,
@@ -5228,6 +5238,7 @@
       "slug": "animal-cell",
       "title": "Animal Cell",
       "sourceTitle": "Animal Cell",
+      "description": "English-language interactive map for identifying the parts of an animal cell and reviewing eukaryotic cell structure.",
       "primarySubjectId": "biologia-geologia",
       "subjectIds": [
         "biologia-geologia"
@@ -5239,6 +5250,18 @@
       "language": "en",
       "typeId": "actividad-interactiva",
       "originCourseLabel": "1.º ESO",
+      "tags": [
+        "animal cell",
+        "eukaryotic cell",
+        "cell parts"
+      ],
+      "keywords": [
+        "célula animal",
+        "célula eucariota",
+        "cell structure",
+        "organelles",
+        "interactive map"
+      ],
       "dates": {
         "createdAt": null,
         "publishedAt": "2026-10-18",
@@ -5257,10 +5280,7 @@
         "titleVerified": false,
         "titleSource": "Markdown proporcionado",
         "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
-      },
-      "description": "",
-      "tags": [],
-      "keywords": []
+      }
     },
     {
       "schemaVersion": 1,
@@ -5268,6 +5288,7 @@
       "slug": "plant-cell",
       "title": "Plant Cell",
       "sourceTitle": "Plant Cell",
+      "description": "English-language interactive map to identify the parts of a plant cell and review eukaryotic cell structure.",
       "primarySubjectId": "biologia-geologia",
       "subjectIds": [
         "biologia-geologia"
@@ -5279,6 +5300,18 @@
       "language": "en",
       "typeId": "actividad-interactiva",
       "originCourseLabel": "1.º ESO",
+      "tags": [
+        "plant cell",
+        "eukaryotic cell",
+        "cell parts"
+      ],
+      "keywords": [
+        "célula vegetal",
+        "célula eucariota",
+        "cell structure",
+        "organelles",
+        "interactive map"
+      ],
       "dates": {
         "createdAt": null,
         "publishedAt": "2026-10-18",
@@ -5297,10 +5330,7 @@
         "titleVerified": false,
         "titleSource": "Markdown proporcionado",
         "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
-      },
-      "description": "",
-      "tags": [],
-      "keywords": []
+      }
     },
     {
       "schemaVersion": 1,
@@ -5308,6 +5338,7 @@
       "slug": "how-do-living-things-get-nutrients",
       "title": "How Do Living Things Get Nutrients?",
       "sourceTitle": "How Do Living Things Get Nutrients?",
+      "description": "English-language quiz on the nutrition function in living things, including autotrophic and heterotrophic nutrition, nutrients, cellular respiration and the route oxygen follows through the body.",
       "primarySubjectId": "biologia-geologia",
       "subjectIds": [
         "biologia-geologia"
@@ -5319,6 +5350,20 @@
       "language": "en",
       "typeId": "actividad-interactiva",
       "originCourseLabel": "1.º ESO",
+      "tags": [
+        "cellular nutrition",
+        "autotrophic nutrition",
+        "heterotrophic nutrition"
+      ],
+      "keywords": [
+        "nutrición celular",
+        "nutrients",
+        "cell respiration",
+        "mitochondria",
+        "oxygen pathway",
+        "nutrición autótrofa",
+        "nutrición heterótrofa"
+      ],
       "dates": {
         "createdAt": null,
         "publishedAt": "2026-10-18",
@@ -5337,10 +5382,7 @@
         "titleVerified": false,
         "titleSource": "Markdown proporcionado",
         "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
-      },
-      "description": "",
-      "tags": [],
-      "keywords": []
+      }
     },
     {
       "schemaVersion": 1,
@@ -5348,6 +5390,7 @@
       "slug": "how-do-living-things-reproduce-part-1",
       "title": "How Do Living Things Reproduce? Parte 1",
       "sourceTitle": "How Do Living Things Reproduce? Parte 1",
+      "description": "English-language quiz on mitosis and cell reproduction, comparing asexual and sexual reproduction and reviewing chromosome numbers in female cells and embryos.",
       "primarySubjectId": "biologia-geologia",
       "subjectIds": [
         "biologia-geologia"
@@ -5359,6 +5402,19 @@
       "language": "en",
       "typeId": "actividad-interactiva",
       "originCourseLabel": "1.º ESO",
+      "tags": [
+        "mitosis",
+        "asexual reproduction",
+        "sexual reproduction"
+      ],
+      "keywords": [
+        "mitosis",
+        "reproducción asexual",
+        "reproducción sexual",
+        "chromosomes",
+        "chromosomes in cells",
+        "embryo"
+      ],
       "dates": {
         "createdAt": null,
         "publishedAt": "2026-10-18",
@@ -5377,10 +5433,7 @@
         "titleVerified": false,
         "titleSource": "Markdown proporcionado",
         "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
-      },
-      "description": "",
-      "tags": [],
-      "keywords": []
+      }
     },
     {
       "schemaVersion": 1,
@@ -5388,6 +5441,7 @@
       "slug": "how-do-living-things-reproduce-part-2",
       "title": "How Do Living Things Reproduce? Parte 2",
       "sourceTitle": "How Do Living Things Reproduce? Parte 2",
+      "description": "English-language group-sort activity to classify features and examples of sexual and asexual reproduction, including sex cells, zygotes, plants, animals and unicellular organisms.",
       "primarySubjectId": "biologia-geologia",
       "subjectIds": [
         "biologia-geologia"
@@ -5399,6 +5453,20 @@
       "language": "en",
       "typeId": "actividad-interactiva",
       "originCourseLabel": "1.º ESO",
+      "tags": [
+        "sexual reproduction",
+        "asexual reproduction",
+        "reproduction examples"
+      ],
+      "keywords": [
+        "reproducción sexual",
+        "reproducción asexual",
+        "gametes",
+        "sex cells",
+        "zygote",
+        "unicellular organisms",
+        "classification"
+      ],
       "dates": {
         "createdAt": null,
         "publishedAt": "2026-10-18",
@@ -5417,10 +5485,7 @@
         "titleVerified": false,
         "titleSource": "Markdown proporcionado",
         "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
-      },
-      "description": "",
-      "tags": [],
-      "keywords": []
+      }
     },
     {
       "schemaVersion": 1,
@@ -5428,6 +5493,7 @@
       "slug": "how-do-living-things-interact-with-their-environment-part-1",
       "title": "How Do Living Things Interact with Their Environment? Parte 1",
       "sourceTitle": "How Do Living Things Interact with Their Environment? Parte 1",
+      "description": "English-language quiz on the interaction function: how cells respond to stimuli and move by amoeboid, contractile or vibratile mechanisms involving pseudopodia, cilia and flagella.",
       "primarySubjectId": "biologia-geologia",
       "subjectIds": [
         "biologia-geologia"
@@ -5439,6 +5505,20 @@
       "language": "en",
       "typeId": "actividad-interactiva",
       "originCourseLabel": "1.º ESO",
+      "tags": [
+        "interaction function",
+        "cell movement",
+        "response to stimuli"
+      ],
+      "keywords": [
+        "función de relación",
+        "movimiento celular",
+        "amoeboid movement",
+        "pseudopodia",
+        "cilia",
+        "flagella",
+        "contractile movement"
+      ],
       "dates": {
         "createdAt": null,
         "publishedAt": "2026-10-18",
@@ -5457,10 +5537,7 @@
         "titleVerified": false,
         "titleSource": "Markdown proporcionado",
         "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
-      },
-      "description": "",
-      "tags": [],
-      "keywords": []
+      }
     },
     {
       "schemaVersion": 1,
@@ -5468,6 +5545,7 @@
       "slug": "how-do-living-things-interact-with-their-environment-part-2",
       "title": "How Do Living Things Interact with Their Environment? Parte 2",
       "sourceTitle": "How Do Living Things Interact with Their Environment? Parte 2",
+      "description": "English-language group-sort activity to classify cellular movement mechanisms and their features: amoeboid, contractile, ciliary and flagellar movement.",
       "primarySubjectId": "biologia-geologia",
       "subjectIds": [
         "biologia-geologia"
@@ -5479,6 +5557,20 @@
       "language": "en",
       "typeId": "actividad-interactiva",
       "originCourseLabel": "1.º ESO",
+      "tags": [
+        "interaction function",
+        "cell movement",
+        "types of movement"
+      ],
+      "keywords": [
+        "función de relación",
+        "movimiento celular",
+        "pseudopodia",
+        "cilia",
+        "flagella",
+        "contractile movement",
+        "classification"
+      ],
       "dates": {
         "createdAt": null,
         "publishedAt": "2026-10-18",
@@ -5497,10 +5589,7 @@
         "titleVerified": false,
         "titleSource": "Markdown proporcionado",
         "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
-      },
-      "description": "",
-      "tags": [],
-      "keywords": []
+      }
     }
   ],
   "mediaResources": [

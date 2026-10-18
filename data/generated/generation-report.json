@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": {
     "file": "data/catalogo-actividades.xlsx",
-    "sha256": "c217d3e5502d2a5bf2df1f2fd5d68253c024b960191f64ded8bf8ab007acb704"
+    "sha256": "69d3f93f708f54b22384fcb3156cb21dc8320943f93091accd2435fc79be7945"
   },
   "counts": {
     "subjects": 6,
@@ -178,8 +178,8 @@
   "artifacts": {
     "searchIndex": {
       "file": "data/generated/search-index.json",
-      "sha256": "beae8389207b13056441f7c36356964261253a60a5a71f2310c86d94424e6f5a",
-      "bytes": 66920,
+      "sha256": "f74223cbe467c792a8cdf55b05f6c5efe793fbcc68cddcb5c7a547fda19ee613",
+      "bytes": 70131,
       "entries": 92
     }
   }
