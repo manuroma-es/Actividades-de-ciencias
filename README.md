@@ -1,6 +1,6 @@
 # Actividades de repaso
 
-Web educativa creada por Alejandro Castaño Medina. Nació con 65 actividades de Ciencias y Conocimiento del Medio organizadas en 11 temas y publicadas originalmente en Wordwall y Educaplay. Ahora reúne 82 actividades en cinco asignaturas y un videotutorial relacionado, sin contar el vídeo como actividad interactiva.
+Web educativa creada por Alejandro Castaño Medina. Nació con 65 actividades de Ciencias y Conocimiento del Medio organizadas en 11 temas y publicadas originalmente en Wordwall y Educaplay. Ahora reúne 92 actividades en seis asignaturas y un videotutorial relacionado, sin contar el vídeo como actividad interactiva. De las 92 actividades, 90 son recursos externos y dos son actividades propias.
 
 ## Tecnología
 

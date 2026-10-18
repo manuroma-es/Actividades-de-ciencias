@@ -90,7 +90,7 @@ export function ActivityCatalog({ lockedTopicId, lockedSubjectId, globalFilters 
       if (sort === "az") return first.title.localeCompare(second.title, "es") || first.id.localeCompare(second.id);
       if (sort === "recent") return compareRecentActivities(first, second);
       if (sort === "relevance" && debouncedQuery) return (scoreById.get(second.id) ?? 0) - (scoreById.get(first.id) ?? 0) || themeOrder(first, second);
-      return lockedTopic ? first.title.localeCompare(second.title, "es") : themeOrder(first, second);
+      return lockedTopic ? 0 : themeOrder(first, second);
     });
   }, [debouncedQuery, filters, lockedTopic, scopedActivities, sort]);
 

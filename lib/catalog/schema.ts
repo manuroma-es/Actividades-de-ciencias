@@ -77,6 +77,7 @@ export interface ExternalSource {
   platformId: string;
   resourceId?: string;
   url: string;
+  embedUrl?: string;
   canonicalUrl?: string;
   originalUrl?: string;
   linkStatus: LinkStatus;

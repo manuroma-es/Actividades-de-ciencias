@@ -2,27 +2,28 @@
   "schemaVersion": 1,
   "source": {
     "file": "data/catalogo-actividades.xlsx",
-    "sha256": "f3fdca3698479951236d025ce897cb4cf3b1c5bad620655f90a4f69cd0ae8d64"
+    "sha256": "19982dc45ead09054da394eea7da4923f97c98ef6bac890521c7b19c1f2a22a5"
   },
   "counts": {
     "subjects": 6,
     "topics": 33,
-    "activities": 84,
-    "relations": 95,
+    "activities": 92,
+    "relations": 103,
     "multiTopicActivities": 8,
     "mediaResources": 1
   },
   "byPlatform": {
-    "educaplay": 53,
-    "wordwall": 29
+    "educaplay": 56,
+    "lumi": 3,
+    "wordwall": 31
   },
   "byLanguage": {
-    "en": 43,
+    "en": 51,
     "es": 32,
     "fr": 9
   },
   "bySourceKind": {
-    "external": 82,
+    "external": 90,
     "native": 2
   },
   "multiTopicActivityIds": [
@@ -42,7 +43,7 @@
       "row": null,
       "column": "Fecha de creación",
       "id": null,
-      "problem": "82 actividades no tienen fecha original de creación",
+      "problem": "90 actividades no tienen fecha original de creación",
       "expected": "Mantener null hasta disponer de una fuente fiable",
       "activityIds": [
         "WW-105266776",
@@ -126,7 +127,15 @@
         "WW-45753481",
         "WW-53716987",
         "WW-55409289",
-        "WW-55344112"
+        "WW-55344112",
+        "EP-30815160",
+        "EP-30945103",
+        "EP-31000797",
+        "LUMI-1PCQ0H",
+        "LUMI-IUQRTE",
+        "WW-121629558",
+        "LUMI-3ARRY5",
+        "WW-121676126"
       ]
     },
     {
@@ -169,9 +178,9 @@
   "artifacts": {
     "searchIndex": {
       "file": "data/generated/search-index.json",
-      "sha256": "f43c0019ca278bfd7a30c97e6a5dc5a6c8113e49918f612af68805f9c62d7fe9",
-      "bytes": 63027,
-      "entries": 84
+      "sha256": "beae8389207b13056441f7c36356964261253a60a5a71f2310c86d94424e6f5a",
+      "bytes": 66920,
+      "entries": 92
     }
   }
 }

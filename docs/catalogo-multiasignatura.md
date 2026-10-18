@@ -13,7 +13,7 @@ El libro general contiene:
 - `MIGRACIÓN_TEMAS`: mapa auditable de los once IDs `SEC-xx` a los nuevos `TopicId`.
 - `TIPOS_ACTIVIDAD`: vocabulario de tipos estable.
 - `PLATAFORMAS`: plataformas externas y hosts conocidos.
-- `ACTIVIDADES`: entidad única, fechas, estado editorial y origen external/native. Las 82 actividades actuales son externas; el vídeo no se mezcla en esta hoja.
+- `ACTIVIDADES`: entidad única, fechas, estado editorial y origen external/native. Las 90 actividades externas y dos actividades propias actuales se registran en esta hoja; el vídeo no se mezcla en ella.
 - `ACTIVIDAD_TEMA`: relaciones muchos-a-muchos.
 - `RECURSOS_RELACIONADOS`: recursos multimedia con IDs, temas, actividades relacionadas y rutas locales verificadas.
 - `ENTRADA_ORIGINAL`: encabezados y notas del material de entrada, incluido «Adjetivos» para WW-55409289.

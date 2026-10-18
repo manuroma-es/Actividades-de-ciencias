@@ -11,7 +11,7 @@ Integración sobre `main` a78290f7cb3bab2bd41d0f898e4463fa21034991.
 - Creación, incorporación y actualización: **2026-10-01**.
 - Rutas: `/asignatura/biologia-geologia/`, `/asignatura/biologia-geologia/the-earth/`, `/actividad/vital-functions/`.
 
-El Excel `data/catalogo-actividades.xlsx` conserva su esquema. Se añaden filas de asignatura, tema, tipo, actividad, relación y crédito; no se modifican celdas históricas. Los derivados se obtienen con `npm run catalog:generate`. Los 82 recursos externos existentes se conservan.
+El Excel `data/catalogo-actividades.xlsx` conserva su esquema. Se añaden filas de asignatura, tema, tipo, actividad, relación y crédito; no se modifican celdas históricas. Los derivados se obtienen con `npm run catalog:generate`. Los 90 recursos externos actuales se conservan.
 
 ## Motor local
 
@@ -60,7 +60,7 @@ npx playwright install --with-deps chromium
 npm run test:browser
 ```
 
-Las pruebas de contenido cotejan todos los enunciados y opciones con el Markdown, además de claves y categorías. Las pruebas puras cubren los cuatro correctores, respuestas incompletas, puntuación, bloqueo, reset y modo de repaso. Las regresiones siguen verificando las 65 actividades y 11 temas originales de Ciencias, además de los 82 recursos externos de la fase anterior.
+Las pruebas de contenido cotejan todos los enunciados y opciones con el Markdown, además de claves y categorías. Las pruebas puras cubren los cuatro correctores, respuestas incompletas, puntuación, bloqueo, reset y modo de repaso. Las regresiones siguen verificando las 65 actividades y 11 temas originales de Ciencias, además de las 82 actividades de las cinco asignaturas incorporadas en la fase anterior.
 
 Las pruebas de navegador recorren sesiones correctas e incorrectas, revisión final, repetición, repaso de errores, selección con teclado, ordenación con teclado, clasificación, funcionamiento offline, Topic, búsqueda, Recientes, URL directa, recarga y vuelta atrás. Se ejecutan en escritorio, viewport iPad con touch y móvil con touch; son emulación en Chromium, no una prueba física de Safari/iPadOS. GitHub Actions conserva capturas e informe en `native-activity-browser-qa`.
 
