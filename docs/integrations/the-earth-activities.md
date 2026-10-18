@@ -1,6 +1,6 @@
 # External activities in THE EARTH
 
-The editable catalog workbook records eight additional resources in Biología y Geología / THE EARTH. Their original public links and provider embed URLs come from the activity list supplied for this change. Existing native activities remain in the same topic.
+The editable catalog workbook records eight additional resources in Biología y Geología / THE EARTH. Their original public links and provider embed URLs come from the activity list supplied for this change. All ten activities in the topic, including the two existing native activities, are recorded as created in 1.º ESO, as confirmed by the user.
 
 The detail page embeds an activity when its source has a provider-approved HTTPS `embedUrl`. The activity card links to that detail page and also keeps a direct provider link. Every embedded page repeats that fallback because browsers cannot reliably report a cross-origin frame refusal to the parent page.
 
