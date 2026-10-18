@@ -94,6 +94,18 @@ export default async function ActivityPage({ params }: { params: Promise<{ slug:
           <div className="detail-badges"><span className={`platform-badge source-${activity.source.kind}${activity.source.kind === "external" ? ` platform-${activity.source.platformId}` : ""}`}>{sourceLabel}</span><span className="language-badge" lang={activity.language}>{language}</span><span className="type-badge">{typeLabel(activity)}</span></div>
           <h1 lang={activity.language}>{activity.title}</h1>
           {activity.description ? <p className="detail-description">{activity.description}</p> : null}
+          {activity.source.kind === "external" && activity.source.embedUrl ? <section className="activity-embed-section" aria-label={`Actividad interactiva de ${sourceLabel}`}>
+            <iframe
+              className="activity-embed"
+              src={activity.source.embedUrl}
+              title={`${activity.title} — actividad interactiva en ${sourceLabel}`}
+              loading="lazy"
+              allow="fullscreen; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+            <p className="embed-fallback-note">Si la actividad no se muestra o no responde, puedes <a href={activity.source.url} target="_blank" rel="noopener noreferrer">abrirla directamente en {sourceLabel}</a>.</p>
+          </section> : null}
           {shouldShowSourceTitle(activity) ? <p className="original-title"><strong>Título original:</strong> <span lang={activity.language}>{activity.sourceTitle}</span></p> : null}
           <section className="detail-section"><h2>Asignaturas relacionadas</h2><div className="theme-links">{relatedSubjects.map((subject) => <Link key={subject.id} href={`/asignatura/${subject.slug}`}>{subject.name}</Link>)}</div></section>
           <section className="detail-section"><h2>Temas relacionados</h2><div className="theme-links">{relatedTopics.map((topic) => <Link key={topic.id} href={getTopicHref(topic)}>{topic.name}</Link>)}</div></section>

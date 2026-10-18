@@ -24,7 +24,7 @@ test("mantiene cursos y enlaces públicos externos", () => {
     assert.equal(activity.source.kind, "external");
     assert.ok(platforms.has(activity.source.platformId), `Plataforma inesperada: ${activity.id}`);
     const url = new URL(activity.source.url);
-    assert.ok(["wordwall.net", "es.educaplay.com"].includes(url.hostname), `Dominio inesperado: ${activity.source.url}`);
+    assert.ok(["wordwall.net", "es.educaplay.com", "app.lumi.education"].includes(url.hostname), `Dominio inesperado: ${activity.source.url}`);
   }
 });
 
@@ -44,7 +44,7 @@ test("exporta todas las rutas directas", async () => {
     ...data.activities.map((activity) => `actividad/${activity.slug}/index.html`),
   ];
   await Promise.all(expected.map((relative) => access(path.join(root, "out", relative))));
-  assert.equal(expected.length, 161);
+  assert.equal(expected.length, 169);
 });
 
 test("exporta las once imágenes temáticas", async () => {

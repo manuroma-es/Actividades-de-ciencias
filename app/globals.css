@@ -232,6 +232,8 @@ svg { stroke-width: 1.8; }
 .more-themes { color: #175b72; white-space: nowrap; }
 .external-button { width: 100%; min-height: 46px; padding: .65rem .75rem; font-size: .9rem; }
 .external-button svg, .detail-external-button svg { width: 1rem; }
+.card-fallback-link { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: .35rem; margin-top: .2rem; color: #315b61; font-size: .88rem; font-weight: 700; text-decoration: underline; }
+.card-fallback-link svg { width: .9rem; }
 .empty-state { min-height: 22rem; display: grid; place-items: center; align-content: center; text-align: center; border: 1px dashed #bdc7c4; border-radius: 1rem; background: #fff; padding: 2rem; }
 .empty-state > svg { width: 2rem; color: #74858b; }
 .empty-state h3 { margin: .8rem 0 .25rem; font-size: 1.25rem; }
@@ -257,6 +259,10 @@ svg { stroke-width: 1.8; }
 .detail-badges { margin-top: 1.25rem; }
 .detail-main h1 { max-width: 48rem; margin: .75rem 0 .8rem; font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.04; letter-spacing: -.045em; overflow-wrap: anywhere; }
 .detail-description { max-width: 47rem; color: #465761; font-size: 1.08rem; }
+.activity-embed-section { margin: 1.35rem 0 1.8rem; }
+.activity-embed { display: block; width: 100%; height: min(82vh, 54rem); min-height: 38rem; border: 1px solid #d4dcd8; border-radius: .9rem; background: #fff; }
+.embed-fallback-note { margin: .5rem .2rem 0; color: #5d6a72; font-size: .88rem; }
+.embed-fallback-note a { color: #175b72; font-weight: 700; }
 .original-title { max-width: 47rem; color: #5d6a72; font-size: .92rem; }
 .detail-section { margin-top: 2rem; padding-top: 1.3rem; border-top: 1px solid #dce1dd; }
 .detail-section h2, .course-context h2 { margin: 0 0 .7rem; font-size: 1rem; }
@@ -343,6 +349,7 @@ svg { stroke-width: 1.8; }
 @media (max-width: 52rem) {
   .desktop-nav { display: none; }
   .mobile-menu-button { display: inline-flex !important; }
+  .activity-embed { height: 72vh; min-height: 34rem; max-height: 48rem; }
 }
 
 @media (max-width: 42rem) {

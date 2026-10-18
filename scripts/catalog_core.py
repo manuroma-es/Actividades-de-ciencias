@@ -170,6 +170,13 @@ def validate_catalog(catalog: dict, locations=None) -> tuple[list[dict], list[di
             url = source.get("url")
             if not isinstance(url, str) or urlparse(url).scheme not in {"http", "https"} or not urlparse(url).netloc:
                 errors.append(problem("invalid-external-url", activity_id, f"URL externa inválida: {url!r}", "Usar una URL HTTP(S) completa", locations, "URL pública"))
+            embed_url = source.get("embedUrl")
+            if embed_url:
+                parsed_embed = urlparse(embed_url) if isinstance(embed_url, str) else None
+                allowed_hosts = set(platforms.get(platform_id, {}).get("hostnames", []))
+                if (not parsed_embed or parsed_embed.scheme != "https" or not parsed_embed.hostname
+                        or parsed_embed.hostname not in allowed_hosts or parsed_embed.username or parsed_embed.password):
+                    errors.append(problem("invalid-embed-url", activity_id, f"URL de inserción inválida: {embed_url!r}", "Usar una URL HTTPS del host permitido para la plataforma", locations, "URL de inserción"))
             canonical_url = source.get("canonicalUrl")
             if canonical_url:
                 if canonical_url in canonical_urls:

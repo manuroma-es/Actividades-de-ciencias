@@ -214,6 +214,7 @@ def load_general_workbook(source: Path) -> tuple[dict, dict[str, dict]]:
                 "platformId": row["ID de plataforma"],
                 "resourceId": str(row["ID de recurso"]) if row["ID de recurso"] not in (None, "") else None,
                 "url": row["URL pública"],
+                "embedUrl": row.get("URL de inserción"),
                 "canonicalUrl": row["URL canónica"],
                 "originalUrl": row["URL original"],
                 "linkStatus": row["Estado del enlace"],

@@ -115,7 +115,7 @@ test('Cells: canonical catalog, search, recent listing and exported native route
  assert.deepEqual(a.subjectIds,['biologia-geologia']);assert.deepEqual(a.topicIds,['topic-biologia-geologia-the-earth']);
  assert.equal(a.source.kind,'native');assert.equal(a.source.url,undefined);assert.equal(a.typeId,'actividad-interactiva');assert.equal(a.language,'en');
  assert.deepEqual(a.dates,{createdAt:'2026-10-03',publishedAt:'2026-10-03',updatedAt:'2026-10-03'});
- assert.equal(rankSearchEntries(search.entries,a.title)[0].id,a.id);assert.equal(sortRecentActivities(catalog.activities)[0].id,a.id);
+ assert.equal(rankSearchEntries(search.entries,a.title)[0].id,a.id);assert.ok(sortRecentActivities(catalog.activities).some((item)=>item.id===a.id));
  assert.equal(matchesActivityFilters(a,{subjects:a.subjectIds,topics:a.topicIds,languages:['en'],types:[a.typeId],sources:['native'],platforms:[]}),true);
  const html=await readFile(`out/actividad/${a.slug}/index.html`,'utf8');assert.match(html,/What do living things need to survive/);assert.doesNotMatch(html,/<iframe|Abrir actividad en/);
  for(const path of ['recientes','explorar','asignatura/biologia-geologia','asignatura/biologia-geologia/the-earth'])assert.ok((await readFile(`out/${path}/index.html`,'utf8')).includes(a.slug),path);

@@ -65,7 +65,7 @@ test("validador bloquea referencias rotas y rutas multimedia inexistentes",()=>{
 });
 
 test("fechas nuevas alimentan Recientes y Nueva con la regla general",()=>{
- const additions=catalog.activities.filter((item)=>item.primarySubjectId!=="ciencias"&&item.source.kind==="external");
+ const additions=catalog.activities.filter((item)=>!['ciencias','biologia-geologia'].includes(item.primarySubjectId)&&item.source.kind==="external");
  assert.equal(additions.length,17);
  assert.ok(additions.every((item)=>item.dates.publishedAt==="2026-09-24"&&item.dates.updatedAt==="2026-09-24"&&item.dates.createdAt===null));
  assert.ok(additions.every((item)=>isNewPublication(item.dates.publishedAt,new Date("2026-09-24T12:00:00Z"))));
@@ -85,7 +85,8 @@ test("fichas, temas e Inicio muestran cinco asignaturas y vídeo accesible",asyn
  assert.ok(vocab.includes(`/actividad/${english.slug}`));
  assert.ok((await readHtml(`actividad/${english.slug}`)).includes(english.title));
  const recent=await readHtml("recientes");
- assert.ok(recent.includes(english.title));
+ const earthActivity=catalog.activities.find((item)=>item.id==="EP-30815160");
+ assert.ok(recent.includes(earthActivity.title));
 });
 
 test("Ciencias conserva exactamente el catálogo estructurado de main",()=>{

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": {
     "file": "data/catalogo-actividades.xlsx",
-    "sha256": "f3fdca3698479951236d025ce897cb4cf3b1c5bad620655f90a4f69cd0ae8d64"
+    "sha256": "c217d3e5502d2a5bf2df1f2fd5d68253c024b960191f64ded8bf8ab007acb704"
   },
   "subjects": [
     {
@@ -725,6 +725,15 @@
       ],
       "color": "#7a3d22",
       "order": 2
+    },
+    {
+      "id": "lumi",
+      "name": "Lumi",
+      "hostnames": [
+        "app.lumi.education"
+      ],
+      "color": "#5b58c9",
+      "order": 3
     }
   ],
   "activities": [
@@ -5172,6 +5181,326 @@
           "contentPath": "data/native/living-things-are-formed-of-cells.json"
         }
       }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-30815160",
+      "slug": "what-are-cells-like-animal-and-plant-cell",
+      "title": "What Are Cells Like? Animal and Plant Cell",
+      "sourceTitle": "What Are Cells Like? Animal and Plant Cell",
+      "primarySubjectId": "biologia-geologia",
+      "subjectIds": [
+        "biologia-geologia"
+      ],
+      "primaryTopicId": "topic-biologia-geologia-the-earth",
+      "topicIds": [
+        "topic-biologia-geologia-the-earth"
+      ],
+      "language": "en",
+      "typeId": "actividad-interactiva",
+      "originCourseLabel": "1.º ESO",
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-10-18",
+        "updatedAt": "2026-10-18"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "30815160",
+        "url": "https://es.educaplay.com/recursos-educativos/30815160-what_are_cells_like.html",
+        "embedUrl": "https://es.educaplay.com/juego/30815160-what_are_cells_like.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/30815160-what_are_cells_like.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/30815160-what_are_cells_like.html",
+        "linkStatus": "unverified",
+        "titleVerified": false,
+        "titleSource": "Markdown proporcionado",
+        "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
+      },
+      "description": "",
+      "tags": [],
+      "keywords": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-30945103",
+      "slug": "animal-cell",
+      "title": "Animal Cell",
+      "sourceTitle": "Animal Cell",
+      "primarySubjectId": "biologia-geologia",
+      "subjectIds": [
+        "biologia-geologia"
+      ],
+      "primaryTopicId": "topic-biologia-geologia-the-earth",
+      "topicIds": [
+        "topic-biologia-geologia-the-earth"
+      ],
+      "language": "en",
+      "typeId": "actividad-interactiva",
+      "originCourseLabel": "1.º ESO",
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-10-18",
+        "updatedAt": "2026-10-18"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "30945103",
+        "url": "https://es.educaplay.com/recursos-educativos/30945103-animal_cell.html",
+        "embedUrl": "https://es.educaplay.com/juego/30945103-animal_cell.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/30945103-animal_cell.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/30945103-animal_cell.html",
+        "linkStatus": "unverified",
+        "titleVerified": false,
+        "titleSource": "Markdown proporcionado",
+        "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
+      },
+      "description": "",
+      "tags": [],
+      "keywords": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "EP-31000797",
+      "slug": "plant-cell",
+      "title": "Plant Cell",
+      "sourceTitle": "Plant Cell",
+      "primarySubjectId": "biologia-geologia",
+      "subjectIds": [
+        "biologia-geologia"
+      ],
+      "primaryTopicId": "topic-biologia-geologia-the-earth",
+      "topicIds": [
+        "topic-biologia-geologia-the-earth"
+      ],
+      "language": "en",
+      "typeId": "actividad-interactiva",
+      "originCourseLabel": "1.º ESO",
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-10-18",
+        "updatedAt": "2026-10-18"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "educaplay",
+        "resourceId": "31000797",
+        "url": "https://es.educaplay.com/recursos-educativos/31000797-eukaryotic_cel.html",
+        "embedUrl": "https://es.educaplay.com/juego/31000797-eukaryotic_cel.html",
+        "canonicalUrl": "https://es.educaplay.com/recursos-educativos/31000797-eukaryotic_cel.html",
+        "originalUrl": "https://es.educaplay.com/recursos-educativos/31000797-eukaryotic_cel.html",
+        "linkStatus": "unverified",
+        "titleVerified": false,
+        "titleSource": "Markdown proporcionado",
+        "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
+      },
+      "description": "",
+      "tags": [],
+      "keywords": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "LUMI-1PCQ0H",
+      "slug": "how-do-living-things-get-nutrients",
+      "title": "How Do Living Things Get Nutrients?",
+      "sourceTitle": "How Do Living Things Get Nutrients?",
+      "primarySubjectId": "biologia-geologia",
+      "subjectIds": [
+        "biologia-geologia"
+      ],
+      "primaryTopicId": "topic-biologia-geologia-the-earth",
+      "topicIds": [
+        "topic-biologia-geologia-the-earth"
+      ],
+      "language": "en",
+      "typeId": "actividad-interactiva",
+      "originCourseLabel": "1.º ESO",
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-10-18",
+        "updatedAt": "2026-10-18"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "lumi",
+        "resourceId": "1PCQ0H",
+        "url": "https://app.lumi.education/run/1PCQ0H",
+        "embedUrl": "https://app.lumi.education/run/1PCQ0H",
+        "canonicalUrl": "https://app.lumi.education/run/1PCQ0H",
+        "originalUrl": "https://app.lumi.education/run/1PCQ0H",
+        "linkStatus": "unverified",
+        "titleVerified": false,
+        "titleSource": "Markdown proporcionado",
+        "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
+      },
+      "description": "",
+      "tags": [],
+      "keywords": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "LUMI-IUQRTE",
+      "slug": "how-do-living-things-reproduce-part-1",
+      "title": "How Do Living Things Reproduce? Parte 1",
+      "sourceTitle": "How Do Living Things Reproduce? Parte 1",
+      "primarySubjectId": "biologia-geologia",
+      "subjectIds": [
+        "biologia-geologia"
+      ],
+      "primaryTopicId": "topic-biologia-geologia-the-earth",
+      "topicIds": [
+        "topic-biologia-geologia-the-earth"
+      ],
+      "language": "en",
+      "typeId": "actividad-interactiva",
+      "originCourseLabel": "1.º ESO",
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-10-18",
+        "updatedAt": "2026-10-18"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "lumi",
+        "resourceId": "iuQrtE",
+        "url": "https://app.lumi.education/run/iuQrtE",
+        "embedUrl": "https://app.lumi.education/run/iuQrtE",
+        "canonicalUrl": "https://app.lumi.education/run/iuQrtE",
+        "originalUrl": "https://app.lumi.education/run/iuQrtE",
+        "linkStatus": "unverified",
+        "titleVerified": false,
+        "titleSource": "Markdown proporcionado",
+        "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
+      },
+      "description": "",
+      "tags": [],
+      "keywords": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-121629558",
+      "slug": "how-do-living-things-reproduce-part-2",
+      "title": "How Do Living Things Reproduce? Parte 2",
+      "sourceTitle": "How Do Living Things Reproduce? Parte 2",
+      "primarySubjectId": "biologia-geologia",
+      "subjectIds": [
+        "biologia-geologia"
+      ],
+      "primaryTopicId": "topic-biologia-geologia-the-earth",
+      "topicIds": [
+        "topic-biologia-geologia-the-earth"
+      ],
+      "language": "en",
+      "typeId": "actividad-interactiva",
+      "originCourseLabel": "1.º ESO",
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-10-18",
+        "updatedAt": "2026-10-18"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "121629558",
+        "url": "https://wordwall.net/resource/121629558?wwmethod=link",
+        "embedUrl": "https://wordwall.net/embed/fc0b8b174f2b466f80b7f879d3e72e14?themeId=1&templateId=2&fontStackId=0",
+        "canonicalUrl": "https://wordwall.net/resource/121629558?wwmethod=link",
+        "originalUrl": "https://wordwall.net/resource/121629558?wwmethod=link",
+        "linkStatus": "unverified",
+        "titleVerified": false,
+        "titleSource": "Markdown proporcionado",
+        "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
+      },
+      "description": "",
+      "tags": [],
+      "keywords": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "LUMI-3ARRY5",
+      "slug": "how-do-living-things-interact-with-their-environment-part-1",
+      "title": "How Do Living Things Interact with Their Environment? Parte 1",
+      "sourceTitle": "How Do Living Things Interact with Their Environment? Parte 1",
+      "primarySubjectId": "biologia-geologia",
+      "subjectIds": [
+        "biologia-geologia"
+      ],
+      "primaryTopicId": "topic-biologia-geologia-the-earth",
+      "topicIds": [
+        "topic-biologia-geologia-the-earth"
+      ],
+      "language": "en",
+      "typeId": "actividad-interactiva",
+      "originCourseLabel": "1.º ESO",
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-10-18",
+        "updatedAt": "2026-10-18"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "lumi",
+        "resourceId": "3Arry5",
+        "url": "https://app.lumi.education/run/3Arry5",
+        "embedUrl": "https://app.lumi.education/run/3Arry5",
+        "canonicalUrl": "https://app.lumi.education/run/3Arry5",
+        "originalUrl": "https://app.lumi.education/run/3Arry5",
+        "linkStatus": "unverified",
+        "titleVerified": false,
+        "titleSource": "Markdown proporcionado",
+        "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
+      },
+      "description": "",
+      "tags": [],
+      "keywords": []
+    },
+    {
+      "schemaVersion": 1,
+      "id": "WW-121676126",
+      "slug": "how-do-living-things-interact-with-their-environment-part-2",
+      "title": "How Do Living Things Interact with Their Environment? Parte 2",
+      "sourceTitle": "How Do Living Things Interact with Their Environment? Parte 2",
+      "primarySubjectId": "biologia-geologia",
+      "subjectIds": [
+        "biologia-geologia"
+      ],
+      "primaryTopicId": "topic-biologia-geologia-the-earth",
+      "topicIds": [
+        "topic-biologia-geologia-the-earth"
+      ],
+      "language": "en",
+      "typeId": "actividad-interactiva",
+      "originCourseLabel": "1.º ESO",
+      "dates": {
+        "createdAt": null,
+        "publishedAt": "2026-10-18",
+        "updatedAt": "2026-10-18"
+      },
+      "publicationStatus": "published",
+      "source": {
+        "kind": "external",
+        "platformId": "wordwall",
+        "resourceId": "121676126",
+        "url": "https://wordwall.net/resource/121676126?wwmethod=link",
+        "embedUrl": "https://wordwall.net/embed/66f02bba25bd48fdbabe4bd91dec5d23?themeId=1&templateId=2&fontStackId=0",
+        "canonicalUrl": "https://wordwall.net/resource/121676126?wwmethod=link",
+        "originalUrl": "https://wordwall.net/resource/121676126?wwmethod=link",
+        "linkStatus": "unverified",
+        "titleVerified": false,
+        "titleSource": "Markdown proporcionado",
+        "verificationNote": "URL de origen y título proporcionados por el usuario; no verificados en navegador."
+      },
+      "description": "",
+      "tags": [],
+      "keywords": []
     }
   ],
   "mediaResources": [

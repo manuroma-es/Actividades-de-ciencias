@@ -47,7 +47,10 @@ export function ActivityCard({
           {showPublishedDate ? <div className="published-meta"><dt>Incorporada</dt><dd>{formatCatalogDate(activity.dates.publishedAt)}</dd></div> : null}
         </dl>
         {activity.source.kind === "external" ? (
-          <a className="external-button" href={activity.source.url} target="_blank" rel="noopener noreferrer">
+          activity.source.embedUrl ? <>
+            <Link className="external-button" href={`/actividad/${activity.slug}`}>Ver y jugar aquí</Link>
+            <a className="card-fallback-link" href={activity.source.url} target="_blank" rel="noopener noreferrer">Abrir en {sourceLabel} <ExternalLink aria-hidden="true" /><span className="sr-only">; se abre en una pestaña nueva</span></a>
+          </> : <a className="external-button" href={activity.source.url} target="_blank" rel="noopener noreferrer">
             Abrir actividad <ExternalLink aria-hidden="true" />
             <span className="sr-only"> en {sourceLabel}; se abre en una pestaña nueva</span>
           </a>
